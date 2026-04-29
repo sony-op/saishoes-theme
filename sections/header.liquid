@@ -54,15 +54,41 @@
   endcapture
 
   # theme-check-disable UniqueStaticBlockId
+  capture mega_menu_content
+    echo '<div class="skechers-mega-menu"><div class="mega-menu-inner">'
+    echo '<div class="mega-column"><div class="mega-header">Featured</div><a href="#">New Arrivals</a><a href="#">Spring Summer</a></div>'
+    echo '<div class="mega-column"><div class="mega-header">Footwear</div><a href="#">Running Shoes</a><a href="#">Walking Shoes</a><a href="#">Casual Sneakers</a><a href="#">Slipper/Sandal</a><a href="#">Slip-Ons</a><a href="#">Lace Up</a><a href="#">Slides</a><a href="#">Slip-Ins</a></div>'
+    echo '<div class="mega-column"><div class="mega-header">Shop By Activity</div><a href="#">Running</a><a href="#">Walking</a><a href="#">Trail-Hiking</a><a href="#">Pickleball</a></div>'
+    echo '<div class="mega-column"><div class="mega-header">Shop By Collections</div><div class="mega-subgrid"><div class="sub-col"><a href="#">Arch Fit</a><a href="#">GO WALK</a><a href="#">GO RUN</a><a href="#">Sport</a><a href="#">SKECHERS Street</a><a href="#">UNOs</a><a href="#">Cali</a><a href="#">BOBS</a><a href="#">Stretch Fit</a><a href="#">Goodyear</a><a href="#">HYPER BURST</a><a href="#">Max Cushioning</a></div><div class="sub-col"><a href="#">Skech-Air</a><a href="#">Court Classics</a><a href="#">Modern Comfort</a><a href="#">Mark Nason</a></div></div></div>'
+    echo '<div class="mega-column"><div class="mega-header">Apparels</div><div class="mega-subheader">Top Wear</div><a href="#">T-Shirts</a><a href="#">Tanks</a><a href="#">Jackets</a><a href="#">Tops</a><a href="#">Hoodies</a><a href="#">Sports Bra</a><div class="mega-subheader">Bottom Wear</div><a href="#">Capris</a><a href="#">Pants</a><a href="#">Leggings</a><a href="#">Shorts</a></div>'
+    echo '<div class="mega-column"><div class="mega-header">Accessories</div><a href="#">Socks</a><a href="#">Bags</a><a href="#">Shoe Care</a><a href="#">Caps</a><a href="#">Fitness Equipment</a></div>'
+    echo '<div class="mega-column"><div class="mega-header">Collaborations</div><a href="#">Mumbai Indians</a><a href="#">Retroverse</a></div>'
+    echo '</div></div>'
+  endcapture
+
   capture menu
     echo '<ul class="skechers-main-nav">'
-    echo '<li><a href="/collections/all">WOMEN</a></li>'
-    echo '<li><a href="/collections/all">MEN</a></li>'
-    echo '<li><a href="/collections/all">KIDS</a></li>'
-    echo '<li><a href="/collections/all">APPARELS</a></li>'
-    echo '<li><a href="/collections/all">COLLECTIONS</a></li>'
-    echo '<li><a href="/collections/all">SPORTS</a></li>'
-    echo '<li><a href="/collections/all">SALE</a></li>'
+    echo '<li class="has-mega-menu"><a href="/collections/all">WOMEN</a>'
+    echo mega_menu_content
+    echo '</li>'
+    echo '<li class="has-mega-menu"><a href="/collections/all">MEN</a>'
+    echo mega_menu_content
+    echo '</li>'
+    echo '<li class="has-mega-menu"><a href="/collections/all">KIDS</a>'
+    echo mega_menu_content
+    echo '</li>'
+    echo '<li class="has-mega-menu"><a href="/collections/all">APPARELS</a>'
+    echo mega_menu_content
+    echo '</li>'
+    echo '<li class="has-mega-menu"><a href="/collections/all">COLLECTIONS</a>'
+    echo mega_menu_content
+    echo '</li>'
+    echo '<li class="has-mega-menu"><a href="/collections/all">SPORTS</a>'
+    echo mega_menu_content
+    echo '</li>'
+    echo '<li class="has-mega-menu"><a href="/collections/all">SALE</a>'
+    echo mega_menu_content
+    echo '</li>'
     echo '</ul>'
   endcapture
 

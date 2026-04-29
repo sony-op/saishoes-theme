@@ -461,3 +461,86 @@ header-actions {
 .skechers-add-btn:hover .btn-text {
   color: #ffffff;
 }
+
+/* ==========================================
+   MEGA MENU (Hover Dropdown)
+========================================== */
+.skechers-main-nav {
+  position: relative;
+}
+
+.has-mega-menu {
+  position: static;
+}
+
+.skechers-mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  display: none;
+  z-index: 100;
+  padding: 40px 0;
+}
+
+.has-mega-menu:hover .skechers-mega-menu {
+  display: block;
+}
+
+.mega-menu-inner {
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.mega-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-header {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  text-transform: none;
+}
+
+.mega-subheader {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.mega-column a {
+  font-size: 13px !important;
+  color: #666666 !important;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-weight: 400 !important;
+  text-transform: none !important;
+}
+
+.mega-column a:hover {
+  color: var(--skechers-blue) !important;
+}
+
+.mega-subgrid {
+  display: flex;
+  gap: 30px;
+}
+
+.sub-col {
+  display: flex;
+  flex-direction: column;
+}
