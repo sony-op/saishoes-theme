@@ -106,7 +106,38 @@
       {% if block_settings.padding-block-end > 0 %}--zoom-out-padding-block-end: min(var(--padding-xs), {{ block_settings.padding-block-end | times: 0.7}}px);{% endif %}
     "
   >
-    {{ children }}
+    <div class="skechers-product-card-inner">
+      <div class="skechers-product-badge">
+        {% if product.compare_at_price > product.price %}
+          <span class="badge-sale">Sale</span>
+        {% else %}
+          <span class="badge-new">New</span>
+        {% endif %}
+      </div>
+      <div class="skechers-wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+      </div>
+      <div class="skechers-product-image">
+        {% if product.featured_media %}
+          <img src="{{ product.featured_media | image_url: width: 600 }}" alt="{{ product.title | escape }}" loading="lazy" style="width: 100%; height: auto; object-fit: contain; aspect-ratio: 4/3;">
+        {% else %}
+          {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+      <div class="skechers-product-info">
+        <div class="skechers-product-vendor">Men</div>
+        <h3 class="skechers-product-title">{{ product.title }}</h3>
+        <div class="skechers-product-price">
+          <span class="mrp">MRP</span> {{ product.price | money }}
+        </div>
+      </div>
+      <div class="skechers-quick-add">
+        <button type="button" class="skechers-add-btn">
+          <span class="btn-icon">+</span>
+          <span class="btn-text">Add to Cart</span>
+        </button>
+      </div>
+    </div>
   </div>
 </product-card>
 
