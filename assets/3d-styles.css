@@ -1,0 +1,39 @@
+/* 3D Styles for Depth */
+
+/* 3D Container */
+.tilt-3d-card {
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+/* Returning to rest transition */
+.tilt-3d-card:not(:hover) {
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Inner elements pop out */
+.tilt-3d-inner {
+  transform: translateZ(30px);
+  transform-style: preserve-3d;
+}
+
+.tilt-3d-card img,
+.tilt-3d-card .card__media {
+  transform: translateZ(50px);
+  /* Makes image pop out further */
+}
+
+.tilt-3d-card .card__content {
+  transform: translateZ(40px);
+  /* Makes text pop out */
+  background: rgba(255, 255, 255, 0.9);
+  /* Prevent text blending into background */
+}
+
+/* Enhanced 3D Shadows for hovering */
+.tilt-3d-card:hover {
+  box-shadow:
+    -20px 20px 30px rgba(0, 0, 0, 0.1),
+    20px 20px 30px rgba(0, 0, 0, 0.1) !important;
+}
