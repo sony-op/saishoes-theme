@@ -878,10 +878,40 @@
         "padding-block-end": 24,
         "gap_between_elements": 24
       }
+    },
+    "shop_by_sport_custom": {
+      "type": "shop-by-sport",
+      "blocks": {
+        "card_1": {
+          "type": "sport_card"
+        },
+        "card_2": {
+          "type": "sport_card"
+        },
+        "card_3": {
+          "type": "sport_card"
+        },
+        "card_4": {
+          "type": "sport_card"
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card_4"
+      ],
+      "settings": {
+        "title": "Shop by Sport",
+        "bg_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
     "hero_p9CmMG",
+    "shop_by_sport_custom",
     "product_list_themegen",
     "section_x8mrnx",
     "media_with_content_xMM9EF",

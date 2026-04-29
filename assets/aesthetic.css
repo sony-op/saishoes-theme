@@ -645,3 +645,102 @@ header-actions {
   }
 }
 
+/* ==========================================
+   SHOP BY SPORT CAROUSEL
+========================================== */
+.shop-by-sport-section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.shop-by-sport-header h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 25px;
+  text-transform: none;
+  font-family: var(--font-body-family) !important;
+}
+
+.shop-by-sport-carousel {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  padding: 0 20px; 
+}
+
+.shop-by-sport-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.shop-by-sport-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.shop-by-sport-item {
+  width: calc((100vw - 100px) / 4);
+  max-width: 320px;
+  min-width: 250px;
+  flex-shrink: 0;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.shop-by-sport-item:hover {
+  transform: translateY(-5px);
+}
+
+.shop-by-sport-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.placeholder-svg {
+  width: 100%;
+  height: 300px;
+  background-color: #f4f4f4;
+  fill: #cccccc;
+}
+
+.shop-by-sport-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.shop-by-sport-dots .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.shop-by-sport-dots .dot.active {
+  background-color: #666;
+}
+
+@media screen and (max-width: 989px) {
+  .shop-by-sport-track {
+    margin: 0;
+  }
+  .shop-by-sport-item {
+    width: 70vw;
+    min-width: unset;
+  }
+}
+
+
