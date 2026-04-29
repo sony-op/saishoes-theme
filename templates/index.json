@@ -907,11 +907,48 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "footwear_essentials": {
+      "type": "footwear-essentials",
+      "blocks": {
+        "cat_1": { "type": "category_card", "settings": { "label": "WALKING SHOES" } },
+        "cat_2": { "type": "category_card", "settings": { "label": "SLIP-ONS" } },
+        "cat_3": { "type": "category_card", "settings": { "label": "SLIP-INS" } },
+        "cat_4": { "type": "category_card", "settings": { "label": "CASUAL SNEAKERS" } }
+      },
+      "block_order": [
+        "cat_1", "cat_2", "cat_3", "cat_4"
+      ],
+      "settings": {
+        "title": "Footwear Essentials",
+        "bg_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "trending_collections": {
+      "type": "trending-collections",
+      "blocks": {
+        "banner_1": { "type": "collection_banner" },
+        "banner_2": { "type": "collection_banner" },
+        "banner_3": { "type": "collection_banner" }
+      },
+      "block_order": [
+        "banner_1", "banner_2", "banner_3"
+      ],
+      "settings": {
+        "title": "Trending Collections",
+        "bg_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
     "hero_p9CmMG",
     "shop_by_sport_custom",
+    "footwear_essentials",
+    "trending_collections",
     "product_list_themegen",
     "section_x8mrnx",
     "media_with_content_xMM9EF",

@@ -743,4 +743,166 @@ header-actions {
   }
 }
 
+/* ==========================================
+   HEADING WITH LINE
+========================================== */
+.section-heading-with-line {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.section-heading-with-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e0e0e0;
+  z-index: 1;
+}
+.section-heading-with-line h2 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #333;
+  margin: 0;
+  text-transform: none;
+  font-family: var(--font-body-family) !important;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+.section-heading-with-line h2 span {
+  background: #fff;
+  padding: 0 20px;
+}
 
+/* ==========================================
+   FOOTWEAR ESSENTIALS
+========================================== */
+.footwear-essentials-section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+.footwear-essentials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.footwear-card {
+  text-align: center;
+}
+.footwear-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.footwear-image-wrapper {
+  background-color: #f9f9f9;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  margin-bottom: 15px;
+  position: relative;
+}
+.footwear-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.footwear-card:hover .footwear-image-wrapper img {
+  transform: scale(1.05);
+}
+.footwear-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.footwear-card:hover .footwear-label {
+  color: var(--skechers-blue);
+}
+
+@media screen and (max-width: 989px) {
+  .footwear-essentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* ==========================================
+   TRENDING COLLECTIONS
+========================================== */
+.trending-collections-section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+.trending-collections-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.trending-nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #999;
+  z-index: 2;
+  transition: color 0.3s;
+}
+.trending-nav-btn:hover {
+  color: #333;
+}
+.trending-collections-carousel {
+  flex-grow: 1;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+.trending-collections-carousel::-webkit-scrollbar {
+  display: none;
+}
+.trending-collections-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+}
+.trending-collection-item {
+  width: 400px; /* Adjust based on image aspect ratio */
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.trending-collection-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.trending-collection-item:hover img {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 989px) {
+  .trending-nav-btn {
+    display: none;
+  }
+  .trending-collection-item {
+    width: 85vw;
+  }
+}

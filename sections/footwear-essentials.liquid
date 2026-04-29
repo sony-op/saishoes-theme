@@ -1,0 +1,113 @@
+<div class="footwear-essentials-section" id="footwear-essentials-{{ section.id }}" style="background-color: {{ section.settings.bg_color }}; padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px 0;">
+  {% if section.settings.title != blank %}
+    <div class="section-heading-with-line">
+      <h2><span>{{ section.settings.title | escape }}</span></h2>
+    </div>
+  {% endif %}
+
+  <div class="footwear-essentials-grid">
+    {% for block in section.blocks %}
+      <div class="footwear-card" {{ block.shopify_attributes }}>
+        {% if block.settings.link != blank %}
+          <a href="{{ block.settings.link }}" class="footwear-card-link">
+        {% else %}
+          <div class="footwear-card-link">
+        {% endif %}
+        
+        <div class="footwear-image-wrapper">
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.label | escape }}" loading="lazy" width="600" height="auto">
+          {% else %}
+            {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </div>
+        
+        {% if block.settings.label != blank %}
+          <div class="footwear-label">{{ block.settings.label | escape }}</div>
+        {% endif %}
+        
+        {% if block.settings.link != blank %}
+          </a>
+        {% else %}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Footwear Essentials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Footwear Essentials"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category_card",
+      "name": "Category Card",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "CATEGORY NAME"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footwear Essentials",
+      "blocks": [
+        { "type": "category_card", "settings": { "label": "WALKING SHOES" } },
+        { "type": "category_card", "settings": { "label": "SLIP-ONS" } },
+        { "type": "category_card", "settings": { "label": "SLIP-INS" } },
+        { "type": "category_card", "settings": { "label": "CASUAL SNEAKERS" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
