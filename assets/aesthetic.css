@@ -1,162 +1,208 @@
 /* ============================================================================
-   Aesthetic Enhancements - Performance-Led Editorial Grid
+   Aesthetic Enhancements - SAI SHOES (Skechers 1:1 Layout)
    ============================================================================ */
 
-/* Typography Overrides */
 :root {
   --font-body-family: 'Outfit', sans-serif;
   --font-heading-family: 'Outfit', sans-serif;
-  --transition-smooth: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease, color 0.2s ease;
-  --radius-modern: 0px; /* Brutalist sharp edges */
-  --radius-pill: 0px;
-  --color-primary: #000000; /* Pitch Black */
-  --color-navy: #000000;
-  --color-bg: #ffffff; /* Pure white */
+  --skechers-blue: #0055FF;
+  --color-primary: #000000;
+  --color-bg: #ffffff;
 }
 
-/* Structural Grid Overrides */
 html, body, .gradient {
   background: var(--color-bg) !important;
-  background-image: none !important;
   color: var(--color-primary) !important;
+  font-family: var(--font-body-family) !important;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6, 
-.h1, .h2, .h3, .h4, .h5, .h6, 
-p, a, span, button, input, select, textarea {
-  font-family: var(--font-body-family) !important;
-}
-
-/* Massive Editorial Headings */
-h1, .h1 {
-  font-weight: 900 !important;
-  font-style: normal !important;
-  letter-spacing: -0.05em !important;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-heading-family) !important;
   text-transform: uppercase;
-  font-size: clamp(3rem, 8vw, 6rem) !important;
-  line-height: 0.9 !important;
-  color: var(--color-primary) !important;
-  margin-bottom: 0.5em;
 }
 
-h2, h3, h4, .h2, .h3, .h4 {
-  font-weight: 800 !important;
-  letter-spacing: -0.04em !important;
-  text-transform: uppercase;
-  color: var(--color-primary) !important;
+/* ==========================================
+   HEADER 3-TIER SYSTEM
+========================================== */
+
+/* 1. Announcement Bar (Top Blue Bar) */
+.announcement-bar {
+  background-color: var(--skechers-blue) !important;
+  color: #ffffff !important;
+  text-align: center;
+  padding: 10px 0 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
 }
 
-/* Links */
-a {
-  color: var(--color-primary) !important;
-  text-decoration: none !important;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.2s ease;
+/* 2. Utility Nav (Middle White Bar) */
+.utility-nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 0;
+}
+.utility-nav__links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+.utility-nav__links a {
+  color: #666666 !important;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.utility-nav__links a:hover {
+  color: var(--skechers-blue) !important;
 }
 
-a:hover {
-  border-bottom: 2px solid var(--color-primary);
-}
-
-/* Brutalist Cards & Components */
-.card-wrapper, .card, .product-card-wrapper, .collection-card-wrapper, .blog-card-wrapper {
-  border-radius: var(--radius-modern) !important;
-  overflow: visible !important; 
-  transition: var(--transition-smooth);
-  border: 1px solid #e0e0e0 !important; /* Visible grid lines */
+/* 3. Main Navigation */
+#header-component {
   background: #ffffff !important;
-  box-shadow: none !important; /* Flat design */
+  border-bottom: 1px solid #e0e0e0 !important;
+  padding: 10px 0 !important;
+}
+/* SAI SHOES Logo mimicking Skechers */
+.header-logo, .header__heading-link {
+  font-family: 'Arial Black', Impact, sans-serif !important; /* Heavy thick font */
+  font-size: 32px !important;
+  font-style: italic !important;
+  color: var(--skechers-blue) !important;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-decoration: none !important;
 }
 
-.card__inner {
+/* Main Menu Links */
+.header__menu-item span {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  color: #000000 !important;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+.header__menu-item:hover span {
+  color: var(--skechers-blue) !important;
+}
+
+/* ==========================================
+   HOMEPAGE HERO BANNER (3-Column Split)
+========================================== */
+.hero {
+  max-width: 100vw !important;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.hero .hero__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  background: #EEDCC6; /* Beige background for outer columns */
+}
+
+/* Simulate the 3 column layout for the hero groups */
+.hero .hero__inner > .group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+/* The middle section with the image */
+.hero .hero__inner > .group:nth-child(2) {
+  flex: 2; /* Make it wider */
+  background: transparent;
+}
+
+.skechers-hero-title {
+  font-size: clamp(2rem, 5vw, 4rem) !important;
+  font-family: serif !important; /* The classic serif look from the screenshot */
+  color: #000000 !important;
+  line-height: 1.1 !important;
+  margin-bottom: 10px;
+}
+
+.skechers-hero-subtitle {
+  font-size: clamp(3rem, 7vw, 6rem) !important;
+  font-family: serif !important;
+  color: #000000 !important;
+  font-weight: 900 !important;
+}
+
+/* ==========================================
+   COOKIES POLICY POPUP
+========================================== */
+.cookies-policy-popup {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 900px;
+  background-color: #ffffff;
+  box-shadow: 0px -5px 20px rgba(0,0,0,0.1);
+  padding: 20px 30px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-top: 4px solid var(--skechers-blue);
+}
+.cookies-policy-popup__content h4 {
+  margin: 0 0 10px 0 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  text-transform: none;
+}
+.cookies-policy-popup__content p {
+  margin: 0 !important;
+  font-size: 13px !important;
+  color: #444 !important;
+  line-height: 1.5;
+}
+.cookies-policy-popup__actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.button--blue {
+  background-color: var(--skechers-blue) !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 12px 24px !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+}
+.button--outline {
+  background-color: transparent !important;
+  color: var(--skechers-blue) !important;
+  border: 1px solid var(--skechers-blue) !important;
+  padding: 12px 24px !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+}
+
+/* Product Cards Flat Design */
+.card-wrapper {
+  border: none !important;
+  box-shadow: none !important;
   background: transparent !important;
 }
-
-/* Hover: Strict bordered lift, no soft shadows */
-.card-wrapper:hover, .product-card-wrapper:hover, .collection-card-wrapper:hover, .blog-card-wrapper:hover {
-  transform: translate(-4px, -4px);
-  box-shadow: 4px 4px 0px 0px #000000 !important; /* Brutalist hard shadow */
-  border: 1px solid #000000 !important;
-}
-
-/* Inner Images */
-.card__media, .media {
-  border-radius: var(--radius-modern) !important;
-  background: #f5f5f5 !important; /* Slight contrast for images */
-}
-
-/* Subdued Hover Effect for Shoes (No heavy 3D) */
-.card-wrapper .card__media {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.card-wrapper:hover .card__media {
-  transform: scale(1.05); 
-}
-
-/* Brutalist Buttons */
-.button, .btn, button.shopify-payment-button__button--unbranded {
-  border-radius: var(--radius-pill) !important;
-  transition: var(--transition-smooth) !important;
-  font-weight: 800 !important;
-  letter-spacing: 0px;
-  text-transform: uppercase;
-  background: var(--color-primary) !important;
-  color: #fff !important;
-  box-shadow: none !important;
-  border: 2px solid var(--color-primary) !important;
-  padding: 15px 30px !important;
-}
-
-.button:hover, .btn:hover, button.shopify-payment-button__button--unbranded:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0px 0px #cccccc !important;
-  background: #ffffff !important;
-  color: var(--color-primary) !important;
-}
-
-.button::after, .btn::after {
-  content: none !important;
-}
-
-/* Structural Header */
-header-component {
-  background: #ffffff !important;
-  border-bottom: 1px solid #000000 !important;
-  box-shadow: none !important;
-}
-
-.header__menu-item span, .header__icon {
-  color: var(--color-primary) !important;
-  font-weight: 700 !important;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
-}
-
-/* Inputs & Forms */
-.field__input, .select__select, .customer .field input, .customer select {
-  border-radius: var(--radius-modern) !important;
-  border: 2px solid #e0e0e0 !important;
-  background-color: #ffffff !important;
-  color: var(--color-primary) !important;
-  box-shadow: none !important;
-  font-weight: 500;
-}
-
-.field__input:focus, .select__select:focus {
-  border-color: var(--color-primary) !important;
-  box-shadow: none !important;
-}
-
-/* Footer */
-.footer {
-  border-top: 2px solid #000000 !important;
-  background-color: #ffffff !important;
-  color: var(--color-primary) !important;
-  padding-top: 4rem;
-}
-
-.footer h1, .footer h2, .footer h3, .footer p {
-  color: var(--color-primary) !important;
+.card-wrapper:hover {
+  transform: none !important;
 }

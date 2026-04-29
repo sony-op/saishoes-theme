@@ -45,6 +45,20 @@
     <canvas id="webgl-bg" style="position: fixed; top: 0; left: 0; z-index: -1; width: 100vw; height: 100vh; pointer-events: none;"></canvas>
     
     {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
+    
+    <!-- Skechers-Style Utility Nav -->
+    <div class="utility-nav">
+      <div class="page-width">
+        <ul class="utility-nav__links">
+          <li><a href="/account/login">→] Login / Signup</a></li>
+          <li><a href="/account">User My Account</a></li>
+          <li><a href="/pages/track-order">Track Order</a></li>
+          <li><a href="/pages/stores">Stores</a></li>
+          <li><a href="/pages/help">? Help</a></li>
+        </ul>
+      </div>
+    </div>
+
     <div id="header-group">
       {% sections 'header-group' %}
     </div>
@@ -127,6 +141,18 @@
     >
       {{ content_for_layout }}
     </main>
+
+    <!-- Skechers-Style Cookies Policy Popup -->
+    <div class="cookies-policy-popup">
+      <div class="cookies-policy-popup__content">
+        <h4>SAI SHOES Cookies Policy</h4>
+        <p>Cookies are important to the proper functioning of a site. To improve your experience, we use cookies to remember log-in details and provide secure log-in, collect statistics to optimize site functionality, and deliver content tailored to your interests. Click "I Agree" to Agree and Proceed to accept cookies as per our cookie policy and go directly to the site or click on "I Disagree" to Reject the acceptance of Cookies.</p>
+      </div>
+      <div class="cookies-policy-popup__actions">
+        <button class="button button--blue" onclick="this.closest('.cookies-policy-popup').style.display='none'">ACCEPT & CONTINUE</button>
+        <button class="button button--outline" onclick="this.closest('.cookies-policy-popup').style.display='none'">REJECT</button>
+      </div>
+    </div>
 
     <footer>
       {% sections 'footer-group' %}
