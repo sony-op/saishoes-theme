@@ -1,5 +1,5 @@
 /* ============================================================================
-   Aesthetic Enhancements - Immersive Deep 3D Dark Theme
+   Aesthetic Enhancements - Athletic 3D Theme (Skechers Inspired)
    ============================================================================ */
 
 /* Typography Overrides */
@@ -7,80 +7,51 @@
   --font-body-family: 'Outfit', sans-serif;
   --font-heading-family: 'Outfit', sans-serif;
   --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.3);
-  --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.5);
-  --radius-modern: 16px;
+  --shadow-soft: 0 8px 24px rgba(0, 30, 66, 0.08);
+  --shadow-hover: 0 15px 35px rgba(0, 30, 66, 0.15);
+  --radius-modern: 8px; /* Slightly sharper for athletic feel */
   --radius-pill: 50px;
+  --color-primary: #0055FF; /* Electric Blue */
+  --color-navy: #001e42; /* Skechers Navy */
+  --color-bg: #f5f5f7; /* Light grey */
 }
 
-/* Force Dark Mode Global Overrides */
-html,
-body,
-.gradient {
-  background: #0a0a0c !important;
-  /* Deep space dark */
-  background-image: radial-gradient(circle at 50% 0%, #1a1a24 0%, #0a0a0c 60%) !important;
-  color: #f0f0f0 !important;
+/* Light Sporty Global Overrides */
+html, body, .gradient {
+  background: var(--color-bg) !important;
+  background-image: none !important;
+  color: #333333 !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-p,
-a,
-span,
-button,
-input,
-select,
-textarea {
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6, 
+p, a, span, button, input, select, textarea {
   font-family: var(--font-body-family) !important;
-  color: #ffffff !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-weight: 600 !important;
-  letter-spacing: -0.02em;
+/* Athletic Headings */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 800 !important;
+  font-style: italic !important;
+  letter-spacing: -0.03em;
+  color: var(--color-navy) !important;
+  text-transform: uppercase;
 }
 
 /* Links */
 a {
-  color: #e0e0e0 !important;
+  color: var(--color-navy) !important;
 }
 
-/* Global Cards & Components (Glassmorphism) */
-.card-wrapper,
-.card,
-.product-card-wrapper,
-.collection-card-wrapper,
-.blog-card-wrapper {
+/* Global Cards & Components */
+.card-wrapper, .card, .product-card-wrapper, .collection-card-wrapper, .blog-card-wrapper {
   border-radius: var(--radius-modern) !important;
-  overflow: visible !important;
-  /* Allow pop-out shadows */
+  overflow: visible !important; 
   transition: var(--transition-smooth);
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  background: rgba(20, 20, 25, 0.4) !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
+  border: none !important;
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   box-shadow: var(--shadow-soft);
 }
 
@@ -88,113 +59,96 @@ a {
   background: transparent !important;
 }
 
-.card-wrapper:hover,
-.product-card-wrapper:hover,
-.collection-card-wrapper:hover,
-.blog-card-wrapper:hover {
-  transform: translateY(-4px);
+.card-wrapper:hover, .product-card-wrapper:hover, .collection-card-wrapper:hover, .blog-card-wrapper:hover {
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  background: rgba(30, 30, 40, 0.6) !important;
+  background: #ffffff !important;
 }
 
 /* Inner Images */
-.card__media,
-.media {
+.card__media, .media {
   border-radius: var(--radius-modern) var(--radius-modern) 0 0 !important;
   background: transparent !important;
 }
 
-/* Floating Animation for Shoes */
-@keyframes floatShoe {
-  0% {
-    transform: translateY(0px) translateZ(50px);
-  }
-
-  50% {
-    transform: translateY(-10px) translateZ(50px);
-  }
-
-  100% {
-    transform: translateY(0px) translateZ(50px);
-  }
+/* Floating Animation for Shoes (Maintains 3D feel) */
+@keyframes floatShoeSport {
+  0% { transform: translateY(0px) translateZ(40px); }
+  50% { transform: translateY(-8px) translateZ(40px); }
+  100% { transform: translateY(0px) translateZ(40px); }
 }
 
-.tilt-3d-card img,
-.tilt-3d-card .card__media {
-  transform: translateZ(50px);
-  animation: floatShoe 4s ease-in-out infinite;
-  filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.6)) !important;
-  /* Add shadow directly to shoe */
+.tilt-3d-card img, .tilt-3d-card .card__media {
+  transform: translateZ(40px); 
+  animation: floatShoeSport 3s ease-in-out infinite;
+  filter: drop-shadow(0 10px 10px rgba(0, 30, 66, 0.2)) !important;
 }
 
 .tilt-3d-card .card__content {
-  transform: translateZ(40px);
-  background: transparent !important;
+  transform: translateZ(30px);
+  background: transparent !important; 
 }
 
-/* Buttons */
-.button,
-.btn,
-button.shopify-payment-button__button--unbranded {
+/* Sporty Buttons */
+.button, .btn, button.shopify-payment-button__button--unbranded {
   border-radius: var(--radius-pill) !important;
   transition: var(--transition-smooth) !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.5px;
-  background: linear-gradient(135deg, #444 0%, #111 100%) !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #0055FF 0%, #0033A0 100%) !important;
   color: #fff !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 15px rgba(0, 85, 255, 0.3);
+  border: none !important;
 }
 
-.button:hover,
-.btn:hover,
-button.shopify-payment-button__button--unbranded:hover {
+.button:hover, .btn:hover, button.shopify-payment-button__button--unbranded:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
-  background: linear-gradient(135deg, #555 0%, #222 100%) !important;
+  box-shadow: 0 6px 20px rgba(0, 85, 255, 0.5);
+  background: linear-gradient(135deg, #0066FF 0%, #0044CC 100%) !important;
 }
 
-.button::after,
-.btn::after {
+.button::after, .btn::after {
   content: none !important;
 }
 
-/* Header & Glassmorphism */
+/* Header */
 header-component {
-  background: rgba(10, 10, 12, 0.8) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid var(--color-primary);
 }
 
-.header__menu-item span,
-.header__icon {
-  color: #fff !important;
+.header__menu-item span, .header__icon {
+  color: var(--color-navy) !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
 }
 
 /* Inputs & Forms */
-.field__input,
-.select__select,
-.customer .field input,
-.customer select {
+.field__input, .select__select, .customer .field input, .customer select {
   border-radius: var(--radius-modern) !important;
   transition: var(--transition-smooth);
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  color: #fff !important;
+  border: 1px solid rgba(0,30,66,0.1) !important;
+  background-color: #ffffff !important;
+  color: var(--color-navy) !important;
   box-shadow: none !important;
 }
 
-.field__input:focus,
-.select__select:focus {
-  border-color: rgba(255, 255, 255, 0.5) !important;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
+.field__input:focus, .select__select:focus {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 1px var(--color-primary) !important;
 }
 
-/* Footer modern touch */
+/* Footer */
 .footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
-  background-color: #050505 !important;
+  border-top: none !important;
+  background-color: var(--color-navy) !important;
+  color: #ffffff !important;
   padding-top: 4rem;
+}
+
+.footer h1, .footer h2, .footer h3, .footer a, .footer p {
+  color: #ffffff !important;
 }

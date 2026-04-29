@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const material = new THREE.PointsMaterial({
     size: 0.03, // Slightly larger particles
-    color: 0x4dd0e1, // Bright glowing cyan/white
+    color: 0x0033A0, // Skechers Navy Blue
     transparent: true,
-    opacity: 0.9,
-    blending: THREE.AdditiveBlending
+    opacity: 0.4, // Lower opacity so it doesn't distract from products
+    blending: THREE.NormalBlending
   });
 
   const particlesMesh = new THREE.Points(particlesGeometry, material);
