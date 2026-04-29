@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Particles
   const particlesGeometry = new THREE.BufferGeometry();
-  const particlesCount = 700;
+  const particlesCount = 1500; // Increased count for density
 
   const posArray = new Float32Array(particlesCount * 3);
   for (let i = 0; i < particlesCount * 3; i++) {
@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
   particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
 
   const material = new THREE.PointsMaterial({
-    size: 0.02,
-    color: 0x888888,
+    size: 0.03, // Slightly larger particles
+    color: 0x4dd0e1, // Bright glowing cyan/white
     transparent: true,
-    opacity: 0.8,
+    opacity: 0.9,
     blending: THREE.AdditiveBlending
   });
 
