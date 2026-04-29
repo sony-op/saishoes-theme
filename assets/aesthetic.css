@@ -544,3 +544,104 @@ header-actions {
   display: flex;
   flex-direction: column;
 }
+
+/* ==========================================
+   MOBILE RESPONSIVENESS (iPhone & Android Friendly)
+========================================== */
+@media screen and (max-width: 989px) {
+  /* Hide desktop-specific navigation, rely on mobile drawer */
+  .skechers-main-nav,
+  .skechers-search-bar {
+    display: none !important;
+  }
+  
+  /* Shrink Logo for Mobile */
+  .skechers-logo {
+    font-size: 24px !important;
+    margin-right: 0 !important;
+  }
+  .skechers-logo img {
+    height: 32px !important;
+  }
+
+  /* Header adjustments */
+  #header-component {
+    padding: 10px 0 !important;
+  }
+
+  /* Utility Nav Mobile Tweaks */
+  .utility-nav__links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .utility-nav__links a {
+    font-size: 11px;
+  }
+
+  /* Hero Section Mobile Column Layout */
+  .hero .hero__inner {
+    flex-direction: column !important;
+  }
+  
+  .hero .hero__inner > .group {
+    padding: 30px 20px !important;
+  }
+  
+  .skechers-hero-title {
+    font-size: 2.5rem !important;
+  }
+  
+  .skechers-hero-subtitle {
+    font-size: 3.5rem !important;
+  }
+
+  /* Cookie Policy Popup */
+  .cookies-policy-popup {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+    width: 90%;
+    bottom: 10px;
+  }
+
+  .cookies-policy-popup__actions {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .cookies-policy-popup__actions .button--blue,
+  .cookies-policy-popup__actions .button--outline {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  /* Product Cards Mobile Tweaks */
+  .skechers-product-card-inner {
+    padding: 12px !important;
+  }
+  
+  .skechers-add-btn {
+    bottom: 12px !important;
+    right: 12px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .skechers-add-btn .btn-icon {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 16px !important;
+  }
+  
+  .skechers-product-title {
+    font-size: 12px !important;
+  }
+  
+  .skechers-product-price {
+    font-size: 13px !important;
+  }
+}
+
