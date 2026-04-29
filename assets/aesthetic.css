@@ -1,26 +1,25 @@
 /* ============================================================================
-   Aesthetic Enhancements - Athletic 3D Theme (Skechers Inspired)
+   Aesthetic Enhancements - Performance-Led Editorial Grid
    ============================================================================ */
 
 /* Typography Overrides */
 :root {
   --font-body-family: 'Outfit', sans-serif;
   --font-heading-family: 'Outfit', sans-serif;
-  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  --shadow-soft: 0 8px 24px rgba(0, 30, 66, 0.08);
-  --shadow-hover: 0 15px 35px rgba(0, 30, 66, 0.15);
-  --radius-modern: 8px; /* Slightly sharper for athletic feel */
-  --radius-pill: 50px;
-  --color-primary: #0055FF; /* Electric Blue */
-  --color-navy: #001e42; /* Skechers Navy */
-  --color-bg: #f5f5f7; /* Light grey */
+  --transition-smooth: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease, color 0.2s ease;
+  --radius-modern: 0px; /* Brutalist sharp edges */
+  --radius-pill: 0px;
+  --color-primary: #000000; /* Pitch Black */
+  --color-navy: #000000;
+  --color-bg: #ffffff; /* Pure white */
 }
 
-/* Light Sporty Global Overrides */
+/* Structural Grid Overrides */
 html, body, .gradient {
   background: var(--color-bg) !important;
   background-image: none !important;
-  color: #333333 !important;
+  color: var(--color-primary) !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6, 
@@ -29,117 +28,135 @@ p, a, span, button, input, select, textarea {
   font-family: var(--font-body-family) !important;
 }
 
-/* Athletic Headings */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 800 !important;
-  font-style: italic !important;
-  letter-spacing: -0.03em;
-  color: var(--color-navy) !important;
+/* Massive Editorial Headings */
+h1, .h1 {
+  font-weight: 900 !important;
+  font-style: normal !important;
+  letter-spacing: -0.05em !important;
   text-transform: uppercase;
+  font-size: clamp(3rem, 8vw, 6rem) !important;
+  line-height: 0.9 !important;
+  color: var(--color-primary) !important;
+  margin-bottom: 0.5em;
+}
+
+h2, h3, h4, .h2, .h3, .h4 {
+  font-weight: 800 !important;
+  letter-spacing: -0.04em !important;
+  text-transform: uppercase;
+  color: var(--color-primary) !important;
 }
 
 /* Links */
 a {
-  color: var(--color-navy) !important;
+  color: var(--color-primary) !important;
+  text-decoration: none !important;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s ease;
 }
 
-/* Global Cards & Components */
+a:hover {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+/* Brutalist Cards & Components */
 .card-wrapper, .card, .product-card-wrapper, .collection-card-wrapper, .blog-card-wrapper {
   border-radius: var(--radius-modern) !important;
   overflow: visible !important; 
   transition: var(--transition-smooth);
-  border: none !important;
+  border: 1px solid #e0e0e0 !important; /* Visible grid lines */
   background: #ffffff !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: var(--shadow-soft);
+  box-shadow: none !important; /* Flat design */
 }
 
 .card__inner {
   background: transparent !important;
 }
 
+/* Hover: Strict bordered lift, no soft shadows */
 .card-wrapper:hover, .product-card-wrapper:hover, .collection-card-wrapper:hover, .blog-card-wrapper:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
-  background: #ffffff !important;
+  transform: translate(-4px, -4px);
+  box-shadow: 4px 4px 0px 0px #000000 !important; /* Brutalist hard shadow */
+  border: 1px solid #000000 !important;
 }
 
 /* Inner Images */
 .card__media, .media {
-  border-radius: var(--radius-modern) var(--radius-modern) 0 0 !important;
-  background: transparent !important;
+  border-radius: var(--radius-modern) !important;
+  background: #f5f5f5 !important; /* Slight contrast for images */
 }
 
-/* Subtle Hover Effect for Shoes (Skechers style) */
+/* Subdued Hover Effect for Shoes (No heavy 3D) */
 .card-wrapper .card__media {
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-wrapper:hover .card__media {
-  transform: scale(1.03); 
+  transform: scale(1.05); 
 }
 
-/* Sporty Buttons */
+/* Brutalist Buttons */
 .button, .btn, button.shopify-payment-button__button--unbranded {
   border-radius: var(--radius-pill) !important;
   transition: var(--transition-smooth) !important;
-  font-weight: 700 !important;
-  font-style: italic !important;
-  letter-spacing: 1px;
+  font-weight: 800 !important;
+  letter-spacing: 0px;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #0055FF 0%, #0033A0 100%) !important;
+  background: var(--color-primary) !important;
   color: #fff !important;
-  box-shadow: 0 4px 15px rgba(0, 85, 255, 0.3);
-  border: none !important;
+  box-shadow: none !important;
+  border: 2px solid var(--color-primary) !important;
+  padding: 15px 30px !important;
 }
 
 .button:hover, .btn:hover, button.shopify-payment-button__button--unbranded:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 85, 255, 0.5);
-  background: linear-gradient(135deg, #0066FF 0%, #0044CC 100%) !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px 0px #cccccc !important;
+  background: #ffffff !important;
+  color: var(--color-primary) !important;
 }
 
 .button::after, .btn::after {
   content: none !important;
 }
 
-/* Header */
+/* Structural Header */
 header-component {
   background: #ffffff !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  border-bottom: 2px solid var(--color-primary);
+  border-bottom: 1px solid #000000 !important;
+  box-shadow: none !important;
 }
 
 .header__menu-item span, .header__icon {
-  color: var(--color-navy) !important;
-  font-weight: 600 !important;
+  color: var(--color-primary) !important;
+  font-weight: 700 !important;
   text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 /* Inputs & Forms */
 .field__input, .select__select, .customer .field input, .customer select {
   border-radius: var(--radius-modern) !important;
-  transition: var(--transition-smooth);
-  border: 1px solid rgba(0,30,66,0.1) !important;
+  border: 2px solid #e0e0e0 !important;
   background-color: #ffffff !important;
-  color: var(--color-navy) !important;
+  color: var(--color-primary) !important;
   box-shadow: none !important;
+  font-weight: 500;
 }
 
 .field__input:focus, .select__select:focus {
   border-color: var(--color-primary) !important;
-  box-shadow: 0 0 0 1px var(--color-primary) !important;
+  box-shadow: none !important;
 }
 
 /* Footer */
 .footer {
-  border-top: none !important;
-  background-color: var(--color-navy) !important;
-  color: #ffffff !important;
+  border-top: 2px solid #000000 !important;
+  background-color: #ffffff !important;
+  color: var(--color-primary) !important;
   padding-top: 4rem;
 }
 
-.footer h1, .footer h2, .footer h3, .footer a, .footer p {
-  color: #ffffff !important;
+.footer h1, .footer h2, .footer h3, .footer p {
+  color: var(--color-primary) !important;
 }

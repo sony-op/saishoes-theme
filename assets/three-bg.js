@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
   particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
 
   const material = new THREE.PointsMaterial({
-    size: 0.03, // Slightly larger particles
-    color: 0x0033A0, // Skechers Navy Blue
+    size: 0.02, // Smaller, tighter particles for grid feel
+    color: 0xd0d0d0, // Faint technical grey
     transparent: true,
-    opacity: 0.4, // Lower opacity so it doesn't distract from products
+    opacity: 0.5, 
     blending: THREE.NormalBlending
   });
 
