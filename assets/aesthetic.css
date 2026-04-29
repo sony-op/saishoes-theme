@@ -67,29 +67,108 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #header-component {
   background: #ffffff !important;
   border-bottom: 1px solid #e0e0e0 !important;
-  padding: 10px 0 !important;
+  padding: 15px 0 !important;
 }
+
 /* SAI SHOES Logo mimicking Skechers */
-.header-logo, .header__heading-link {
-  font-family: 'Arial Black', Impact, sans-serif !important; /* Heavy thick font */
+.skechers-logo {
+  font-family: 'Arial Black', Impact, sans-serif !important;
   font-size: 32px !important;
   font-style: italic !important;
   color: var(--skechers-blue) !important;
   letter-spacing: -1px;
   text-transform: uppercase;
   text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
 }
 
-/* Main Menu Links */
-.header__menu-item span {
+/* Skechers Main Nav */
+.skechers-main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+}
+.skechers-main-nav a {
   font-weight: 700 !important;
   font-size: 14px !important;
   color: #000000 !important;
   text-transform: uppercase;
   letter-spacing: 0px;
+  text-decoration: none !important;
 }
-.header__menu-item:hover span {
+.skechers-main-nav a:hover {
   color: var(--skechers-blue) !important;
+}
+
+/* Search Bar */
+.skechers-search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.skechers-search-bar form {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 2px;
+}
+.skechers-search-input {
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  font-size: 14px;
+  width: 200px;
+  padding: 5px;
+}
+.skechers-search-submit {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.skechers-search-submit svg path {
+  fill: #666666 !important;
+}
+
+/* Cart Badge Override */
+.header-actions__cart-icon {
+  position: relative;
+}
+.header-actions__cart-icon .cart-bubble {
+  position: absolute !important;
+  top: -6px !important;
+  right: -8px !important;
+  background-color: var(--skechers-blue) !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  width: 18px !important;
+  height: 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 11px !important;
+  font-weight: bold !important;
+  padding: 0 !important;
+  mask: none !important;
+  border: 2px solid #ffffff !important;
+}
+.header-actions__cart-icon .cart-bubble .cart-bubble__background {
+  background-color: transparent !important;
+}
+.header-actions__cart-icon .cart-bubble__text {
+  color: #ffffff !important;
+}
+.header-actions__cart-icon.header-actions__cart-icon--has-cart svg {
+  mask: none !important;
 }
 
 /* ==========================================
