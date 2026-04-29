@@ -14,20 +14,50 @@
 }
 
 /* Force Dark Mode Global Overrides */
-html, body, .gradient {
-  background: #0a0a0c !important; /* Deep space dark */
+html,
+body,
+.gradient {
+  background: #0a0a0c !important;
+  /* Deep space dark */
   background-image: radial-gradient(circle at 50% 0%, #1a1a24 0%, #0a0a0c 60%) !important;
   color: #f0f0f0 !important;
 }
 
-h1, h2, h3, h4, h5, h6, 
-.h1, .h2, .h3, .h4, .h5, .h6, 
-p, a, span, button, input, select, textarea {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p,
+a,
+span,
+button,
+input,
+select,
+textarea {
   font-family: var(--font-body-family) !important;
   color: #ffffff !important;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-weight: 600 !important;
   letter-spacing: -0.02em;
 }
@@ -38,9 +68,14 @@ a {
 }
 
 /* Global Cards & Components (Glassmorphism) */
-.card-wrapper, .card, .product-card-wrapper, .collection-card-wrapper, .blog-card-wrapper {
+.card-wrapper,
+.card,
+.product-card-wrapper,
+.collection-card-wrapper,
+.blog-card-wrapper {
   border-radius: var(--radius-modern) !important;
-  overflow: visible !important; /* Allow pop-out shadows */
+  overflow: visible !important;
+  /* Allow pop-out shadows */
   transition: var(--transition-smooth);
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   background: rgba(20, 20, 25, 0.4) !important;
@@ -53,7 +88,10 @@ a {
   background: transparent !important;
 }
 
-.card-wrapper:hover, .product-card-wrapper:hover, .collection-card-wrapper:hover, .blog-card-wrapper:hover {
+.card-wrapper:hover,
+.product-card-wrapper:hover,
+.collection-card-wrapper:hover,
+.blog-card-wrapper:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
@@ -61,48 +99,64 @@ a {
 }
 
 /* Inner Images */
-.card__media, .media {
+.card__media,
+.media {
   border-radius: var(--radius-modern) var(--radius-modern) 0 0 !important;
   background: transparent !important;
 }
 
 /* Floating Animation for Shoes */
 @keyframes floatShoe {
-  0% { transform: translateY(0px) translateZ(50px); }
-  50% { transform: translateY(-10px) translateZ(50px); }
-  100% { transform: translateY(0px) translateZ(50px); }
+  0% {
+    transform: translateY(0px) translateZ(50px);
+  }
+
+  50% {
+    transform: translateY(-10px) translateZ(50px);
+  }
+
+  100% {
+    transform: translateY(0px) translateZ(50px);
+  }
 }
 
-.tilt-3d-card img, .tilt-3d-card .card__media {
-  transform: translateZ(50px); 
+.tilt-3d-card img,
+.tilt-3d-card .card__media {
+  transform: translateZ(50px);
   animation: floatShoe 4s ease-in-out infinite;
-  filter: drop-shadow(0 15px 15px rgba(0,0,0,0.6)) !important; /* Add shadow directly to shoe */
+  filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.6)) !important;
+  /* Add shadow directly to shoe */
 }
 
 .tilt-3d-card .card__content {
   transform: translateZ(40px);
-  background: transparent !important; 
+  background: transparent !important;
 }
 
 /* Buttons */
-.button, .btn, button.shopify-payment-button__button--unbranded {
+.button,
+.btn,
+button.shopify-payment-button__button--unbranded {
   border-radius: var(--radius-pill) !important;
   transition: var(--transition-smooth) !important;
   font-weight: 500 !important;
   letter-spacing: 0.5px;
   background: linear-gradient(135deg, #444 0%, #111 100%) !important;
   color: #fff !important;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-  border: 1px solid rgba(255,255,255,0.1) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-.button:hover, .btn:hover, button.shopify-payment-button__button--unbranded:hover {
+.button:hover,
+.btn:hover,
+button.shopify-payment-button__button--unbranded:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255,255,255,0.1);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
   background: linear-gradient(135deg, #555 0%, #222 100%) !important;
 }
 
-.button::after, .btn::after {
+.button::after,
+.btn::after {
   content: none !important;
 }
 
@@ -111,31 +165,36 @@ header-component {
   background: rgba(10, 10, 12, 0.8) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.header__menu-item span, .header__icon {
+.header__menu-item span,
+.header__icon {
   color: #fff !important;
 }
 
 /* Inputs & Forms */
-.field__input, .select__select, .customer .field input, .customer select {
+.field__input,
+.select__select,
+.customer .field input,
+.customer select {
   border-radius: var(--radius-modern) !important;
   transition: var(--transition-smooth);
-  border: 1px solid rgba(255,255,255,0.1) !important;
-  background-color: rgba(0,0,0,0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
   color: #fff !important;
   box-shadow: none !important;
 }
 
-.field__input:focus, .select__select:focus {
-  border-color: rgba(255,255,255,0.5) !important;
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.5) !important;
+.field__input:focus,
+.select__select:focus {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
 }
 
 /* Footer modern touch */
 .footer {
-  border-top: 1px solid rgba(255,255,255,0.05) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
   background-color: #050505 !important;
   padding-top: 4rem;
 }
