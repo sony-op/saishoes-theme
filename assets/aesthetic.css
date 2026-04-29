@@ -906,3 +906,125 @@ header-actions {
     width: 85vw;
   }
 }
+
+/* ==========================================
+   SKECHERS FOOTER
+========================================== */
+.skechers-footer {
+  border-top: 1px solid #eaeaea;
+  font-family: var(--font-body-family) !important;
+  color: #333;
+}
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.skechers-footer-top {
+  padding: 40px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.popular-searches-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.popular-searches-links p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
+}
+.skechers-footer-main {
+  padding: 50px 0;
+}
+.footer-main-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-menus {
+  display: flex;
+  flex-grow: 1;
+  gap: 30px;
+  justify-content: space-between;
+}
+.footer-menu-col {
+  flex: 1;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-menu-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+.footer-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-menu-list li {
+  margin-bottom: 12px;
+}
+.footer-menu-list a {
+  text-decoration: none;
+  color: #666;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+.footer-menu-list a:hover {
+  color: #0055FF;
+  text-decoration: underline;
+}
+.footer-social {
+  padding-left: 40px;
+  border-left: 1px solid #eaeaea;
+  min-width: 250px;
+}
+.footer-social-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0055FF;
+  transition: opacity 0.2s;
+}
+.social-icon:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 989px) {
+  .footer-main-grid {
+    flex-direction: column;
+  }
+  .footer-menus {
+    flex-wrap: wrap;
+  }
+  .footer-menu-col {
+    min-width: 45%;
+    margin-bottom: 30px;
+  }
+  .footer-social {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid #eaeaea;
+    padding-top: 30px;
+  }
+  .footer-container {
+    padding: 0 20px;
+  }
+}
