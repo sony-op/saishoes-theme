@@ -64,9 +64,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /* 3. Main Navigation */
-#header-component {
+header-component {
   background: #fafafa !important;
   border-bottom: 1px solid #e0e0e0 !important;
+}
+header-component .header__row {
+  background: transparent !important;
   padding: 15px 0 !important;
 }
 
