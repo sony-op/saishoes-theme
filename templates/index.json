@@ -926,6 +926,20 @@
         "padding_bottom": 40
       }
     },
+    "promo_product_carousel": {
+      "type": "promo-product-carousel",
+      "settings": {
+        "title": "New Arrivals",
+        "subtitle": "Get up to 20% Off*",
+        "collection": "all",
+        "max_products": 8,
+        "show_ribbon": true,
+        "ribbon_text": "NEW LAUNCH",
+        "show_view_all": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "shop_by_category": {
       "type": "shop-by-category",
       "blocks": {
@@ -986,6 +1000,7 @@
   },
   "order": [
     "hero_p9CmMG",
+    "promo_product_carousel",
     "shop_by_category",
     "shop_by_sport_custom",
     "footwear_essentials",

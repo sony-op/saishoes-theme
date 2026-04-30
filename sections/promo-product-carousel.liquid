@@ -1,0 +1,374 @@
+{{ 'aesthetic.css' | asset_url | stylesheet_tag }}
+
+<div class="promo-carousel-wrapper" style="background: linear-gradient(to bottom, #fcece3, #fff); padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;">
+  <div class="page-width">
+    <!-- Header -->
+    <div class="promo-carousel-header text-center" style="margin-bottom: 2rem;">
+      {% if section.settings.title != blank %}
+        <h2 style="font-size: 2.5rem; font-weight: 800; background: linear-gradient(90deg, #f0892a, #f1496a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0; line-height: 1.2;">{{ section.settings.title }}</h2>
+      {% endif %}
+      {% if section.settings.subtitle != blank %}
+        <p style="font-size: 1.1rem; color: #333; margin-top: 0.5rem; margin-bottom: 0;">{{ section.settings.subtitle }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Carousel -->
+    <div class="promo-carousel-scroll">
+      <div class="promo-carousel-track">
+        {% assign collection = collections[section.settings.collection] %}
+        {% for product in collection.products limit: section.settings.max_products %}
+          <div class="promo-card">
+            <!-- Ribbon -->
+            {% if section.settings.show_ribbon %}
+              <div class="promo-card__ribbon">{{ section.settings.ribbon_text }}</div>
+            {% endif %}
+
+            <!-- Image -->
+            <a href="{{ product.url }}" class="promo-card__image-link">
+              <img src="{{ product.featured_media | image_url: width: 400 }}" alt="{{ product.title | escape }}" loading="lazy" class="promo-card__image">
+            </a>
+
+            <!-- Thumbnails -->
+            <div class="promo-card__thumbnails">
+              {% for media in product.media limit: 4 %}
+                <div class="promo-card__thumb {% if forloop.first %}is-active{% endif %}">
+                  <img src="{{ media | image_url: width: 100 }}" alt="{{ product.title | escape }} angle {{ forloop.index }}">
+                </div>
+              {% endfor %}
+            </div>
+
+            <!-- Info -->
+            <div class="promo-card__info">
+              <a href="{{ product.url }}" style="text-decoration: none;">
+                <h3 class="promo-card__title">{{ product.title | split: ' ' | first }}</h3>
+                <p class="promo-card__subtitle">{{ product.title }}</p>
+              </a>
+
+              <div class="promo-card__pricing">
+                <span class="promo-price-current">Rs. {{ product.price | money_without_currency }}</span>
+                {% if product.compare_at_price > product.price %}
+                  <span class="promo-price-original">Rs. {{ product.compare_at_price | money_without_currency }}</span>
+                  {% assign savings = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round %}
+                  <span class="promo-price-badge">{{ savings }}% off</span>
+                {% endif %}
+              </div>
+
+              <!-- Add to Cart -->
+              <form method="post" action="/cart/add" class="promo-card__form">
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                <button type="submit" class="promo-card__btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                  Add to Cart
+                </button>
+              </form>
+            </div>
+          </div>
+        {% else %}
+          <!-- Placeholders -->
+          {% for i in (1..5) %}
+            <div class="promo-card">
+              <div class="promo-card__ribbon">NEW LAUNCH</div>
+              <div class="promo-card__image-link" style="background: #ffffff; display: flex; align-items: center; justify-content: center;">
+                {{ 'product-' | append: i | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+              <div class="promo-card__thumbnails">
+                {% for j in (1..4) %}
+                  <div class="promo-card__thumb {% if forloop.first %}is-active{% endif %}">
+                    {{ 'product-' | append: i | placeholder_svg_tag: 'placeholder-svg' }}
+                  </div>
+                {% endfor %}
+              </div>
+              <div class="promo-card__info">
+                <h3 class="promo-card__title">PYTHON-0{{ i }}</h3>
+                <p class="promo-card__subtitle">Asian Python-0{{ i }} Sneaker For Men</p>
+                <div class="promo-card__pricing">
+                  <span class="promo-price-current">Rs. 1319.00</span>
+                  <span class="promo-price-original">Rs. 2499</span>
+                  <span class="promo-price-badge">47% off</span>
+                </div>
+                <button class="promo-card__btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- View All -->
+    {% if section.settings.show_view_all %}
+      <div class="text-center" style="margin-top: 1rem;">
+        <a href="{{ collection.url | default: '#' }}" class="promo-view-all">View All</a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .promo-carousel-scroll {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2rem;
+  }
+  .promo-carousel-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .promo-carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    min-width: min-content;
+    padding: 0 1rem;
+  }
+
+  .promo-card {
+    background: #fff;
+    border-radius: 16px;
+    width: 280px;
+    flex: 0 0 auto;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .promo-card__ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #222;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 6px 20px 6px 12px;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    z-index: 2;
+  }
+
+  .promo-card__image-link {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4/3;
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  .promo-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .promo-card__thumbnails {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .promo-card__thumb {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 2px;
+  }
+
+  .promo-card__thumb.is-active {
+    border-color: #222;
+  }
+
+  .promo-card__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .promo-card__info {
+    padding: 1rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .promo-card__title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #111;
+    margin: 0 0 0.25rem 0;
+    font-family: var(--font-heading-family);
+  }
+
+  .promo-card__subtitle {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0 0 1rem 0;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .promo-card__pricing {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .promo-price-current {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111;
+  }
+
+  .promo-price-original {
+    font-size: 0.85rem;
+    color: #999;
+    text-decoration: line-through;
+  }
+
+  .promo-price-badge {
+    background: #0f4a3f;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-left: auto;
+  }
+
+  .promo-card__form {
+    margin-top: auto;
+  }
+
+  .promo-card__btn {
+    width: 100%;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background 0.2s;
+  }
+  .promo-card__btn:hover {
+    background: #333;
+  }
+  .promo-card__btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .promo-view-all {
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 2.5rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+  }
+  .promo-view-all:hover {
+    background: #000;
+  }
+  
+  .promo-card .placeholder-svg {
+    width: 100%;
+    height: 100%;
+    fill: #ccc;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Promo Product Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "New Arrivals"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Get up to 20% Off*"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "max_products",
+      "min": 4,
+      "max": 12,
+      "step": 1,
+      "label": "Maximum products to show",
+      "default": 8
+    },
+    {
+      "type": "checkbox",
+      "id": "show_ribbon",
+      "label": "Show Top Left Ribbon",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "ribbon_text",
+      "label": "Ribbon Text",
+      "default": "NEW LAUNCH"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show View All button",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promo Product Carousel"
+    }
+  ]
+}
+{% endschema %}
