@@ -334,7 +334,7 @@ header-actions {
 }
 
 .badge-sale {
-  background-color: #E21C2B;
+  background-color: var(--color-primary-button-background, #E51937);
   color: #ffffff;
   padding: 4px 12px;
   font-size: 12px;
@@ -455,7 +455,7 @@ header-actions {
 }
 
 .skechers-add-btn:hover {
-  background: var(--skechers-blue);
+  background: var(--color-primary-button-background, #E51937);
 }
 .skechers-add-btn:hover .btn-icon,
 .skechers-add-btn:hover .btn-text {

@@ -237,7 +237,7 @@
   }
 
   .promo-price-badge {
-    background: #0f4a3f;
+    background: var(--color-primary, #E51937);
     color: #fff;
     font-size: 0.7rem;
     font-weight: 700;
@@ -252,8 +252,8 @@
 
   .promo-card__btn {
     width: 100%;
-    background: #111;
-    color: #fff;
+    background: var(--color-primary-button-background, #E51937);
+    color: var(--color-primary-button-text, #fff);
     border: none;
     border-radius: 8px;
     padding: 0.75rem;
@@ -267,7 +267,7 @@
     transition: background 0.2s;
   }
   .promo-card__btn:hover {
-    background: #333;
+    background: var(--color-primary-button-hover-background, #C4132B);
   }
   .promo-card__btn svg {
     width: 16px;
@@ -276,8 +276,8 @@
 
   .promo-view-all {
     display: inline-block;
-    background: #222;
-    color: #fff;
+    background: var(--color-primary-button-background, #E51937);
+    color: var(--color-primary-button-text, #fff);
     text-decoration: none;
     padding: 0.75rem 2.5rem;
     border-radius: 6px;
@@ -286,7 +286,7 @@
     transition: background 0.2s;
   }
   .promo-view-all:hover {
-    background: #000;
+    background: var(--color-primary-button-hover-background, #C4132B);
   }
   
   .promo-card .placeholder-svg {
