@@ -926,6 +926,25 @@
         "padding_bottom": 40
       }
     },
+    "shop_by_category": {
+      "type": "shop-by-category",
+      "blocks": {
+        "cat_1": { "type": "category", "settings": { "title": "Best Seller" } },
+        "cat_2": { "type": "category", "settings": { "title": "New Arrivals" } },
+        "cat_3": { "type": "category", "settings": { "title": "Trekking Shoes" } },
+        "cat_4": { "type": "category", "settings": { "title": "Men's Sneakers" } },
+        "cat_5": { "type": "category", "settings": { "title": "Women's Sneakers" } },
+        "cat_6": { "type": "category", "settings": { "title": "Kid's Sneakers" } }
+      },
+      "block_order": [
+        "cat_1", "cat_2", "cat_3", "cat_4", "cat_5", "cat_6"
+      ],
+      "settings": {
+        "title": "Shop By Category",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "trending_collections": {
       "type": "trending-collections",
       "blocks": {
@@ -967,6 +986,7 @@
   },
   "order": [
     "hero_p9CmMG",
+    "shop_by_category",
     "shop_by_sport_custom",
     "footwear_essentials",
     "trending_collections",
