@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /* 2. Utility Nav (Middle White Bar) */
 .utility-nav {
-  background-color: #ffffff;
+  background-color: #fafafa;
   border-bottom: 1px solid #e0e0e0;
   padding: 8px 0;
 }
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /* 3. Main Navigation */
 #header-component {
-  background: #ffffff !important;
+  background: #fafafa !important;
   border-bottom: 1px solid #e0e0e0 !important;
   padding: 15px 0 !important;
 }
