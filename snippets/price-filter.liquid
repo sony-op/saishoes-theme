@@ -84,6 +84,37 @@
         data-currency="{{ localization.country.currency.iso_code }}"
         on:change="/updatePriceFilterAndResults"
       >
+        {%- assign max_price_amount = filter.range_max | divided_by: 100.0 | ceil -%}
+        {%- assign min_val = filter.min_value.value | default: 0 | divided_by: 100.0 | floor -%}
+        {%- assign max_val = filter.max_value.value | default: filter.range_max | divided_by: 100.0 | ceil -%}
+        
+        <div class="price-slider" ref="sliderContainer">
+          <div class="price-slider__track"></div>
+          <div class="price-slider__range" ref="sliderRange"></div>
+          <input 
+            type="range" 
+            class="price-slider__thumb price-slider__thumb--min" 
+            ref="minRange"
+            min="0" 
+            max="{{ max_price_amount }}" 
+            value="{{ min_val }}"
+            step="1"
+            on:input="/handleRangeInput"
+            on:change="/updatePriceFilterAndResults"
+          >
+          <input 
+            type="range" 
+            class="price-slider__thumb price-slider__thumb--max" 
+            ref="maxRange"
+            min="0" 
+            max="{{ max_price_amount }}" 
+            value="{{ max_val }}"
+            step="1"
+            on:input="/handleRangeInput"
+            on:change="/updatePriceFilterAndResults"
+          >
+        </div>
+
         <div class="facets__inputs-wrapper facets__inputs-wrapper--row">
           <div
             class="price-facet__inputs-wrapper"
@@ -244,4 +275,71 @@
     padding: var(--input-padding-y) var(--input-padding-x);
     transform: none;
   }
+
+  .price-slider {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    margin-bottom: var(--padding-md);
+    margin-top: var(--padding-sm);
+  }
+
+  .price-slider__track {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background-color: rgb(var(--color-foreground-rgb) / var(--opacity-10-25));
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .price-slider__range {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    background-color: var(--color-foreground);
+    border-radius: 4px;
+    z-index: 2;
+    left: 0%;
+    right: 0%;
+  }
+
+  .price-slider__thumb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    appearance: none;
+    background: none;
+    pointer-events: none;
+    z-index: 3;
+    outline: none;
+  }
+
+  .price-slider__thumb::-webkit-slider-thumb {
+    pointer-events: auto;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-foreground);
+    border: 2px solid var(--color-background);
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgb(var(--color-foreground-rgb) / var(--opacity-10-25));
+  }
+
+  .price-slider__thumb::-moz-range-thumb {
+    pointer-events: auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-foreground);
+    border: 2px solid var(--color-background);
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgb(var(--color-foreground-rgb) / var(--opacity-10-25));
+  }
+}
 {% endstylesheet %}

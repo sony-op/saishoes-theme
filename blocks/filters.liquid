@@ -165,40 +165,63 @@
               {% assign total_active_values = 0 %}
 
               {% capture rendered_filters %}
+                {%- assign price_html = '' -%}
+                {%- assign size_html = '' -%}
+                {%- assign color_html = '' -%}
+                {%- assign other_html = '' -%}
+
                 {%- for filter in filters -%}
-                  {% case filter.type %}
-                    {% when 'price_range' %}
-                      {%- liquid
-                        if filter.min_value.value != null or filter.max_value.value != null
-                          assign total_active_values = total_active_values | plus: 1
-                          assign is_active = true
-                        endif
+                  {% capture filter_html %}
+                    {% case filter.type %}
+                      {% when 'price_range' %}
+                        {%- liquid
+                          if filter.min_value.value != null or filter.max_value.value != null
+                            assign total_active_values = total_active_values | plus: 1
+                            assign is_active = true
+                          endif
 
-                        if block_settings.filter_style != 'vertical'
-                          assign should_render_clear = true
-                        else
-                          assign should_render_clear = false
-                        endif
+                          if block_settings.filter_style != 'vertical'
+                            assign should_render_clear = true
+                          else
+                            assign should_render_clear = false
+                          endif
 
-                        render 'price-filter', filter: filter, filter_style: block_settings.filter_style, should_render_clear: should_render_clear, id_prefix: 'horizontal'
-                      -%}
-                    {% else %}
-                      {% liquid
-                        if filter.active_values.size > 0
-                          assign is_active = true
-                        endif
+                          render 'price-filter', filter: filter, filter_style: block_settings.filter_style, should_render_clear: should_render_clear, id_prefix: 'horizontal'
+                        -%}
+                      {% else %}
+                        {% liquid
+                          if filter.active_values.size > 0
+                            assign is_active = true
+                          endif
 
-                        assign active_value_count = filter.active_values | size
-                        assign total_active_values = total_active_values | plus: active_value_count
-                        if block_settings.filter_style != 'vertical'
-                          assign should_render_clear = true
-                        else
-                          assign should_render_clear = false
-                        endif
-                        render 'list-filter', filter: filter, filter_style: block_settings.filter_style, active_value_count: active_value_count, should_render_clear: should_render_clear, show_swatch_label: block_settings.show_swatch_label, sectionId: section.id
-                      %}
-                  {% endcase %}
+                          assign active_value_count = filter.active_values | size
+                          assign total_active_values = total_active_values | plus: active_value_count
+                          if block_settings.filter_style != 'vertical'
+                            assign should_render_clear = true
+                          else
+                            assign should_render_clear = false
+                          endif
+                          render 'list-filter', filter: filter, filter_style: block_settings.filter_style, active_value_count: active_value_count, should_render_clear: should_render_clear, show_swatch_label: block_settings.show_swatch_label, sectionId: section.id
+                        %}
+                    {% endcase %}
+                  {% endcapture %}
+
+                  {%- assign filter_label_downcase = filter.label | downcase -%}
+                  {%- if filter.type == 'price_range' -%}
+                    {%- assign price_html = filter_html -%}
+                  {%- elsif filter_label_downcase contains 'size' -%}
+                    {%- assign size_html = filter_html -%}
+                  {%- elsif filter_label_downcase contains 'color' or filter_label_downcase contains 'colour' -%}
+                    {%- assign color_html = filter_html -%}
+                  {%- else -%}
+                    {%- assign other_html = other_html | append: filter_html -%}
+                  {%- endif -%}
                 {%- endfor -%}
+
+                {{ price_html }}
+                {{ size_html }}
+                {{ color_html }}
+                {{ other_html }}
               {% endcapture %}
 
               <div class="facets__filters-wrapper">
@@ -434,29 +457,52 @@
                 {% assign total_active_values = 0 %}
                 {% assign is_active = false %}
 
+                {%- assign price_html = '' -%}
+                {%- assign size_html = '' -%}
+                {%- assign color_html = '' -%}
+                {%- assign other_html = '' -%}
+
                 {%- for filter in filters -%}
-                  {% case filter.type %}
-                    {% when 'price_range' %}
-                      {%- liquid
-                        if filter.min_value.value != null or filter.max_value.value != null
-                          assign total_active_values = total_active_values | plus: 1
-                          assign is_active = true
-                        endif
+                  {% capture filter_html %}
+                    {% case filter.type %}
+                      {% when 'price_range' %}
+                        {%- liquid
+                          if filter.min_value.value != null or filter.max_value.value != null
+                            assign total_active_values = total_active_values | plus: 1
+                            assign is_active = true
+                          endif
 
-                        render 'price-filter', filter: filter, filter_style: 'vertical', should_render_clear: false, id_prefix: 'dialog'
-                      -%}
-                    {% else %}
-                      {% liquid
-                        if filter.active_values.size > 0
-                          assign is_active = true
-                        endif
+                          render 'price-filter', filter: filter, filter_style: 'vertical', should_render_clear: false, id_prefix: 'dialog'
+                        -%}
+                      {% else %}
+                        {% liquid
+                          if filter.active_values.size > 0
+                            assign is_active = true
+                          endif
 
-                        assign active_value_count = filter.active_values | size
-                        assign total_active_values = total_active_values | plus: active_value_count
-                        render 'list-filter', filter: filter, filter_style: 'vertical', active_value_count: active_value_count, should_render_clear: false, in_drawer: true, sectionId: section.id
-                      %}
-                  {% endcase %}
+                          assign active_value_count = filter.active_values | size
+                          assign total_active_values = total_active_values | plus: active_value_count
+                          render 'list-filter', filter: filter, filter_style: 'vertical', active_value_count: active_value_count, should_render_clear: false, in_drawer: true, sectionId: section.id
+                        %}
+                    {% endcase %}
+                  {% endcapture %}
+
+                  {%- assign filter_label_downcase = filter.label | downcase -%}
+                  {%- if filter.type == 'price_range' -%}
+                    {%- assign price_html = filter_html -%}
+                  {%- elsif filter_label_downcase contains 'size' -%}
+                    {%- assign size_html = filter_html -%}
+                  {%- elsif filter_label_downcase contains 'color' or filter_label_downcase contains 'colour' -%}
+                    {%- assign color_html = filter_html -%}
+                  {%- else -%}
+                    {%- assign other_html = other_html | append: filter_html -%}
+                  {%- endif -%}
                 {%- endfor -%}
+
+                {{ price_html }}
+                {{ size_html }}
+                {{ color_html }}
+                {{ other_html }}
               </div>
             {% endif %}
 

@@ -209,6 +209,9 @@ if (!customElements.get('facet-inputs-component')) {
  * @typedef {Object} PriceFacetRefs
  * @property {HTMLInputElement} minInput - The minimum price input
  * @property {HTMLInputElement} maxInput - The maximum price input
+ * @property {HTMLInputElement} minRange - The minimum price range slider
+ * @property {HTMLInputElement} maxRange - The maximum price range slider
+ * @property {HTMLElement} sliderRange - The slider track highlighted range
  */
 
 /**
@@ -226,6 +229,54 @@ class PriceFacetComponent extends Component {
     this.addEventListener('keydown', this.#onKeyDown);
     this.currency = this.dataset.currency ?? 'USD';
     this.moneyFormat = this.#extractMoneyPlaceholder(this.dataset.moneyFormat ?? '{{amount}}');
+    this.#updateSliderUI();
+  }
+
+  /**
+   * Handles dual range slider inputs
+   */
+  handleRangeInput(event) {
+    const { minRange, maxRange, minInput, maxInput } = this.refs;
+    if (!minRange || !maxRange) return;
+
+    let minVal = parseInt(minRange.value);
+    let maxVal = parseInt(maxRange.value);
+
+    // Ensure min doesn't cross max and vice versa
+    if (minVal > maxVal) {
+      if (event.target === minRange) {
+        minRange.value = maxVal.toString();
+        minVal = maxVal;
+      } else {
+        maxRange.value = minVal.toString();
+        maxVal = minVal;
+      }
+    }
+
+    this.#updateSliderUI();
+
+    if (minInput) minInput.value = minVal.toString();
+    if (maxInput) maxInput.value = maxVal.toString();
+  }
+
+  /**
+   * Updates the UI range track between the two slider thumbs
+   */
+  #updateSliderUI() {
+    const { minRange, maxRange, sliderRange } = this.refs;
+    if (!minRange || !maxRange || !sliderRange) return;
+
+    const minVal = parseInt(minRange.value);
+    const maxVal = parseInt(maxRange.value);
+    const maxBound = parseInt(maxRange.max);
+
+    if (maxBound <= 0) return;
+
+    const leftPercent = (minVal / maxBound) * 100;
+    const rightPercent = 100 - (maxVal / maxBound) * 100;
+
+    sliderRange.style.left = `${leftPercent}%`;
+    sliderRange.style.right = `${rightPercent}%`;
   }
 
   disconnectedCallback() {
@@ -258,10 +309,21 @@ class PriceFacetComponent extends Component {
    * Updates price filter and results
    */
   updatePriceFilterAndResults() {
-    const { minInput, maxInput } = this.refs;
+    const { minInput, maxInput, minRange, maxRange } = this.refs;
 
     this.#adjustToValidValues(minInput);
     this.#adjustToValidValues(maxInput);
+
+    // Sync sliders back if text inputs were changed
+    if (minRange && minInput && minInput.value) {
+      const minVal = this.#parseDisplayValue(minInput.value, this.currency) / 100;
+      minRange.value = Math.floor(minVal).toString();
+    }
+    if (maxRange && maxInput && maxInput.value) {
+      const maxVal = this.#parseDisplayValue(maxInput.value, this.currency) / 100;
+      maxRange.value = Math.ceil(maxVal).toString();
+    }
+    this.#updateSliderUI();
 
     const facetsForm = this.closest('facets-form-component');
     if (!(facetsForm instanceof FacetsFormComponent)) return;
