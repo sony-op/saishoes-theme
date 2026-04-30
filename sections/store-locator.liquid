@@ -1,6 +1,6 @@
 {{ 'aesthetic.css' | asset_url | stylesheet_tag }}
 
-<div class="store-locator-wrapper section-{{ section.id }}-padding" style="background-color: var(--color-background); padding-top: 4rem; padding-bottom: 4rem;">
+<div id="store-locator-section" class="store-locator-wrapper section-{{ section.id }}-padding" style="background-color: var(--color-background); padding-top: 4rem; padding-bottom: 4rem;">
   <div class="page-width">
     {% if section.settings.title != blank %}
       <h2 class="title inline-richtext text-center" style="margin-bottom: 3rem; font-family: var(--font-heading-family); text-transform: uppercase;">{{ section.settings.title }}</h2>

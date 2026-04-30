@@ -942,6 +942,27 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "store_locator": {
+      "type": "store-locator",
+      "blocks": {
+        "store_1": {
+          "type": "store",
+          "settings": {
+            "store_name": "RedTape Flagship",
+            "address": "123 Main Street\nNew Delhi, India",
+            "phone": "+91 9876543210",
+            "hours": "Mon-Sun: 10AM - 9PM"
+          }
+        }
+      },
+      "block_order": [
+        "store_1"
+      ],
+      "settings": {
+        "title": "Find Our Stores",
+        "map_embed_code": ""
+      }
     }
   },
   "order": [
@@ -953,6 +974,7 @@
     "section_x8mrnx",
     "media_with_content_xMM9EF",
     "media_with_content_nrnzPh",
+    "store_locator",
     "marquee_KN4PYb"
   ]
 }
