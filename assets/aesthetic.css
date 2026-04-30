@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .skechers-main-nav a {
   font-weight: 700 !important;
   font-size: 14px !important;
-  color: #333333 !important;
+  color: #666666 !important;
   text-transform: uppercase;
   letter-spacing: 0px;
   text-decoration: none !important;
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 14px;
   width: 200px;
   padding: 5px;
-  color: #333333 !important;
+  color: #666666 !important;
 }
 .skechers-search-input::placeholder {
   color: #999999 !important;
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 0;
 }
 .skechers-search-submit svg path {
-  fill: #333333 !important;
+  fill: #666666 !important;
 }
 
 /* Cart Badge Override */
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   position: relative;
 }
 header-actions {
-  color: #333333 !important;
+  color: #666666 !important;
 }
 .header-actions__cart-icon .cart-bubble {
   position: absolute !important;
