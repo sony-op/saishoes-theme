@@ -1,11 +1,11 @@
 {{ 'aesthetic.css' | asset_url | stylesheet_tag }}
 
-<div class="promo-carousel-wrapper" style="background: linear-gradient(to bottom, #fcece3, #fff); padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;">
+<div class="promo-carousel-wrapper" style="background: #f4f4f4; padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;">
   <div class="page-width">
     <!-- Header -->
     <div class="promo-carousel-header text-center" style="margin-bottom: 2rem;">
       {% if section.settings.title != blank %}
-        <h2 style="font-size: 2.5rem; font-weight: 800; background: linear-gradient(90deg, #f0892a, #f1496a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0; line-height: 1.2;">{{ section.settings.title }}</h2>
+        <h2 style="font-size: 2.5rem; font-weight: 800; color: #0a0a0a; margin: 0; line-height: 1.2;">{{ section.settings.title }}</h2>
       {% endif %}
       {% if section.settings.subtitle != blank %}
         <p style="font-size: 1.1rem; color: #333; margin-top: 0.5rem; margin-bottom: 0;">{{ section.settings.subtitle }}</p>

@@ -5,8 +5,8 @@
 :root {
   --font-body-family: 'Outfit', sans-serif;
   --font-heading-family: 'Outfit', sans-serif;
-  --skechers-blue: #0055FF;
-  --color-primary: #000000;
+  --skechers-blue: #0a0a0a;
+  --color-primary: #0a0a0a;
   --color-bg: #ffffff;
 }
 
@@ -193,7 +193,7 @@ header-actions {
   justify-content: space-between;
   align-items: stretch;
   width: 100%;
-  background: #EEDCC6; /* Beige background for outer columns */
+  background: #f4f4f4; /* Neutral background for outer columns */
 }
 
 /* Simulate the 3 column layout for the hero groups */
@@ -247,7 +247,7 @@ header-actions {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  border-top: 4px solid var(--skechers-blue);
+  border-top: 4px solid var(--color-primary-button-background, #E51937);
 }
 .cookies-policy-popup__content h4 {
   margin: 0 0 10px 0 !important;
