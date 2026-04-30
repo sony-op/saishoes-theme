@@ -1,0 +1,219 @@
+<div class="custom-login-wrapper">
+  <div class="custom-login-container">
+    {%- if section.settings.banner_image != blank -%}
+      <div class="custom-login-banner">
+        <img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="{{ section.settings.banner_image.alt | default: 'Login Banner' }}" />
+      </div>
+    {%- else -%}
+      <div class="custom-login-banner placeholder-banner">
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      </div>
+    {%- endif -%}
+    
+    <div class="custom-login-content">
+      <h1 class="custom-login-title">Login <span class="title-slash">/</span> <span class="title-signup">Signup</span></h1>
+      
+      <div class="custom-login-form">
+        <div class="input-group-mobile">
+          <span class="country-code">+91</span>
+          <input type="tel" placeholder="Mobile Number" id="MobileNumber" name="mobile" class="mobile-input">
+        </div>
+        
+        <p class="terms-text">
+          By logging in, you agree to {{ section.settings.brand_name }} <a href="#">T&C</a> and Shiprocket's <a href="#">T&C</a> and <a href="#">Privacy Policy</a>
+        </p>
+        
+        <button type="button" class="btn-send-otp">SEND OTP</button>
+      </div>
+      
+      <div class="powered-by">
+        <span class="powered-text">Powered By</span>
+        <span class="shiprocket-logo">
+          <svg width="100" height="20" viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 2 L19 2 L23 12 L19 22 L5 22 L1 12 Z" fill="none" stroke="#5C3B8B" stroke-width="2.5" stroke-linejoin="round"/>
+            <polygon points="10,7 16,12 10,17" fill="#3DCE76"/>
+            <text x="30" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="16" fill="#333">Shiprocket</text>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .custom-login-wrapper {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  .custom-login-container {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .custom-login-banner {
+    width: 100%;
+  }
+  .custom-login-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .placeholder-banner {
+    background-color: #f0f0f0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .placeholder-banner svg {
+    width: 100%;
+    height: 100%;
+    fill: #ccc;
+  }
+  .custom-login-content {
+    padding: 35px 40px;
+  }
+  .custom-login-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #000;
+    margin-top: 0;
+  }
+  .title-slash {
+    font-weight: 400;
+    color: #999;
+    margin: 0 2px;
+  }
+  .title-signup {
+    font-weight: 500;
+    color: #000;
+  }
+  .input-group-mobile {
+    display: flex;
+    border: 1px solid #7da3f0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: box-shadow 0.2s ease;
+  }
+  .input-group-mobile:focus-within {
+    box-shadow: 0 0 0 1px #7da3f0;
+  }
+  .country-code {
+    padding: 14px 15px;
+    background: #ffffff;
+    color: #555;
+    border-right: 1px solid #7da3f0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-input {
+    flex: 1;
+    border: none;
+    padding: 14px 15px;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mobile-input::placeholder {
+    color: #a0a0a0;
+  }
+  .terms-text {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  .terms-text a {
+    color: #1976d2;
+    text-decoration: underline;
+  }
+  .btn-send-otp {
+    width: 100%;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: background-color 0.2s ease;
+  }
+  .btn-send-otp:hover {
+    background-color: #0062c4;
+  }
+  .powered-by {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+  .powered-text {
+    font-size: 13px;
+    color: #888;
+  }
+  .shiprocket-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 480px) {
+    .custom-login-wrapper {
+      padding: 0;
+      min-height: auto;
+    }
+    .custom-login-container {
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .custom-login-content {
+      padding: 25px 20px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom OTP Login",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image",
+      "info": "Upload an image. E.g., End of Season Sale banner."
+    },
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Brand Name",
+      "default": "Asian Footwears",
+      "info": "Displayed in the Terms & Conditions text."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom OTP Login",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

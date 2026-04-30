@@ -167,5 +167,8 @@
     <!-- 3D Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="{{ 'three-bg.js' | asset_url }}" defer></script>
+    {% unless customer %}
+      {% render 'guest-popup' %}
+    {% endunless %}
   </body>
 </html>
