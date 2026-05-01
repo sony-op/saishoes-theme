@@ -1,18 +1,47 @@
 {{ 'aesthetic.css' | asset_url | stylesheet_tag }}
 
-<div id="store-locator-section" class="store-locator-wrapper section-{{ section.id }}-padding" style="background-color: var(--color-background); padding-top: 4rem; padding-bottom: 4rem;">
+<div id="store-locator-section" class="store-locator-wrapper" style="background-color: var(--color-background); padding-top: 4rem; padding-bottom: 4rem;">
   <div class="page-width">
     {% if section.settings.title != blank %}
       <h2 class="title inline-richtext text-center" style="margin-bottom: 3rem; font-family: var(--font-heading-family); text-transform: uppercase;">{{ section.settings.title }}</h2>
     {% endif %}
 
     <div class="store-locator-grid">
-      
-      <!-- Store List Sidebar -->
+
+      <!-- Store Info Sidebar -->
       <div class="store-locator-sidebar">
+
+        <!-- Hardcoded SAI SHOES store card (always visible) -->
+        <div class="store-card is-active">
+          <div class="store-card__badge">📍 Open Now</div>
+          <h3 class="store-card__name">SAI SHOES</h3>
+          <p class="store-card__text">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; margin-right:6px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Surat, Gujarat, India
+          </p>
+          <p class="store-card__text">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; margin-right:6px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+            {{ section.settings.phone | default: '+91 98765 43210' }}
+          </p>
+          <p class="store-card__text">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; margin-right:6px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            {{ section.settings.hours | default: 'Mon – Sun: 10:00 AM – 9:00 PM' }}
+          </p>
+          <a
+            href="https://www.google.com/maps?q=Sai+SHOES+Surat&ll=21.201640,72.794693"
+            target="_blank"
+            rel="noopener"
+            class="store-card__directions-btn"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            Get Directions
+          </a>
+        </div>
+
+        <!-- Dynamic blocks (if added via Theme Editor) -->
         {% for block in section.blocks %}
           {% if block.type == 'store' %}
-            <div class="store-card" onclick="highlightStore({{ forloop.index0 }})" {{ block.shopify_attributes }}>
+            <div class="store-card" {{ block.shopify_attributes }}>
               <h3 class="store-card__name">{{ block.settings.store_name }}</h3>
               <p class="store-card__text">{{ block.settings.address | newline_to_br }}</p>
               {% if block.settings.phone != blank %}
@@ -21,11 +50,16 @@
               {% if block.settings.hours != blank %}
                 <p class="store-card__text"><strong>Hours:</strong> {{ block.settings.hours }}</p>
               {% endif %}
+              {% if block.settings.map_link != blank %}
+                <a href="{{ block.settings.map_link }}" target="_blank" rel="noopener" class="store-card__directions-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                  Get Directions
+                </a>
+              {% endif %}
             </div>
           {% endif %}
-        {% else %}
-          <p>No stores added yet. Please add store blocks in the Theme Editor.</p>
         {% endfor %}
+
       </div>
 
       <!-- Map Display -->
@@ -111,6 +145,36 @@
   }
   .store-card__text:last-child {
     margin-bottom: 0;
+  }
+
+  .store-card__badge {
+    display: inline-block;
+    background: #22c55e;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+  }
+
+  .store-card__directions-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    background: #111;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  .store-card__directions-btn:hover {
+    background: #333;
   }
   
   .store-locator-map-container {
