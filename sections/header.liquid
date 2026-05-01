@@ -89,10 +89,9 @@
     echo '<li class="has-mega-menu"><a href="/collections/all">SALE</a>'
     echo mega_menu_content
     echo '</li>'
-    echo '<li class="has-mega-menu"><a href="/#store-locator-section" onclick="smoothScrollToStoreLocator(event)">STORE LOCATOR</a>'
-    echo '</li>'
+    echo '<li class="nav-plain"><a href="/#store-locator-section" id="storeLocatorNavLink">STORE LOCATOR</a></li>'
     echo '</ul>'
-    echo '<script>function smoothScrollToStoreLocator(e) { if(window.location.pathname==="/" || window.location.pathname===""){ e.preventDefault(); const el = document.getElementById("store-locator-section"); if(el){ el.scrollIntoView({behavior:"smooth", block: "start"}); } else { window.location.href = "/#store-locator-section"; } } }</script>'
+    echo '<script>document.addEventListener("DOMContentLoaded",function(){var link=document.getElementById("storeLocatorNavLink");if(!link)return;link.addEventListener("click",function(e){if(window.location.pathname==="/"||window.location.pathname===""){e.preventDefault();var el=document.getElementById("store-locator-section");if(el){el.scrollIntoView({behavior:"smooth",block:"start"});}else{window.location.href="/#store-locator-section";}}});if(window.location.hash==="#store-locator-section"){setTimeout(function(){var el=document.getElementById("store-locator-section");if(el)el.scrollIntoView({behavior:"smooth",block:"start"});},400);}});</script>'
   endcapture
 
   capture drawer_menu
