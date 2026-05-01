@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer",
@@ -8,25 +17,29 @@
         "menu_1": {
           "type": "menu",
           "settings": {
-            "title": "About Skechers"
+            "title": "About Sai SHOES",
+            "menu": ""
           }
         },
         "menu_2": {
           "type": "menu",
           "settings": {
-            "title": "Customer Service"
+            "title": "Customer Service",
+            "menu": ""
           }
         },
         "menu_3": {
           "type": "menu",
           "settings": {
-            "title": "My Account"
+            "title": "My Account",
+            "menu": ""
           }
         },
         "menu_4": {
           "type": "menu",
           "settings": {
-            "title": "Others"
+            "title": "Others",
+            "menu": ""
           }
         }
       },
@@ -39,8 +52,8 @@
       "settings": {
         "bg_color": "#f8f8f8",
         "show_popular_searches": true,
-        "popular_searches_title": "POPULAR SEARCHES",
-        "popular_searches_text": "<p>Women's Shoes | Walking Shoes for Women | Walking Shoes for Men | Men's Shoes | Running Shoes for Women | Running Shoes for Men | Women's Slippers | Men's Slippers | Kids Shoes | Slip-Ins | Men's Jackets | Women's Jacket | Men's T-Shirts | Sports Bra | Arch Fit Shoes | Memory Foam | Goga Mat | GO Walk | James Gold Crown Collection | GO Run | Mark Nason | Kids Light Up Shoes | Tokidoki | Shoes Sale | Running Shoes | Walking Shoes | Trail-Hiking | Black Shoes | White Shoes | Pink Shoes | Blue Shoes |<\/p>",
+        "popular_searches_title": "POPULAR",
+        "popular_searches_text": "<p>Women's Shoes | Walking Shoes for Women | Walking Shoes for Men | Men's Shoes | Running Shoes for Women | Running Shoes for Men | Women's Slippers | Men's Slippers | Kids Shoes | Slip-Ins | Men's Jackets | Women's Jacket | Men's T-Shirts | Sports Bra | Arch Fit Shoes | Memory Foam | Goga Mat | GO Walk | James Gold Crown Collection | GO Run | Mark Nason | Kids Light Up Shoes | Tokidoki | Shoes Sale | Running Shoes | Walking Shoes | Trail-Hiking | Black Shoes | White Shoes | Pink Shoes | Blue Shoes |</p>",
         "social_title": "Follow us"
       }
     }
