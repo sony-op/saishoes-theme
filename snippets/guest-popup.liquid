@@ -5,15 +5,17 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     z-index: 999999;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
 
   .guest-popup-overlay.is-visible {
@@ -21,403 +23,380 @@
     visibility: visible;
   }
 
+  /* The Phone Frame */
   .guest-popup-container {
-    display: flex;
-    width: 900px;
-    max-width: 95vw;
-    min-height: 500px;
-    background: #000;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 380px;
+    max-width: 90vw;
+    background: rgba(20, 20, 20, 0.4);
+    border-radius: 50px;
+    border: 14px solid #000;
+    box-shadow: 
+      inset 0 0 0 2px rgba(255,255,255,0.1),
+      0 40px 80px rgba(0, 0, 0, 0.8),
+      0 0 40px rgba(255, 255, 255, 0.05);
     position: relative;
-    transform: translateY(20px);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(40px) scale(0.95);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 24px 30px;
+    color: #fff;
   }
 
   .guest-popup-overlay.is-visible .guest-popup-container {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 
+  /* Dynamic Island / Notch */
+  .iphone-notch {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 35px;
+    background: #000;
+    border-radius: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 12px;
+    box-shadow: inset 0 -1px 2px rgba(255,255,255,0.1);
+  }
+  
+  .iphone-camera {
+    width: 14px;
+    height: 14px;
+    background: #0a0a0a;
+    border-radius: 50%;
+    box-shadow: inset 0 0 4px rgba(255,255,255,0.2), 0 0 2px rgba(0,0,0,0.5);
+    position: relative;
+  }
+  
+  .iphone-camera::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 4px;
+    height: 4px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    filter: blur(1px);
+  }
+
+  /* Close Button */
   .guest-popup-close {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: none;
+    top: 25px;
+    right: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
     cursor: pointer;
-    z-index: 10;
-    padding: 5px;
-    color: #666;
+    z-index: 20;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color 0.2s ease;
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .guest-popup-close:hover {
-    color: #000;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg) scale(1.1);
+    border-color: rgba(255, 255, 255, 0.3);
   }
 
   .guest-popup-close svg {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 
-  /* Left Side: Dark Theme */
-  .guest-popup-left {
-    flex: 1.2;
-    background: #000;
-    color: #fff;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .guest-popup-brand {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 40px;
+  /* Content Styling */
+  .guest-popup-header {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
   }
 
   .guest-popup-logo {
     font-size: 32px;
     font-weight: 900;
-    letter-spacing: -0.5px;
+    letter-spacing: -1.5px;
+    margin: 0 0 8px 0;
+    background: linear-gradient(180deg, #ffffff 0%, #a0a0a0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
+  }
+
+  .guest-popup-subtitle {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
     margin: 0;
-    line-height: 1;
-  }
-
-  .guest-popup-powered {
-    font-size: 10px;
-    color: #999;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-  }
-  
-  .guest-popup-powered span:last-child {
-    color: #fff;
-    font-weight: 700;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-  }
-  
-  .guest-popup-powered span:last-child::after {
-    content: "⚡";
-    font-size: 12px;
-    color: #ffd700;
-  }
-
-  .guest-popup-features {
-    display: flex;
-    gap: 15px;
-  }
-
-  .guest-popup-feature-card {
-    flex: 1;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    transition: border-color 0.2s ease;
-  }
-
-  .guest-popup-feature-card:hover {
-    border-color: rgba(255, 255, 255, 0.5);
-  }
-
-  .guest-popup-feature-icon {
-    font-size: 24px;
-  }
-
-  .guest-popup-feature-title {
-    font-size: 13px;
-    font-weight: 600;
-    margin: 0;
-  }
-
-  /* Right Side: Light Theme */
-  .guest-popup-right {
-    flex: 1;
-    background: #fff;
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border-radius: 8px;
-    margin: 10px; /* Slight inset to match reference */
-  }
-
-  .guest-popup-title {
-    color: #000;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 25px 0;
-    line-height: 1.3;
-    text-align: center;
+    line-height: 1.4;
+    font-weight: 500;
   }
 
   .guest-popup-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 14px;
   }
 
+  /* Glassmorphism Inputs */
   .guest-popup-input-group {
     display: flex;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
     overflow: hidden;
-    transition: border-color 0.2s ease;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
   }
 
   .guest-popup-input-group:focus-within {
-    border-color: #000;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), inset 0 2px 4px rgba(0,0,0,0.1);
+    transform: translateY(-1px);
   }
 
   .guest-popup-country-code {
     display: flex;
     align-items: center;
-    padding: 0 12px;
-    background: #f9f9f9;
-    border-right: 1px solid #e0e0e0;
-    font-size: 14px;
-    color: #333;
-    font-weight: 500;
-    gap: 6px;
+    padding: 0 16px;
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    gap: 8px;
   }
 
   .guest-popup-input {
     flex: 1;
     border: none;
-    padding: 14px 15px;
-    font-size: 14px;
-    color: #000;
+    padding: 16px;
+    font-size: 15px;
+    color: #fff;
     background: transparent;
     outline: none;
     width: 100%;
+    font-family: inherit;
   }
   
   .guest-popup-input::placeholder {
-    color: #999;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
   }
 
   select.guest-popup-input {
     appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.6)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
-    background-position: right 15px center;
-    background-size: 14px;
-    color: #999;
+    background-position: right 16px center;
+    background-size: 16px;
+    color: rgba(255, 255, 255, 0.4);
   }
   
   select.guest-popup-input:focus, select.guest-popup-input:valid {
-      color: #000;
+    color: #fff;
+  }
+  
+  select.guest-popup-input option {
+    background: #111;
+    color: #fff;
   }
 
   .guest-popup-checkbox-group {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 8px 0;
+    padding: 0 4px;
   }
 
   .guest-popup-checkbox {
-    width: 16px;
-    height: 16px;
-    accent-color: #000;
+    width: 18px;
+    height: 18px;
+    accent-color: #fff;
     cursor: pointer;
+    margin-top: 2px;
+    border-radius: 4px;
   }
 
   .guest-popup-checkbox-label {
     font-size: 13px;
-    color: #666;
+    color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
+    line-height: 1.5;
   }
 
   .guest-popup-submit {
-    background: #111;
-    color: #fff;
+    background: #fff;
+    color: #000;
     border: none;
-    border-radius: 6px;
-    padding: 16px;
-    font-size: 16px;
-    font-weight: 700;
+    border-radius: 16px;
+    padding: 18px;
+    font-size: 17px;
+    font-weight: 800;
     cursor: pointer;
-    transition: background 0.2s ease;
-    margin-top: 5px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 12px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
   }
 
   .guest-popup-submit:hover {
-    background: #000;
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+  }
+
+  .guest-popup-submit:active {
+    transform: translateY(1px);
   }
 
   .guest-popup-footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .guest-popup-terms {
-    font-size: 11px;
-    color: #999;
-    line-height: 1.5;
-    margin: 0 0 15px 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+    margin: 0 0 16px 0;
   }
 
   .guest-popup-terms a {
-    color: #999;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   .guest-popup-help {
-    font-size: 13px;
-    color: #666;
+    font-size: 14px;
+    color: #fff;
     text-decoration: underline;
+    opacity: 0.8;
+    text-underline-offset: 4px;
+    font-weight: 500;
+  }
+  
+  .guest-popup-help:hover {
+    opacity: 1;
   }
 
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .guest-popup-container {
-      flex-direction: column;
-      width: 95vw;
-      max-height: 90vh;
-      overflow-y: auto;
-    }
+  /* Home Indicator (Bottom iPhone Bar) */
+  .iphone-home-indicator {
+    width: 140px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 30px auto 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  }
 
-    .guest-popup-left {
-      padding: 30px 20px;
-    }
+  /* Glass Glare Effect */
+  .guest-popup-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.05) 50%,
+      rgba(255,255,255,0) 100%
+    );
+    transform: rotate(30deg) translateY(-50%);
+    pointer-events: none;
+    z-index: 1;
+  }
 
-    .guest-popup-brand {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 5px;
-    }
-
-    .guest-popup-features {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    
-    .guest-popup-feature-card {
-      min-width: 100px;
-      flex: 1 1 calc(33.333% - 10px);
-    }
-
-    .guest-popup-right {
-      padding: 30px 20px;
-      margin: 0;
-      border-radius: 0;
-    }
-    
-    .guest-popup-close {
-        right: 10px;
-        top: 10px;
-        color: #000; /* Contrast on mobile where it might overlap light areas */
-        background: rgba(255,255,255,0.8);
-        border-radius: 50%;
-    }
+  .guest-popup-form, .guest-popup-header, .guest-popup-footer, .guest-popup-close {
+    z-index: 2;
+    position: relative;
   }
 </style>
 
 <div class="guest-popup-overlay" id="guestPopupOverlay">
   <div class="guest-popup-container">
-    <!-- Left Side -->
-    <div class="guest-popup-left">
-      <div class="guest-popup-brand">
-        <h2 class="guest-popup-logo">{{ shop.name | default: 'SAI SHOES' }}</h2>
-        <div class="guest-popup-powered">
-          <span>Powered by</span>
-          <span>dninfo</span>
-        </div>
-      </div>
-      
-      <div class="guest-popup-features">
-        <div class="guest-popup-feature-card">
-          <div class="guest-popup-feature-icon">🌟</div>
-          <h3 class="guest-popup-feature-title">Fast Shipping</h3>
-        </div>
-        <div class="guest-popup-feature-card">
-          <div class="guest-popup-feature-icon">🌟</div>
-          <h3 class="guest-popup-feature-title">Exclusive Drops</h3>
-        </div>
-        <div class="guest-popup-feature-card">
-          <div class="guest-popup-feature-icon">🌟</div>
-          <h3 class="guest-popup-feature-title">Global Curation</h3>
-        </div>
-      </div>
+    <div class="iphone-notch">
+      <div class="iphone-camera"></div>
     </div>
+    
+    <button class="guest-popup-close" id="guestPopupClose" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
 
-    <!-- Right Side -->
-    <div class="guest-popup-right">
-      <button class="guest-popup-close" id="guestPopupClose" aria-label="Close">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-
-      <h3 class="guest-popup-title">Complete your profile to unlock free shipping & birthday offers</h3>
-      
-      {%- form 'customer', class: 'guest-popup-form' -%}
-        <!-- Phone Input -->
-        <div class="guest-popup-input-group">
-          <div class="guest-popup-country-code">
-            <span>🇮🇳</span> +91
-          </div>
-          <input type="tel" name="customer[phone]" class="guest-popup-input" placeholder="Enter Mobile Number*" required>
-        </div>
-
-        <!-- Email Input -->
-        <div class="guest-popup-input-group">
-          <input type="email" name="customer[email]" class="guest-popup-input" placeholder="Email*" required>
-        </div>
-
-        <!-- Birthday Input -->
-        <div class="guest-popup-input-group">
-          <input type="text" name="customer[note][Birthday]" class="guest-popup-input" placeholder="Birthday (DD-MM-YYYY)*" required>
-        </div>
-
-        <!-- Gender Select -->
-        <div class="guest-popup-input-group">
-          <select name="customer[note][Gender]" class="guest-popup-input" required>
-            <option value="" disabled selected hidden>Select your gender*</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-
-        <!-- Checkbox -->
-        <div class="guest-popup-checkbox-group">
-          <input type="checkbox" id="guestPopupNotify" name="customer[accepts_marketing]" class="guest-popup-checkbox" checked>
-          <label for="guestPopupNotify" class="guest-popup-checkbox-label">Notify me for any updates & offers</label>
-        </div>
-
-        <!-- Submit -->
-        <button type="submit" class="guest-popup-submit">Submit</button>
-      {%- endform -%}
-
-      <div class="guest-popup-footer">
-        <p class="guest-popup-terms">
-          I accept that I have read & understood Gokwik's<br>
-          <a href="/policies/privacy-policy">Privacy Policy</a> and <a href="/policies/terms-of-service">T&Cs</a>.
-        </p>
-        <a href="{{ routes.account_login_url }}" class="guest-popup-help">Trouble logging in?</a>
-      </div>
+    <div class="guest-popup-header">
+      <h2 class="guest-popup-logo">{{ shop.name | default: 'SAI SHOES' }}</h2>
+      <p class="guest-popup-subtitle">Unlock exclusive drops & free shipping</p>
     </div>
+      
+    {%- form 'customer', class: 'guest-popup-form' -%}
+      <!-- Phone Input -->
+      <div class="guest-popup-input-group">
+        <div class="guest-popup-country-code">
+          <span>🇮🇳</span> +91
+        </div>
+        <input type="tel" name="customer[phone]" class="guest-popup-input" placeholder="Mobile Number*" required>
+      </div>
+
+      <!-- Email Input -->
+      <div class="guest-popup-input-group">
+        <input type="email" name="customer[email]" class="guest-popup-input" placeholder="Email Address*" required>
+      </div>
+
+      <!-- Birthday Input -->
+      <div class="guest-popup-input-group">
+        <input type="text" name="customer[note][Birthday]" class="guest-popup-input" placeholder="Birthday (DD-MM-YYYY)*" required>
+      </div>
+
+      <!-- Gender Select -->
+      <div class="guest-popup-input-group">
+        <select name="customer[note][Gender]" class="guest-popup-input" required>
+          <option value="" disabled selected hidden>Select Gender*</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="guest-popup-checkbox-group">
+        <input type="checkbox" id="guestPopupNotify" name="customer[accepts_marketing]" class="guest-popup-checkbox" checked>
+        <label for="guestPopupNotify" class="guest-popup-checkbox-label">Notify me for new drops, updates & VIP offers</label>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="guest-popup-submit">Join the Club</button>
+    {%- endform -%}
+
+    <div class="guest-popup-footer">
+      <p class="guest-popup-terms">
+        By joining, you agree to our<br>
+        <a href="/policies/privacy-policy">Privacy Policy</a> and <a href="/policies/terms-of-service">Terms of Service</a>.
+      </p>
+      <a href="{{ routes.account_login_url }}" class="guest-popup-help">Already have an account?</a>
+    </div>
+    
+    <div class="iphone-home-indicator"></div>
   </div>
 </div>
 
