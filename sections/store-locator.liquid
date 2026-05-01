@@ -1,217 +1,342 @@
-{{ 'aesthetic.css' | asset_url | stylesheet_tag }}
-
-<div id="store-locator-section" class="store-locator-wrapper" style="background-color: var(--color-background); padding-top: 4rem; padding-bottom: 4rem;">
-  <div class="page-width">
-    {% if section.settings.title != blank %}
-      <h2 class="title inline-richtext text-center" style="margin-bottom: 3rem; font-family: var(--font-heading-family); text-transform: uppercase;">{{ section.settings.title }}</h2>
-    {% endif %}
-
-    <div class="store-locator-grid">
-
-      <!-- Store Info Sidebar -->
-      <div class="store-locator-sidebar">
-
-        <!-- Hardcoded SAI SHOES store card (always visible) -->
-        <div class="store-card is-active">
-          <div class="store-card__badge">📍 Open Now</div>
-          <h3 class="store-card__name">SAI SHOES</h3>
-          <p class="store-card__text">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; margin-right:6px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Surat, Gujarat, India
-          </p>
-          <p class="store-card__text">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; margin-right:6px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
-            {{ section.settings.phone | default: '+91 98765 43210' }}
-          </p>
-          <p class="store-card__text">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; margin-right:6px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            {{ section.settings.hours | default: 'Mon – Sun: 10:00 AM – 9:00 PM' }}
-          </p>
-          <a
-            href="https://www.google.com/maps?q=Sai+SHOES+Surat&ll=21.201640,72.794693"
-            target="_blank"
-            rel="noopener"
-            class="store-card__directions-btn"
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
-            Get Directions
-          </a>
-        </div>
-
-        <!-- Dynamic blocks (if added via Theme Editor) -->
-        {% for block in section.blocks %}
-          {% if block.type == 'store' %}
-            <div class="store-card" {{ block.shopify_attributes }}>
-              <h3 class="store-card__name">{{ block.settings.store_name }}</h3>
-              <p class="store-card__text">{{ block.settings.address | newline_to_br }}</p>
-              {% if block.settings.phone != blank %}
-                <p class="store-card__text"><strong>Phone:</strong> {{ block.settings.phone }}</p>
-              {% endif %}
-              {% if block.settings.hours != blank %}
-                <p class="store-card__text"><strong>Hours:</strong> {{ block.settings.hours }}</p>
-              {% endif %}
-              {% if block.settings.map_link != blank %}
-                <a href="{{ block.settings.map_link }}" target="_blank" rel="noopener" class="store-card__directions-btn">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
-                  Get Directions
-                </a>
-              {% endif %}
-            </div>
-          {% endif %}
-        {% endfor %}
-
-      </div>
-
-      <!-- Map Display -->
-      <div class="store-locator-map-container">
-        {% if section.settings.map_embed_code != blank %}
-          <div class="map-embed">
-            {{ section.settings.map_embed_code }}
-          </div>
-        {% else %}
-          <div class="map-embed">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.761263093412!2d72.79469297504889!3d21.201640780491314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d800fb385b1%3A0x41726302b5e31aa5!2sSai%20SHOES..!5e0!3m2!1sen!2sin!4v1777629859580!5m2!1sen!2sin"
-              width="100%"
-              height="600"
-              style="border:0; display:block;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="SAI SHOES Store Location"
-            ></iframe>
-          </div>
-        {% endif %}
-      </div>
-
-    </div>
-  </div>
-</div>
-
 <style>
-  .store-locator-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  /* ==========================================
+     STORE LOCATOR SECTION
+  ========================================== */
+  .sl-section {
+    background: #f7f7f7;
+    padding: 0;
+    font-family: var(--font-body-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
+    scroll-margin-top: 80px;
   }
-  @media screen and (min-width: 750px) {
-    .store-locator-grid {
-      grid-template-columns: 1fr 2fr;
+
+  /* Top bar */
+  .sl-topbar {
+    background: #111;
+    color: #fff;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .sl-topbar__title {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .sl-topbar__subtitle {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    margin: 0;
+  }
+
+  .sl-topbar__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    color: #111;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .sl-topbar__cta:hover {
+    background: #eee;
+  }
+
+  /* Main layout */
+  .sl-body {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    min-height: 520px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .sl-body {
+      grid-template-columns: 1fr;
+    }
+
+    .sl-topbar {
+      padding: 16px 20px;
     }
   }
-  .store-locator-sidebar {
-    max-height: 600px;
+
+  /* Sidebar */
+  .sl-sidebar {
+    background: #fff;
+    padding: 28px 24px;
+    border-right: 1px solid #e8e8e8;
     overflow-y: auto;
-    padding-right: 1rem;
-  }
-  
-  /* Scrollbar styles for the sidebar */
-  .store-locator-sidebar::-webkit-scrollbar {
-    width: 6px;
-  }
-  .store-locator-sidebar::-webkit-scrollbar-track {
-    background: rgb(var(--color-foreground-rgb) / 0.05);
-  }
-  .store-locator-sidebar::-webkit-scrollbar-thumb {
-    background: rgb(var(--color-foreground-rgb) / 0.2);
-    border-radius: 4px;
-  }
-  
-  .store-card {
-    border: 1px solid rgb(var(--color-foreground-rgb) / 0.2);
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background-color: var(--color-background);
-  }
-  .store-card:hover, .store-card.is-active {
-    background-color: rgb(var(--color-foreground-rgb) / 0.05);
-    border-color: rgb(var(--color-foreground-rgb));
-  }
-  .store-card__name {
-    margin-top: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    color: var(--color-foreground);
-  }
-  .store-card__text {
-    margin-bottom: 0.5rem;
-    opacity: 0.8;
-    color: var(--color-foreground);
-    line-height: 1.4;
-  }
-  .store-card__text:last-child {
-    margin-bottom: 0;
+    max-height: 560px;
   }
 
-  .store-card__badge {
-    display: inline-block;
-    background: #22c55e;
-    color: #fff;
+  .sl-sidebar::-webkit-scrollbar { width: 4px; }
+  .sl-sidebar::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px; }
+
+  .sl-sidebar__heading {
+    font-size: 12px;
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 16px 0;
+  }
+
+  /* Store card */
+  .sl-store-card {
+    border: 1.5px solid #ebebeb;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background: #fff;
+    position: relative;
+  }
+
+  .sl-store-card:hover,
+  .sl-store-card.is-active {
+    border-color: #111;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+
+  .sl-store-card.is-active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #111;
+    border-radius: 12px 0 0 12px;
+  }
+
+  .sl-store-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #dcfce7;
+    color: #16a34a;
     font-size: 11px;
     font-weight: 700;
     padding: 3px 10px;
     border-radius: 20px;
     margin-bottom: 10px;
-    letter-spacing: 0.3px;
   }
 
-  .store-card__directions-btn {
+  .sl-store-name {
+    font-size: 17px;
+    font-weight: 800;
+    color: #111;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .sl-store-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .sl-store-row svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #888;
+  }
+
+  .sl-store-row a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .sl-store-row a:hover { color: #111; text-decoration: underline; }
+
+  .sl-directions-btn {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     margin-top: 14px;
     background: #111;
-    color: #fff;
-    font-size: 13px;
+    color: #fff !important;
     font-weight: 700;
-    padding: 10px 18px;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background 0.2s ease;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
   }
-  .store-card__directions-btn:hover {
+
+  .sl-directions-btn:hover {
     background: #333;
+    transform: translateY(-1px);
   }
-  
-  .store-locator-map-container {
-    background: rgb(var(--color-foreground-rgb) / 0.05);
-    border: 1px solid rgb(var(--color-foreground-rgb) / 0.2);
-    min-height: 400px;
+
+  /* Map */
+  .sl-map-container {
     position: relative;
-    overflow: hidden;
+    background: #e8e8e8;
+    min-height: 520px;
   }
-  .map-embed {
+
+  .sl-map-container iframe {
     width: 100%;
     height: 100%;
-  }
-  .store-locator-map-container iframe {
-    width: 100% !important;
-    height: 100% !important;
-    min-height: 600px;
+    min-height: 520px;
     border: none;
     display: block;
   }
-  .map-placeholder {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0.5;
-    color: var(--color-foreground);
-  }
 </style>
 
+<div id="store-locator-section" class="sl-section">
+
+  <!-- Top bar -->
+  <div class="sl-topbar">
+    <div>
+      <h2 class="sl-topbar__title">📍 {{ section.settings.title | default: 'Find Our Store' }}</h2>
+      <p class="sl-topbar__subtitle">Visit us in-store for the best shoe shopping experience</p>
+    </div>
+    <a
+      href="https://www.google.com/maps/dir/?api=1&destination=Sai+SHOES+Surat&destination_place_id=ChIJsYWzD4BN4DsRpRrjtQJjckE"
+      target="_blank"
+      rel="noopener"
+      class="sl-topbar__cta"
+    >
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+      Get Directions
+    </a>
+  </div>
+
+  <!-- Body: Sidebar + Map -->
+  <div class="sl-body">
+
+    <!-- Sidebar -->
+    <div class="sl-sidebar">
+      <p class="sl-sidebar__heading">Our Location</p>
+
+      <!-- SAI SHOES Main Store -->
+      <div class="sl-store-card is-active" onclick="slSelectStore(this)">
+        <div class="sl-store-badge">
+          <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="#16a34a"/></svg>
+          Open Now
+        </div>
+        <h3 class="sl-store-name">SAI SHOES</h3>
+
+        <div class="sl-store-row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>{{ section.settings.address | default: 'Surat, Gujarat, India' }}</span>
+        </div>
+
+        <div class="sl-store-row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+          <a href="tel:{{ section.settings.phone | default: '+919876543210' }}">
+            {{ section.settings.phone | default: '+91 98765 43210' }}
+          </a>
+        </div>
+
+        <div class="sl-store-row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>{{ section.settings.hours | default: 'Mon – Sun: 10:00 AM – 9:00 PM' }}</span>
+        </div>
+
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=Sai+SHOES+Surat&destination_place_id=ChIJsYWzD4BN4DsRpRrjtQJjckE"
+          target="_blank"
+          rel="noopener"
+          class="sl-directions-btn"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+          Get Directions
+        </a>
+      </div>
+
+      <!-- Additional stores from Theme Editor -->
+      {% for block in section.blocks %}
+        {% if block.type == 'store' %}
+          <div class="sl-store-card" onclick="slSelectStore(this)" {{ block.shopify_attributes }}>
+            <h3 class="sl-store-name">{{ block.settings.store_name }}</h3>
+            {% if block.settings.address != blank %}
+              <div class="sl-store-row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>{{ block.settings.address | newline_to_br }}</span>
+              </div>
+            {% endif %}
+            {% if block.settings.phone != blank %}
+              <div class="sl-store-row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+                <a href="tel:{{ block.settings.phone }}">{{ block.settings.phone }}</a>
+              </div>
+            {% endif %}
+            {% if block.settings.hours != blank %}
+              <div class="sl-store-row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>{{ block.settings.hours }}</span>
+              </div>
+            {% endif %}
+            {% if block.settings.map_link != blank %}
+              <a href="{{ block.settings.map_link }}" target="_blank" rel="noopener" class="sl-directions-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                Get Directions
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+
+    <!-- Google Maps Embed -->
+    <div class="sl-map-container">
+      {% if section.settings.map_embed_code != blank %}
+        {{ section.settings.map_embed_code }}
+      {% else %}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.761263093412!2d72.79469297504889!3d21.201640780491314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d800fb385b1%3A0x41726302b5e31aa5!2sSai%20SHOES..!5e0!3m2!1sen!2sin!4v1777629859580!5m2!1sen!2sin"
+          width="100%"
+          height="520"
+          style="border:0; display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="SAI SHOES Store Location"
+        ></iframe>
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+
 <script>
-  function highlightStore(index) {
-    const cards = document.querySelectorAll('.store-card');
-    cards.forEach(card => card.classList.remove('is-active'));
-    cards[index].classList.add('is-active');
+  function slSelectStore(card) {
+    document.querySelectorAll('.sl-store-card').forEach(c => c.classList.remove('is-active'));
+    card.classList.add('is-active');
   }
+
+  // Smooth scroll when navigated via /#store-locator-section hash
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.location.hash === '#store-locator-section') {
+      setTimeout(function() {
+        const el = document.getElementById('store-locator-section');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 300);
+    }
+  });
 </script>
 
 {% schema %}
@@ -221,59 +346,71 @@
     {
       "type": "text",
       "id": "title",
-      "label": "Heading",
-      "default": "Find Our Stores"
+      "label": "Section Heading",
+      "default": "Find Our Store"
+    },
+    {
+      "type": "textarea",
+      "id": "address",
+      "label": "Store Address",
+      "default": "Surat, Gujarat, India"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "Phone Number",
+      "default": "+91 98765 43210"
+    },
+    {
+      "type": "text",
+      "id": "hours",
+      "label": "Store Hours",
+      "default": "Mon – Sun: 10:00 AM – 9:00 PM"
     },
     {
       "type": "textarea",
       "id": "map_embed_code",
-      "label": "Google Maps Embed Code",
-      "info": "Go to Google Maps, find your store or general area, click Share > Embed a map, and paste the iframe HTML here."
+      "label": "Custom Google Maps Embed Code (optional)",
+      "info": "Paste your <iframe> embed code from Google Maps here to override the default map."
     }
   ],
   "blocks": [
     {
       "type": "store",
-      "name": "Store Location",
+      "name": "Additional Store",
       "settings": [
         {
           "type": "text",
           "id": "store_name",
           "label": "Store Name",
-          "default": "RedTape Flagship"
+          "default": "SAI SHOES - Branch"
         },
         {
           "type": "textarea",
           "id": "address",
-          "label": "Address",
-          "default": "123 Main Street\nNew Delhi, India"
+          "label": "Address"
         },
         {
           "type": "text",
           "id": "phone",
-          "label": "Phone Number",
-          "default": "+91 9876543210"
+          "label": "Phone Number"
         },
         {
           "type": "text",
           "id": "hours",
-          "label": "Operating Hours",
-          "default": "Mon-Sun: 10AM - 9PM"
+          "label": "Operating Hours"
+        },
+        {
+          "type": "url",
+          "id": "map_link",
+          "label": "Google Maps Directions Link"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Store Locator",
-      "blocks": [
-        {
-          "type": "store"
-        },
-        {
-          "type": "store"
-        }
-      ]
+      "name": "Store Locator"
     }
   ]
 }
