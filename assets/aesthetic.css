@@ -470,7 +470,7 @@ header-actions {
    MEGA MENU (Hover Dropdown)
 ========================================== */
 .skechers-main-nav {
-  position: relative;
+  position: static;
 }
 
 .has-mega-menu {
@@ -481,7 +481,8 @@ header-actions {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100vw;
+  right: 0;
+  width: 100%;
   background-color: #ffffff;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
