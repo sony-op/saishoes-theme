@@ -45,6 +45,7 @@
             "gradient_direction": "to top",
             "link": "",
             "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -84,6 +85,7 @@
                 "gradient_direction": "to top",
                 "link": "",
                 "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -154,6 +156,7 @@
                 "gradient_direction": "to top",
                 "link": "",
                 "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -210,6 +213,7 @@
                 "gradient_direction": "to top",
                 "link": "",
                 "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -263,6 +267,10 @@
         "media_type_1": "image",
         "image_1": "shopify://shop_images/shoes-minimal-1.jpg",
         "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
         "link": "",
         "open_in_new_tab": false,
         "content_direction": "column",
@@ -281,8 +289,204 @@
         "overlay_color": "#0303033b",
         "overlay_style": "solid",
         "gradient_direction": "to bottom",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
         "padding-block-start": 0,
         "padding-block-end": 0
+      }
+    },
+    "promo_product_carousel": {
+      "type": "promo-product-carousel",
+      "settings": {
+        "title": "New Arrivals",
+        "subtitle": "Get up to 20% Off*",
+        "collection": "all",
+        "max_products": 8,
+        "show_ribbon": true,
+        "ribbon_text": "NEW LAUNCH",
+        "show_view_all": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "shop_by_category": {
+      "type": "shop-by-category",
+      "blocks": {
+        "cat_1": {
+          "type": "category",
+          "settings": {
+            "title": "Best Seller",
+            "link": ""
+          }
+        },
+        "cat_2": {
+          "type": "category",
+          "settings": {
+            "title": "New Arrivals",
+            "link": ""
+          }
+        },
+        "cat_3": {
+          "type": "category",
+          "settings": {
+            "title": "Trekking Shoes",
+            "link": ""
+          }
+        },
+        "cat_4": {
+          "type": "category",
+          "settings": {
+            "title": "Men's Sneakers",
+            "link": ""
+          }
+        },
+        "cat_5": {
+          "type": "category",
+          "settings": {
+            "title": "Women's Sneakers",
+            "link": ""
+          }
+        },
+        "cat_6": {
+          "type": "category",
+          "settings": {
+            "title": "Kid's Sneakers",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "cat_1",
+        "cat_2",
+        "cat_3",
+        "cat_4",
+        "cat_5",
+        "cat_6"
+      ],
+      "settings": {
+        "title": "Shop By Category",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "shop_by_sport_custom": {
+      "type": "shop-by-sport",
+      "blocks": {
+        "card_1": {
+          "type": "sport_card",
+          "settings": {
+            "link": ""
+          }
+        },
+        "card_2": {
+          "type": "sport_card",
+          "settings": {
+            "link": ""
+          }
+        },
+        "card_3": {
+          "type": "sport_card",
+          "settings": {
+            "link": ""
+          }
+        },
+        "card_4": {
+          "type": "sport_card",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card_4"
+      ],
+      "settings": {
+        "title": "Shop by Sport",
+        "bg_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "footwear_essentials": {
+      "type": "footwear-essentials",
+      "blocks": {
+        "cat_1": {
+          "type": "category_card",
+          "settings": {
+            "label": "WALKING SHOES",
+            "link": ""
+          }
+        },
+        "cat_2": {
+          "type": "category_card",
+          "settings": {
+            "label": "SLIP-ONS",
+            "link": ""
+          }
+        },
+        "cat_3": {
+          "type": "category_card",
+          "settings": {
+            "label": "SLIP-INS",
+            "link": ""
+          }
+        },
+        "cat_4": {
+          "type": "category_card",
+          "settings": {
+            "label": "CASUAL SNEAKERS",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "cat_1",
+        "cat_2",
+        "cat_3",
+        "cat_4"
+      ],
+      "settings": {
+        "title": "Footwear Essentials",
+        "bg_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "trending_collections": {
+      "type": "trending-collections",
+      "blocks": {
+        "banner_1": {
+          "type": "collection_banner",
+          "settings": {
+            "link": ""
+          }
+        },
+        "banner_2": {
+          "type": "collection_banner",
+          "settings": {
+            "link": ""
+          }
+        },
+        "banner_3": {
+          "type": "collection_banner",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "banner_1",
+        "banner_2",
+        "banner_3"
+      ],
+      "settings": {
+        "title": "Trending Collections",
+        "bg_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "product_list_themegen": {
@@ -462,6 +666,12 @@
                     "type_preset": "paragraph",
                     "width": "100%",
                     "alignment": "center",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -474,6 +684,7 @@
                   "name": "t:names.swatches",
                   "settings": {
                     "product_swatches_alignment": "flex-start",
+                    "product_swatches_alignment_mobile": "flex-start",
                     "hide_padding": false,
                     "product_swatches_padding_top": 4,
                     "product_swatches_padding_bottom": 0,
@@ -504,6 +715,7 @@
         "max_products": 4,
         "columns": 4,
         "mobile_columns": "1",
+        "mobile_card_size": "60cqw",
         "columns_gap": 0,
         "rows_gap": 36,
         "icons_style": "arrow",
@@ -630,7 +842,9 @@
             "image": "shopify://shop_images/shoes-minimal-4.jpg",
             "link": "",
             "video_loop": true,
-            "video_autoplay": false
+            "video_autoplay": false,
+            "image_position": "cover",
+            "video_position": "cover"
           },
           "blocks": {}
         },
@@ -740,7 +954,9 @@
             "image": "shopify://shop_images/shoes-minimal-2.jpg",
             "link": "",
             "video_loop": true,
-            "video_autoplay": false
+            "video_autoplay": false,
+            "image_position": "cover",
+            "video_position": "cover"
           },
           "blocks": {}
         },
@@ -838,6 +1054,17 @@
         "padding-block-end": 0
       }
     },
+    "google_reviews": {
+      "type": "google-reviews",
+      "settings": {
+        "business_name": "SAI SHOES",
+        "place_id": "ChIJsYWzD4BN4DsRpRrjtQJjckE",
+        "overall_rating": "4.8",
+        "review_count": 120,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "marquee_KN4PYb": {
       "type": "marquee",
       "blocks": {
@@ -878,135 +1105,6 @@
         "padding-block-end": 24,
         "gap_between_elements": 24
       }
-    },
-    "shop_by_sport_custom": {
-      "type": "shop-by-sport",
-      "blocks": {
-        "card_1": {
-          "type": "sport_card"
-        },
-        "card_2": {
-          "type": "sport_card"
-        },
-        "card_3": {
-          "type": "sport_card"
-        },
-        "card_4": {
-          "type": "sport_card"
-        }
-      },
-      "block_order": [
-        "card_1",
-        "card_2",
-        "card_3",
-        "card_4"
-      ],
-      "settings": {
-        "title": "Shop by Sport",
-        "bg_color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "footwear_essentials": {
-      "type": "footwear-essentials",
-      "blocks": {
-        "cat_1": { "type": "category_card", "settings": { "label": "WALKING SHOES" } },
-        "cat_2": { "type": "category_card", "settings": { "label": "SLIP-ONS" } },
-        "cat_3": { "type": "category_card", "settings": { "label": "SLIP-INS" } },
-        "cat_4": { "type": "category_card", "settings": { "label": "CASUAL SNEAKERS" } }
-      },
-      "block_order": [
-        "cat_1", "cat_2", "cat_3", "cat_4"
-      ],
-      "settings": {
-        "title": "Footwear Essentials",
-        "bg_color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "promo_product_carousel": {
-      "type": "promo-product-carousel",
-      "settings": {
-        "title": "New Arrivals",
-        "subtitle": "Get up to 20% Off*",
-        "collection": "all",
-        "max_products": 8,
-        "show_ribbon": true,
-        "ribbon_text": "NEW LAUNCH",
-        "show_view_all": true,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "shop_by_category": {
-      "type": "shop-by-category",
-      "blocks": {
-        "cat_1": { "type": "category", "settings": { "title": "Best Seller" } },
-        "cat_2": { "type": "category", "settings": { "title": "New Arrivals" } },
-        "cat_3": { "type": "category", "settings": { "title": "Trekking Shoes" } },
-        "cat_4": { "type": "category", "settings": { "title": "Men's Sneakers" } },
-        "cat_5": { "type": "category", "settings": { "title": "Women's Sneakers" } },
-        "cat_6": { "type": "category", "settings": { "title": "Kid's Sneakers" } }
-      },
-      "block_order": [
-        "cat_1", "cat_2", "cat_3", "cat_4", "cat_5", "cat_6"
-      ],
-      "settings": {
-        "title": "Shop By Category",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "trending_collections": {
-      "type": "trending-collections",
-      "blocks": {
-        "banner_1": { "type": "collection_banner" },
-        "banner_2": { "type": "collection_banner" },
-        "banner_3": { "type": "collection_banner" }
-      },
-      "block_order": [
-        "banner_1", "banner_2", "banner_3"
-      ],
-      "settings": {
-        "title": "Trending Collections",
-        "bg_color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "google_reviews": {
-      "type": "google-reviews",
-      "settings": {
-        "business_name": "SAI SHOES",
-        "place_id": "ChIJsYWzD4BN4DsRpRrjtQJjckE",
-        "overall_rating": "4.8",
-        "review_count": 120
-      },
-      "blocks": {},
-      "block_order": []
-    },
-    "store_locator": {
-      "type": "store-locator",
-      "blocks": {
-        "store_1": {
-          "type": "store",
-          "settings": {
-            "store_name": "RedTape Flagship",
-            "address": "123 Main Street\nNew Delhi, India",
-            "phone": "+91 9876543210",
-            "hours": "Mon-Sun: 10AM - 9PM"
-          }
-        }
-      },
-      "block_order": [
-        "store_1"
-      ],
-      "settings": {
-        "title": "Find Our Stores",
-        "map_embed_code": ""
-      }
     }
   },
   "order": [
@@ -1021,7 +1119,6 @@
     "media_with_content_xMM9EF",
     "media_with_content_nrnzPh",
     "google_reviews",
-    "store_locator",
     "marquee_KN4PYb"
   ]
 }
