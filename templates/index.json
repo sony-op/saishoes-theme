@@ -976,6 +976,17 @@
         "padding_bottom": 40
       }
     },
+    "google_reviews": {
+      "type": "google-reviews",
+      "settings": {
+        "business_name": "SAI SHOES",
+        "place_id": "ChIJsYWzD4BN4DsRpRrjtQJjckE",
+        "overall_rating": "4.8",
+        "review_count": 120
+      },
+      "blocks": {},
+      "block_order": []
+    },
     "store_locator": {
       "type": "store-locator",
       "blocks": {
@@ -1009,6 +1020,7 @@
     "section_x8mrnx",
     "media_with_content_xMM9EF",
     "media_with_content_nrnzPh",
+    "google_reviews",
     "store_locator",
     "marquee_KN4PYb"
   ]
