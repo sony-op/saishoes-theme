@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
 /* ============================================================================
    Aesthetic Enhancements - SAI SHOES (Skechers 1:1 Layout)
    ============================================================================ */
@@ -75,16 +77,27 @@ header-component .header__row {
 
 /* SAI SHOES Logo mimicking Skechers */
 .skechers-logo {
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.skechers-logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+.skechers-logo-name {
   font-family: 'Arial Black', Impact, sans-serif !important;
   font-size: 32px !important;
   font-style: italic !important;
   color: var(--skechers-blue) !important;
   letter-spacing: -1px;
   text-transform: uppercase;
-  text-decoration: none !important;
-  display: flex;
-  align-items: center;
-  margin-right: 40px;
+  line-height: 1;
 }
 
 /* Skechers Main Nav */
@@ -561,12 +574,12 @@ header-actions {
   }
   
   /* Shrink Logo for Mobile */
-  .skechers-logo {
-    font-size: 24px !important;
-    margin-right: 0 !important;
-  }
-  .skechers-logo img {
+  .skechers-logo-img {
     height: 32px !important;
+    margin-right: 8px !important;
+  }
+  .skechers-logo-name {
+    font-size: 24px !important;
   }
 
   /* Header adjustments */
@@ -1031,5 +1044,146 @@ header-actions {
   }
   .footer-container {
     padding: 0 20px;
+  }
+}
+/* ==========================================
+   CART PAGE ENHANCEMENTS
+   ========================================== */
+.cart-page {
+  padding-top: 40px !important;
+  padding-bottom: 80px !important;
+  font-family: var(--font-body-family) !important;
+}
+
+.cart-page__title h1 {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  margin-bottom: 30px !important;
+  border-bottom: 2px solid #000;
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+/* Cart Items Styling */
+.cart-item {
+  border-bottom: 1px solid #eeeeee;
+  padding: 24px 0 !important;
+}
+
+.cart-item__name {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cart-item__price {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+}
+
+/* Quantity Selector Styling */
+.quantity-selector {
+  border: 1px solid #cccccc !important;
+  border-radius: 4px !important;
+  background: #ffffff !important;
+  display: inline-flex !important;
+  align-items: center;
+}
+
+.quantity-selector button {
+  background: transparent !important;
+  border: none !important;
+  padding: 8px 12px !important;
+  cursor: pointer;
+  color: #333;
+}
+
+.quantity-selector input {
+  width: 40px !important;
+  text-align: center !important;
+  border: none !important;
+  font-weight: 700 !important;
+}
+
+/* Cart Summary Styling (Fixing Clarity) */
+.cart-page__summary {
+  background-color: #fafafa !important;
+  padding: 30px !important;
+  border: 1px solid #eaeaea;
+  height: fit-content !important;
+}
+
+.cart-summary__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #000 !important; /* Force high contrast */
+  font-size: 14px !important;
+}
+
+.cart-summary__item--total {
+  border-top: 1px solid #dddddd;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-weight: 800 !important;
+  font-size: 18px !important;
+}
+
+.cart-summary__item--total .cart-summary__label,
+.cart-summary__item--total .cart-summary__value {
+  color: #000 !important;
+  font-size: 20px !important;
+}
+
+/* Text Clarity Fix for Summary */
+.cart-summary p, 
+.cart-summary span, 
+.cart-summary label, 
+.cart-summary div {
+  color: #000000 !important; /* Absolute black for maximum clarity */
+  opacity: 1 !important;
+}
+
+/* Discount Input styling */
+.cart-summary .field__input {
+  background: #fff !important;
+  border: 1px solid #ccc !important;
+  color: #000 !important;
+  padding: 12px !important;
+}
+
+/* Checkout Button Styling */
+.cart-summary .button, 
+.cart-page .button--checkout,
+#checkout-button {
+  background-color: var(--skechers-blue) !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 18px 30px !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  width: 100% !important;
+  margin-top: 20px !important;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cart-summary .button:hover {
+  background-color: #333333 !important;
+}
+
+/* Mobile Tweaks for Cart */
+@media screen and (max-width: 749px) {
+  .cart-page__title h1 {
+    font-size: 24px !important;
+  }
+  .cart-page__summary {
+    margin-top: 30px;
+    padding: 20px !important;
   }
 }

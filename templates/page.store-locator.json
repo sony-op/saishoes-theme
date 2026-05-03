@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "store-locator",
+      "settings": {
+        "title": "Our Stores",
+        "address": "Surat, Gujarat, India",
+        "phone": "+91 98765 43210",
+        "hours": "Mon – Sun: 10:00 AM – 9:00 PM"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

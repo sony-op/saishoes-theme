@@ -50,7 +50,10 @@
 
   capture logo
     assign logo_url = 'saishoes_logo.png' | asset_url
-    echo '<a href="/" class="skechers-logo"><img src="' | append: logo_url | append: '" alt="SAI SHOES" style="height: 45px; width: auto; object-fit: contain;"></a>'
+    echo '<a href="/" class="skechers-logo">'
+    echo '<img src="' | append: logo_url | append: '" alt="SAI SHOES" class="skechers-logo-img">'
+    echo '<span class="skechers-logo-name">SAI SHOES</span>'
+    echo '</a>'
   endcapture
 
   # theme-check-disable UniqueStaticBlockId
