@@ -1,0 +1,131 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "shopify": {
+    "sentence": {
+      "words_connector": ",",
+      "two_words_connector": "અને",
+      "last_word_connector": ", અને"
+    },
+    "checkout": {
+      "general": {
+        "page_title": "ચકાસણી કરો",
+        "error_page_title": "ભૂલ",
+        "skip_to_content": "સામગ્રી પર જાઓ",
+        "breadcrumb": "બ્રેડક્રમ્બ",
+        "continue_button_label": "ચાલુ રાખો",
+        "complete_purchase_button_label": "ઓર્ડર પૂર્ણ કરો",
+        "pay_now_button_label": "હમણાં ચૂકવણી કરો",
+        "finalize_order_accessibility_label": "ઓર્ડરને અંતિમ સ્વરૂપ આપો",
+        "authenticate_purchase_button_label": "ચુકવણી પ્રમાણિત કરો",
+        "edit_link_label": "સંપાદિત કરો",
+        "all_rights_reserved": "સર્વાધિકાર સુરક્ષિત %{shop_name}",
+        "print_policies_link_label": "છાપો",
+        "cart": "કાર્ટ",
+        "close_modal_label": "બંધ કરો",
+        "close_notice_label": "બંધ કરો",
+        "expand_notice_label": "વધુ જુઓ",
+        "continue_to_shipping_method": "શિપિંગ ચાલુ રાખો",
+        "continue_to_payment_method": "ચુકવણી માટે આગળ વધો",
+        "continue_to_review": "ઓર્ડરની સમીક્ષા કરો",
+        "back_to_cart": "કાર્ટ પર પાછા ફરો",
+        "back_to_contact_information": "માહિતી પર પાછા ફરો",
+        "back_to_shipping_method": "શિપિંગ પર પાછા ફરો",
+        "back_to_payment_method": "ચુકવણી પર પાછા ફરો",
+        "choose_shipping_method": "શિપિંગ પદ્ધતિ પસંદ કરો",
+        "choose_payment_method": "ચુકવણી પદ્ધતિ પસંદ કરો",
+        "choose_billing_address": "બિલિંગ સરનામું પસંદ કરો",
+        "contact_us_html": "વધુ માહિતી માટે અમારો સંપર્ક કરો",
+        "autocomplete_title": "સૂચનો",
+        "autocomplete_single_item": "૧ વસ્તુ ઉપલબ્ધ છે",
+        "autocomplete_multi_item": "{{number}} વસ્તુઓ ઉપલબ્ધ છે",
+        "autocomplete_close": "સૂચનો બંધ કરો",
+        "forwarding_indicator": {
+          "new_window": "નવી વિન્ડોમાં ખુલે છે.",
+          "external": "બાહ્ય વેબસાઇટ ખોલે છે.",
+          "external_and_new_window": "નવી વિંડોમાં બાહ્ય વેબસાઇટ ખોલે છે."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - ચેકઆઉટ"
+        },
+        "tooltip_accessibility_label": "વધુ માહિતી",
+        "qr_code": "QR કોડ",
+        "errors": {
+          "only_empty_terms_accepted": "આ નીતિ ફક્ત ખાલી શરતો સ્વીકારે છે.",
+          "session_identifier_not_unique_error": "તમારા ઓર્ડરમાં કંઈક ખોટું થયું છે, ફરીથી ચેક આઉટ કરવાનો પ્રયાસ કરો.",
+          "line_item_limit_reached": "વધુમાં વધુ વસ્તુઓ ઉમેરાઈ ગઈ છે.",
+          "session_is_already_finished": "આ ચેકઆઉટ સત્ર પહેલાથી જ ફાઇનલ થઈ ગયું છે.",
+          "merchandise": {
+            "only_value_constraint": "માલના ઇનપુટમાં માત્ર ચોક્કસ મૂલ્યો જ માન્ય છે.",
+            "merchandise_not_found": "ઉત્પાદન મળ્યું નથી.",
+            "merchandise_variant_not_found": "ઉત્પાદનનો વિકલ્પ મળ્યો નથી.",
+            "merchandise_not_applicable": "પ્રોડક્ટ વેરિઅન્ટ ખરીદી શકાતો નથી.",
+            "mixed_currencies": "ચેકઆઉટમાં અલગ-અલગ કરન્સીવાળી લાઇન આઇટમ શામેલ છે.",
+            "bundle_products_not_supported_for_b2b": "આ સ્થાન માટે B2B ઓર્ડરમાં બંડલ કરેલી આઇટમ ઉમેરી શકાતી નથી.",
+            "gift_card_quantity_mismatch": "જ્યારે ગિફ્ટ કાર્ડ કોડ્સનો ઉલ્લેખ કરવામાં આવે, ત્યારે લાઇન આઇટમની સંખ્યા અને ગિફ્ટ કાર્ડ કોડ્સની સંખ્યા મેળ ખાતી હોવી જોઈએ.",
+            "gift_card_not_supported": "આ ચેકઆઉટ પર ગિફ્ટ કાર્ડ્સ સમર્થિત નથી.",
+            "gift_card_not_unique": "કોડ {{code}} સાથેનું ભેટ કાર્ડ આ ચેકઆઉટમાં એક કરતા વધુ વખત આવે છે. સરખામણી કરતા પહેલા કોડને ફોર્મેટ કરવામાં આવે છે.",
+            "gift_card_used": "ગિફ્ટ કાર્ડ કોડ {{code}} પહેલેથી જ એક ગિફ્ટ કાર્ડને સોંપવામાં આવેલો છે. તુલના કરતા પહેલા કોડ ફોર્મેટ કરવામાં આવે છે.",
+            "gift_card_invalid": "ગિફ્ટ કાર્ડ કોડ {{code}} અમાન્ય છે.",
+            "gift_card_code_changed": "ભેટ કાર્ડ કોડ {{proposed_code}} ને ફોર્મેટિંગ નિયમોનું પાલન કરવા માટે {{formatted_code}} માં બદલવામાં આવ્યો હતો.",
+            "gift_card_with_attributes_not_supported": "કસ્ટમ એટ્રિબ્યુટ્સ સાથેના ગિફ્ટ કાર્ડ આ ચેકઆઉટ પર સપોર્ટેડ નથી.",
+            "gift_card_with_components_not_supported": "ઘટકોવાળા ગિફ્ટ કાર્ડ આ ચેકઆઉટ પર સમર્થિત નથી.",
+            "selling_plan_mismatch": "સબ્સ્ક્રિપ્શન અપડેટ કરવામાં આવ્યું છે.",
+            "selling_plan_not_supported": "સબ્સ્ક્રિપ્શન્સ સપોર્ટેડ નથી.",
+            "selling_plan_not_supported_b2b": "B2B ચેકઆઉટ માટે સબ્સ્ક્રિપ્શન્સ સપોર્ટેડ નથી.",
+            "price_mismatch": "આ માલસામાન માટે અગાઉ સૂચવેલ કિંમત અમાન્ય હતી અને તેને અપડેટ કરવામાં આવી છે.",
+            "inventory_not_found": "આ માલસામાન માટે કોઈ ઇન્વેન્ટરી મળી નથી.",
+            "product_not_published": "ઉત્પાદન પ્રકાશિત થયેલ નથી.",
+            "product_not_published_in_buyer_location": "વર્તમાન ખરીદદારના સ્થાન પર આ પ્રોડક્ટ ઉપલબ્ધ નથી.",
+            "duplicated_stable_id": "આ મર્ચન્ડાઇઝ લાઇન અન્ય લાઇન જેવી જ સ્ટેબલ-ID ધરાવે છે.",
+            "minimum_quantity_not_met": "કેટલીક વસ્તુઓનો જથ્થો ન્યૂનતમ આવશ્યકતા પૂરી કરતો નથી.",
+            "maximum_quantity_exceeded": "કેટલીક વસ્તુઓનો જથ્થો મંજૂર કરાયેલ મહત્તમ જથ્થા કરતાં વધી ગયો છે.",
+            "quantity_increment_not_met": "કેટલીક વસ્તુઓની માત્રા ઓર્ડર મર્યાદાને પૂર્ણ કરતી નથી.",
+            "quantity_rules_not_met": "કેટલીક વસ્તુઓની માત્રા ઓર્ડર મર્યાદાને પૂર્ણ કરતી નથી.",
+            "bundle_requires_components": "આ બંડલ કરેલ વેપારી માલના કોઈ ઘટકો નથી.",
+            "combined_listing_parent_not_purchasable": "સંયુક્ત સૂચિના મુખ્ય ઉત્પાદનો સીધા ખરીદી શકાતા નથી.",
+            "title_too_long": "પ્રોડક્ટનું શીર્ષક ઘણું લાંબુ છે.",
+            "title_empty": "પ્રોડક્ટનું શીર્ષક ખાલી છે."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "કંપની સંપર્કને કંપનીનો ઍક્સેસ નથી.",
+            "customer_account_required": "ચાલુ રાખવા માટે તમારે સાઇન ઇન કરવું પડશે.",
+            "company_location_required": "ચાલુ રાખવા માટે ગ્રાહકે કંપનીનું સ્થાન પસંદ કરવું આવશ્યક છે.",
+            "company_purchase_permission_required": "ગ્રાહકને કંપનીના ઓર્ડર આપવાની પરવાનગી નથી.",
+            "personal_order_not_allowed": "આ દુકાન માટે વ્યક્તિગત ઓર્ડરની પરવાનગી નથી.",
+            "lost_access_to_company": "ગ્રાહકે કોઈપણ કંપનીની ઍક્સેસ ગુમાવી દીધી છે.",
+            "contact_info_does_not_match_customer_account": "સંપર્ક માહિતી તમે જે એકાઉન્ટમાં સાઇન ઇન કર્યું છે તેની સાથે મેળ ખાતી હોવી આવશ્યક છે.",
+            "phone_number_does_not_match_expected_pattern": "નિર્દિષ્ટ ફોન નંબર અપેક્ષિત પેટર્ન સાથે મેળ ખાતો નથી.",
+            "email_required": "જ્યારે સબસ્ક્રિપ્શનનો ઉપયોગ કરીને માલ ખરીદવામાં આવે ત્યારે ઇમેઇલ આવશ્યક છે.",
+            "email_domain_is_invalid": "આ નિર્દિષ્ટ ડોમેઇનનું નિરાકરણ કરી શકાતું નથી.",
+            "missing_contact_method": "માન્ય સંપર્ક પદ્ધતિ ખૂટે છે.",
+            "checkout_completion_target_is_missing": "ચેકઆઉટ પૂર્ણતાનો લક્ષ્યાંક ખૂટે છે.",
+            "invalid_customer_profile": "એક અમાન્ય ગ્રાહક પ્રોફાઇલ પ્રદાન કરવામાં આવી હતી.",
+            "customer_profile_access_restricted": "ચેકઆઉટ પાસે ગ્રાહક પ્રોફાઇલ ઍક્સેસ કરવાની પરવાનગી નથી.",
+            "checkout_completion_target_is_invalid_proc": "અમાન્ય ચેકઆઉટ પૂર્ણતા લક્ષ્ય.",
+            "buyer_identity_presentment_currency_does_not_match": "તમારા ઑર્ડર પર પ્રક્રિયા કરવામાં સમસ્યા હતી. થોડીવારમાં ફરી પ્રયાસ કરો."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "કાર્ટમાં માત્ર એક ડિલિવરી લાઇન હોવી આવશ્યક છે.",
+            "wrong_number_of_delivery_lines": "માલસામાનના દરેક જૂથ માટે ડિલિવરી લાઇન સ્પષ્ટ કરવી આવશ્યક છે.",
+            "external_delivery_promise_error": "બાહ્ય ડિલિવરી પ્રોમિસ મેળવવામાં ભૂલ આવી.",
+            "options_instructions_invalid": "નિર્દિષ્ટ સૂચનાઓ અપેક્ષિત પેટર્ન સાથે મેળ ખાતી નથી.",
+            "destination_address_required": "આગળ વધવા માટે ગંતવ્ય સ્થાનના સરનામાની જરૂર પડશે.",
+            "pickup_points_unavailable": "પિકઅપ પોઈન્ટ્સ હાલમાં અનુપલબ્ધ છે.",
+            "local_pickup_delivery_line_detail_changed": "ચાલુ રાખવા માટે વર્તમાન સ્થાનિક પિકઅપ ડિલિવરી વ્યૂહરચના બદલવી આવશ્યક છે.",
+            "selected_pickup_option_no_longer_available": "અગાઉ પસંદ કરેલ પિકઅપ વિકલ્પ હવે ઉપલબ્ધ નથી.",
+            "local_pickup_no_delivery_strategy_available": "સ્થાનિક પિકઅપ ડિલિવરી વ્યૂહરચના ઉપલબ્ધ નથી.",
+            "origin_location_id_required": "જ્યારે રિટેલ ડિલિવરી પદ્ધતિની વિનંતી કરવામાં આવે ત્યારે મૂળ સ્થાન ID આવશ્યક છે."
+          }
+        }
+      }
+    }
+  }
+}
