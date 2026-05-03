@@ -17,7 +17,7 @@
         "announcement_cXDVCA": {
           "type": "_announcement",
           "settings": {
-            "text": "SAI SHOES Plus is right now available Online and Stores in Mumbai. Join Now for Free",
+            "text": "SAI SHOES Plus is right now available Online and Stores in surat. Join Now for Free",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "0.875rem",
@@ -44,16 +44,6 @@
     "header_section": {
       "type": "header",
       "blocks": {
-        "header-logo": {
-          "type": "_header-logo",
-          "static": true,
-          "settings": {
-            "hide_logo_on_home_page": false,
-            "padding-block-start": 0,
-            "padding-block-end": 0
-          },
-          "blocks": {}
-        },
         "header-menu": {
           "type": "_header-menu",
           "static": true,
@@ -81,12 +71,15 @@
         "logo_position": "left",
         "menu_position": "center",
         "menu_row": "top",
+        "customer_account_menu": "customer-account-main-menu",
         "show_search": true,
         "search_position": "right",
         "search_row": "top",
         "show_country": true,
         "country_selector_style": false,
         "show_language": true,
+        "localization_font": "heading",
+        "localization_font_size": "1rem",
         "localization_position": "right",
         "localization_row": "top",
         "section_width": "full-width",
@@ -95,6 +88,10 @@
         "divider_width": 0,
         "divider_size": "page-width",
         "border_width": 0,
+        "actions_display_style": "icon",
+        "actions_font_size": "0.875rem",
+        "actions_font": "body",
+        "actions_text_case": "none",
         "color_scheme_top": "scheme-2",
         "color_scheme_bottom": "",
         "color_scheme_transparent": "scheme-6",
