@@ -1,0 +1,117 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "content": {
+    "search_results_resource_collections": "संग्रह",
+    "search_results_resource_pages": "पृष्ठ",
+    "search_results_resource_products": "उत्पाद",
+    "search_results_resource_products_count": {
+      "one": "{{ count }} उत्पाद",
+      "other": "{{ count }} उत्पाद"
+    },
+    "search_results_resource_queries": "खोज के सुझाव",
+    "total_items": "कुल वस्तुएं",
+    "variant": "वेरिएंट",
+    "variant_total": "वैरिएंट कुल",
+    "view_cart": "कार्ट देखें",
+    "your_cart": "आपकी कार्ट",
+    "items_added_to_cart": {
+      "one": "कार्ट में 1 आइटम जोड़ा गया",
+      "other": "कार्ट में {{ count }} आइटम जोड़े गए"
+    },
+    "search_results_view_all": "सभी देखें",
+    "search_results_view_all_button": "सभी देखें",
+    "seller_note": "विशेष निर्देश",
+    "shipping_policy": "शिपिंग की गणना चेकआउट पर की जाएगी।",
+    "shipping_policy_html": "<a href=\"{{ link }}\">शिपिंग</a> का हिसाब चेकआउट पर लगाया जाएगा।",
+    "store_owner_link_html": "क्या आप स्टोर के मालिक हैं? <a href=\"{{ link }}\">यहां लॉग इन करें</a>",
+    "taxes_at_checkout_shipping_at_checkout_with_policy_html": "टैक्स, छूट और <a href=\"{{ link }}\">शिपिंग</a> का हिसाब चेकआउट पर लगाया जाएगा।",
+    "taxes_at_checkout_shipping_at_checkout_with_policy_without_discounts_html": "टैक्स और <a href=\"{{ link }}\">शिपिंग</a> का कैलकुलेशन चेकआउट के समय किया जाएगा।",
+    "taxes_at_checkout_shipping_at_checkout_without_policy": "टैक्स, छूट और शिपिंग का हिसाब चेकआउट पर लगाया जाएगा।",
+    "taxes_at_checkout_shipping_at_checkout_without_policy_without_discounts": "टैक्स और शिपिंग का हिसाब चेकआउट के समय लगाया जाएगा।",
+    "taxes_included": "कर शामिल हैं।",
+    "taxes_included_shipping_at_checkout_with_policy_html": "कर शामिल हैं। छूट और <a href=\"{{ link }}\">शिपिंग</a> चेकआउट पर गणना की जाती है।",
+    "taxes_included_shipping_at_checkout_with_policy_without_discounts_html": "कर शामिल हैं। शिपिंग की गणना चेकआउट के समय की जाती है।",
+    "taxes_included_shipping_at_checkout_without_policy": "कर सहित। छूट और शिपिंग का हिसाब चेकआउट पर लगाया जाएगा।",
+    "taxes_included_shipping_at_checkout_without_policy_without_discounts": "कर शामिल हैं। शिपिंग की गणना चेकआउट के समय की जाती है।",
+    "unavailable": "उपलब्ध नहीं है",
+    "use_fewer_filters_html": "कम फ़िल्टर का उपयोग करने का प्रयास करें, या <a class=\"{{ class }}\" href=\"{{ link }}\">सभी फ़िल्टर साफ़ करें</a>।",
+    "view_more_details": "अधिक विवरण देखें",
+    "volume_pricing_available": "थोक मूल्य निर्धारण उपलब्ध है",
+    "volume_pricing": "थोक मूल्य निर्धारण",
+    "at_price_each": "प्रति नग {{ price }}",
+    "each": "{{ price }}/प्रत्येक",
+    "each_abbreviation": "एक",
+    "price_at": "पर",
+    "price_range": "मूल्य सीमा",
+    "your_cart_is_empty": "आपकी कार्ट खाली है",
+    "product_count": "उत्पाद संख्या",
+    "errors": "त्रुटियाँ",
+    "wrong_password": "गलत पासवर्ड",
+    "recipient_form_send_to": "को भेजें",
+    "recipient_form_email_label": "प्राप्तकर्ता का ईमेल",
+    "recipient_form_email_label_my_email": "मेरा ईमेल",
+    "recipient_form_email_address": "प्राप्तकर्ता का ईमेल पता",
+    "recipient_form_name_label": "प्राप्तकर्ता का नाम (वैकल्पिक)",
+    "recipient_form_message": "संदेश (वैकल्पिक)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} वर्ण उपयोग किए गए",
+    "recipient_form_send_on_label": "को भेजें (वैकल्पिक)",
+    "recipient_form_fields_visible": "प्राप्तकर्ता प्रपत्र फ़ील्ड अब दिखाई दे रहे हैं",
+    "recipient_form_fields_hidden": "प्राप्तकर्ता प्रपत्र फ़ील्ड अब छिपे हुए हैं",
+    "recipient_form_error": "फ़ॉर्म सबमिट करने में कोई गड़बड़ हो गई थी।",
+    "product_custom_property_character_count": "{{ used_chars }}/{{ max_chars }} वर्ण उपयोग किए गए"
+  },
+  "fields": {
+    "separator": "को"
+  },
+  "gift_cards": {
+    "issued": {
+      "how_to_use_gift_card": "गिफ्ट कार्ड कोड का इस्तेमाल ऑनलाइन करें या स्टोर में QR कोड का उपयोग करें",
+      "title": "यह रहा आपका {{ shop }} के लिए {{ value }} का उपहार कार्ड शेष!",
+      "subtext": "आपका उपहार कार्ड",
+      "shop_link": "ऑनलाइन स्टोर पर जाएँ",
+      "add_to_apple_wallet": "Apple Wallet में जोड़ें",
+      "qr_image_alt": "क्यूआर कोड — उपहार कार्ड रिडीम करने के लिए स्कैन करें",
+      "copy_code": "उपहार कार्ड कोड कॉपी करें",
+      "expiration_date": "इस दिन समाप्त होगा: {{ expires_on }}",
+      "copy_code_success": "कोड सफलतापूर्वक कॉपी किया गया",
+      "expired": "समाप्त"
+    }
+  },
+  "placeholders": {
+    "password": "पासवर्ड",
+    "search": "खोजें",
+    "product_title": "उत्पाद शीर्षक",
+    "collection_title": "संग्रह का शीर्षक",
+    "blog_posts": "ब्लॉग पोस्ट",
+    "blog_post_title": "शीर्षक",
+    "blog_post_author": "लेखक",
+    "blog_post_date": "दिनांक",
+    "blog_post_description": "आपके ब्लॉग पोस्ट की सामग्री का एक अंश"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "कार्ट में जोड़ें",
+      "adding_to_cart": "जोड़ रहे हैं...",
+      "added_to_cart": "कार्ट में जोड़ा गया",
+      "add_to_cart_error": "कार्ट में जोड़ने में त्रुटि",
+      "quantity_error_max": "इस आइटम की अधिकतम संख्या {{ maximum }} है",
+      "sold_out": "बिक गया",
+      "unavailable": "उपलब्ध नहीं है",
+      "quantity": "मात्रा",
+      "quantity_increments": "{{ increment }} की वृद्धि",
+      "quantity_minimum": "कम से कम {{ minimum }}",
+      "quantity_maximum": "अधिकतम {{ maximum }}",
+      "in_cart": "कार्ट में",
+      "default_title": "डिफ़ॉल्ट शीर्षक",
+      "sticky_add_to_cart": "कार्ट में तुरंत जोड़ें बार"
+    }
+  }
+}
