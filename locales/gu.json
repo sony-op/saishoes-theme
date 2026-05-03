@@ -380,6 +380,148 @@
         "emirate_label": "અમીરાત",
         "emirate_placeholder": "અમીરાત",
         "state_and_territory_label": "રાજ્ય/પ્રદેશ"
+      },
+      "payment": {
+        "usdc_cashback_terms": "શરતો અને મર્યાદાઓ લાગુ પડે છે",
+        "purchase_options_card_update_agreement_label_html": "તમારી ચુકવણી પદ્ધતિને અપડેટ કરીને, તમે આ સ્ટોરની <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">રદ્દીકરણ નીતિ</a> અનુસાર કોઈપણ રિકરિંગ અથવા મુલતવી રાખેલ ખરીદી માટે ચૂકવણીને અધિકૃત કરો છો.",
+        "subscription_card_update_agreement_label": "ચુકવણી પદ્ધતિ બદલવાથી તમારા સબ્સ્ક્રિપ્શન અને ભવિષ્યની રિકરિંગ ચુકવણીઓ અપડેટ થશે.",
+        "subscription_agreement_label": "તમારા કાર્ટમાં એક અથવા વધુ આઇટમ મુલતવી રાખેલી અથવા સબ્સ્ક્રિપ્શન ખરીદી છે. તમારી ચુકવણી ચાલુ રાખીને, તમે સંમત થાઓ છો કે તમારી ચુકવણી પદ્ધતિ પર આ પૃષ્ઠ પર સૂચિબદ્ધ કિંમત અને આવર્તન પર આપમેળે શુલ્ક લેવામાં આવશે જ્યાં સુધી તે સમાપ્ત ન થાય અથવા તમે રદ ન કરો. બધા રદ્દીકરણો %{cancelled} ને આધીન છે.",
+        "subscription_agreement_cancelled": "રદ્દીકરણ નીતિ",
+        "subscription_heading": "સબ્સ્ક્રિપ્શન કરાર",
+        "subscription_agreement_label_html": "હું સમજું છું કે હું સબ્સ્ક્રિપ્શન માટે સંમત છું. તે સૂચિબદ્ધ કિંમત અને આવર્તન પર રિન્યુ થશે જ્યાં સુધી તે સમાપ્ત ન થાય અથવા\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">રદ</a>ન થાય.\n",
+        "purchase_options_agreement_label": "તમારા કાર્ટમાં એક અથવા વધુ આઇટમ્સ વિલંબિત, સબ્સ્ક્રિપ્શન અથવા રિકરિંગ ખરીદી છે. તમારી ચુકવણી ચાલુ રાખવા દ્વારા, તમે સંમત થાઓ છો કે તમારી ચુકવણી પદ્ધતિ આપમેળે આ પૃષ્ઠ પર સૂચિબદ્ધ કિંમત અને આવર્તન પર ચાર્જ કરવામાં આવશે જ્યાં સુધી તે સમાપ્ત ન થાય અથવા તમે રદ ન કરો. બધા રદ્દીકરણો %{cancellation_policy_label}ને આધિન છે.",
+        "purchase_options_agreement_label_html": "હું સમજું છું કે મારા કાર્ટમાં એક અથવા વધુ આઇટમ મુલતવી, સબ્સ્ક્રિપ્શન અથવા રિકરિંગ ખરીદી છે. ચાલુ રાખીને, હું\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">રદ કરવાની નીતિ</a>\nસાથે સંમત થાઉં છું અને જ્યાં સુધી મારો ઓર્ડર પૂરો ન થાય અથવા જો મંજૂરી હોય તો હું રદ ન કરું ત્યાં સુધી આ પૃષ્ઠ પર સૂચિબદ્ધ કિંમતો, આવર્તન અને તારીખો પર મારી ચુકવણી પદ્ધતિ પર શુલ્ક લેવા માટે તમને અધિકૃત કરું છું.",
+        "purchase_options_agreement_label_wallets": "તમારી ચુકવણી ચાલુ રાખીને, તમે આ પૃષ્ઠ પર સૂચિબદ્ધ ભવિષ્યના શુલ્ક અને રદ કરવાની નીતિ સાથે સંમત થાઓ છો.",
+        "change_currency_section_description": "ચલણનો વિકલ્પ પસંદ કરો",
+        "no_real_orders_dev_store": "આ સ્ટોર વાસ્તવિક ઓર્ડર અથવા વાસ્તવિક ચૂકવણી સ્વીકારી શકતો નથી.",
+        "waiting_on_payment_methods": "ઉપલબ્ધ ચુકવણી પદ્ધતિઓ મેળવી રહ્યું છે...",
+        "apple_pay_payment_error": "તમારી ચુકવણી પૂર્ણ થઈ શકી નથી. ફરીથી પ્રયાસ કરો અથવા ચુકવણીની અલગ રીતનો ઉપયોગ કરો.",
+        "taxes_not_included": "કરવેરા શામેલ નથી",
+        "no_taxes_banner_content": "આ ઓર્ડર પર ટેક્સ લાગુ પડશે નહીં. એકવાર તમે પેમેન્ટ મેળવી લો, પછી ટેક્સ ઉમેરી શકાશે નહીં.",
+        "paypal": {
+          "connect": "તમારા PayPal એકાઉન્ટને કનેક્ટ કરવા માટે ક્લિક કરો"
+        },
+        "apple": {
+          "connect": "તમારા Apple Pay એકાઉન્ટને કનેક્ટ કરવા માટે ક્લિક કરો",
+          "not_available": "આ બ્રાઉઝરમાં Apple Pay ઉપલબ્ધ નથી. તમારા Apple Pay એકાઉન્ટને કનેક્ટ કરવા માટે તમારે Apple ડિવાઇસ પર Safari નો ઉપયોગ કરવાની જરૂર પડશે."
+        },
+        "google": {
+          "connect": "તમારા Google Pay એકાઉન્ટ સાથે કનેક્ટ કરવા માટે ક્લિક કરો",
+          "error_authorizing": "ચુકવણી અધિકૃત કરવામાં ભૂલ આવી"
+        },
+        "account_connected": "એકાઉન્ટ કનેક્ટ થયું.",
+        "mor_disclaimer_html": "નીચે ક્લિક કરીને અને તમારો ઓર્ડર પૂરો કરીને, તમે ગ્લોબલ-ઇ પાસેથી આ ટ્રાન્ઝેક્શન માટે રેકોર્ડના વેપારી તરીકે તમારી વસ્તુઓ ખરીદવા માટે, ગ્લોબલ-ઇના <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">નિયમો અને શરતો</a> અને <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">ગોપનીયતા નીતિ</a> અનુસાર સંમત થાઓ છો. ગ્લોબલ-ઇ %{shop_name} માટે આંતરરાષ્ટ્રીય પૂર્તિ સેવા પ્રદાતા છે.",
+        "pending_payment": {
+          "due_notice": "તમારી %{amount_due} ની ચુકવણી %{due_date} ના રોજ બાકી છે.",
+          "multibanco": {
+            "buyer_action_info": "તમારું %{amount_due}નું પેમેન્ટ બાકી છે.",
+            "instruction_html": "નીચે આપેલાં વિગતોનો ઉપયોગ કરીને તમારું પેમેન્ટ મલ્ટીબેન્કો (Multibanco) અથવા ઑનલાઇન કરો. પ્રશ્નો માટે અથવા ચુકવણીની વિગતો અપડેટ કરવા માટે, %{contact_us}.",
+            "entity": "એન્ટિટી",
+            "reference": "સંદર્ભ",
+            "amount": "રકમ",
+            "find_nearest_atm": "નજીકનું ATM શોધો"
+          }
+        },
+        "update_payment_method": "ચુકવણી પદ્ધતિ અપડેટ કરો",
+        "order_covered_by_store_credit_notice": "તમારો ઓર્ડર તમારા સ્ટોર ક્રેડિટ દ્વારા આવરી લેવામાં આવ્યો છે.",
+        "order_covered_by_redeemables_notice": "તમારો ઓર્ડર સુરક્ષિત છે.",
+        "store_credit": {
+          "label": "સ્ટોર ક્રેડિટ",
+          "apply_label": "સ્ટોર ક્રેડિટ લાગુ કરો",
+          "add_label": "સ્ટોર ક્રેડિટ ઉમેરો",
+          "manage_label": "સ્ટોર ક્રેડિટ મેનેજ કરો",
+          "buying_gift_card": "તમે ભેટ કાર્ડ ખરીદવા માટે સ્ટોર ક્રેડિટનો ઉપયોગ કરી શકતા નથી.",
+          "no_fixed_selling_plans": "તમે મુલતવી રાખેલા ખરીદી વિકલ્પો સાથે સ્ટોર ક્રેડિટનો ઉપયોગ કરી શકતા નથી."
+        },
+        "clear": "ચોખ્ખું",
+        "billing_must_match_shipping_notice": "તમારી ચુકવણી પદ્ધતિનું બિલિંગ સરનામું શિપિંગ સરનામાં સાથે મેળ ખાતું હોવું જોઈએ.",
+        "same_billing_address_checkbox_label": "બિલિંગ સરનામાં તરીકે શિપિંગ સરનામાંનો ઉપયોગ કરો",
+        "location_billing_address_label": "સ્થાન બિલિંગ સરનામું",
+        "fact_billing_address_label": "બિલિંગ સરનામું",
+        "location_shipping_address_label": "સ્થાન શિપિંગ સરનામું",
+        "use_order_billing_address_label": "ઓર્ડરનું બિલિંગ સરનામું વાપરો",
+        "use_location_billing_address_label": "સ્થાન બિલિંગ સરનામું વાપરો",
+        "use_location_shipping_address_label": "સ્થાન શિપિંગ સરનામું વાપરો",
+        "no_working_method_error": "આ સ્ટોર અત્યારે પેમેન્ટ સ્વીકારી શકતો નથી. આ પેજ રિફ્રેશ કરો અથવા પછીથી પાછા આવો.",
+        "brand_not_available": "આ સ્ટોર {{brand}} સ્વીકારતું નથી. ચૂકવણી કરવા માટે અન્ય કાર્ડનો ઉપયોગ કરો.",
+        "shipping_rate_updated": "ઉપલબ્ધ શિપિંગ પદ્ધતિઓ અપડેટ કરવામાં આવી છે. ચેકઆઉટ કરતા પહેલા તમારી પસંદગીની પુષ્ટિ કરો.",
+        "billing_address_invalid_phone": "ચાલુ રાખવા માટે {{label}} {{last_digits}} માટે તમારા બિલિંગ સરનામાંમાં ફોન નંબર અપડેટ કરો.",
+        "billing_address_invalid_phone_no_card": "ચાલુ રાખવા માટે તમારા બિલિંગ સરનામાંમાં ફોન નંબર અપડેટ કરો.",
+        "preview_not_available": {
+          "title": "પૂર્વાવલોકન ઉપલબ્ધ નથી",
+          "content": "ચિંતા કરશો નહીં, આ એક્સપ્રેસ ચેકઆઉટ તમારા ગ્રાહકો માટે કામ કરે છે.",
+          "button": "ઓકે"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "માન્ય ઇશ્યૂ તારીખ દાખલ કરો",
+              "issue_number": "માન્ય ઇશ્યૂ નંબર દાખલ કરો"
+            },
+            "invalid": {
+              "verification_value": "માન્ય CVV અથવા સુરક્ષા કોડ દાખલ કરો"
+            }
+          }
+        },
+        "simulated_checkout": "ઝલક ટૂંક સમયમાં આવી રહી છે",
+        "simulated_express_checkout": "તમારા પ્રદેશ અથવા બ્રાઉઝરને કારણે એડિટર પૂર્વાવલોકનમાં વૉલેટ્સ અનુપલબ્ધ છે",
+        "vaulting_agreement_label": "ઝડપી ચેકઆઉટ માટે %{company} સાથે મારી ચુકવણી માહિતી સાચવો.",
+        "business_customer_vaulting_payment_label": "ચેકઆઉટ પર આ ચુકવણી પદ્ધતિને સાચવો અને આ સ્થાન માટે ભવિષ્યની ખરીદી માટે %{company} ને ચાર્જ કરવા માટે અધિકૃત કરો. આ સ્થાન પર સોંપાયેલ તમામ સંપર્કો ચુકવણી પદ્ધતિનો ઉપયોગ કરી શકે છે.",
+        "business_customer_with_bank_account_vaulting_payment_label": "આ પેમેન્ટ પદ્ધતિને ચેકઆઉટ પર સેવ કરો અને જ્યાં સુધી તમે તેને રદ ન કરો ત્યાં સુધી આ સ્થાન માટે તમે મંજૂર કરો તે ભવિષ્યની ખરીદીઓ માટે તમારા એકાઉન્ટમાંથી ડેબિટ કરવા માટે %{company}ને અધિકૃત કરો. આ સ્થાન પર સોંપાયેલા તમામ સંપર્કો પેમેન્ટ પદ્ધતિનો ઉપયોગ કરી શકે છે.",
+        "purchase_options_and_vaulting_agreement_label": "તમારા કાર્ટમાં એક કે તેથી વધુ આઇટમ મુલતવી અથવા સબ્સ્ક્રિપ્શન ખરીદી છે. તમારા પેમેન્ટ સાથે ચાલુ રાખવાથી, તમે સંમત થાઓ છો કે તમારી પેમેન્ટ પદ્ધતિ આ પૃષ્ઠ પર સૂચિબદ્ધ કિંમત અને આવર્તન પર આપમેળે શુલ્ક લેવામાં આવશે જ્યાં સુધી તે સમાપ્ત ન થાય અથવા તમે રદ ન કરો. બધા રદીકરણો %{cancellation_policy_label}ને આધીન છે.",
+        "purchase_options_cancellation_policy_label": "રદ્દીકરણ નીતિ",
+        "use_different_credit_card_label": "બીજું કાર્ડ વાપરો.",
+        "saved_credit_card": "તમારું સેવ કરેલું ક્રેડિટ કાર્ડ",
+        "saved_credit_card_info": "છેલ્લા ચાર અંક",
+        "saved_credit_card_cvv_verification": "ચકાસણી હેતુઓ માટે, તમારા કાર્ડનો સુરક્ષા કોડ દાખલ કરો.",
+        "saved_credit_card_actions": {
+          "edit": "સંપાદિત કરો",
+          "delete": "કાઢી નાખો"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "બધા સાચવેલા કાર્ડ્સ જુઓ",
+          "done": "થઈ ગયું",
+          "cancel": "રદ કરો"
+        },
+        "add_credit_card_modal": {
+          "title": "કાર્ડ ઉમેરો",
+          "save": "સાચવો",
+          "cancel": "રદ કરો"
+        },
+        "delete_credit_card_modal": {
+          "title": "કાર્ડ કાઢી નાખો",
+          "confirmation": "શું તમે ખરેખર {{lastDigits}} માં સમાપ્ત થતા {{brandName}} ને ડિલીટ કરવા માંગો છો?",
+          "cancel": "રદ કરો",
+          "delete": "કાઢી નાખો"
+        },
+        "edit_credit_card_modal": {
+          "title": "કાર્ડ સંપાદિત કરો",
+          "done": "થઈ ગયું",
+          "cancel": "રદ કરો",
+          "description": "તમે ફક્ત તમારા કાર્ડનું બિલિંગ સરનામું સુધારી શકો છો.",
+          "fields": {
+            "default": "ડિફોલ્ટ તરીકે સેટ કરો",
+            "card_number": "કાર્ડ નંબર",
+            "expiry": "મુદત પૂરી થવાની તારીખ",
+            "security_code": "સુરક્ષા કોડ",
+            "name": "કાર્ડ પરનું નામ",
+            "billing": "બિલ માટે"
+          }
+        },
+        "expired_cards_info": {
+          "one": "તમારું %{count} કાર્ડ સમાપ્ત થઈ ગયું છે, જે તમે તમારા એકાઉન્ટમાં જોઈ અને સંપાદિત કરી શકો છો.",
+          "other": "તમારા ખાતામાં %{count} કાર્ડ્સ એક્સપાયર થયેલાં છે, જેને તમે જોઈ અને સુધારી શકો છો."
+        },
+        "local_payment_method_receiver_notice": "તમારો ઓર્ડર આપ્યા પછી, તમને ચુકવણીની વિગતો પ્રાપ્ત થશે. {{dueDays}} દિવસની અંદર ATM અથવા ઑનલાઇન ચુકવણી કરો.",
+        "order_edit_banner_title": "{{amount_owed}} ની ચુકવણી આવશ્યક છે",
+        "order_edit_banner_subtitle": "તમારા ઓર્ડર {{order_number}} માં ફેરફાર કરવામાં આવ્યો છે. આ ફેરફારોની સમીક્ષા કરો, પછી તમારા ઓર્ડરની પુષ્ટિ કરવા માટે ચુકવણી કરો.",
+        "order_edit_banner_items_added": {
+          "one": "ઉમેરાયેલું",
+          "other": "ઉમેરવામાં આવ્યા %{count}"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "દૂર કરાયેલું"
+        }
       }
     }
   }
