@@ -66,7 +66,101 @@
     "recipient_form_fields_visible": "प्राप्तकर्ता प्रपत्र फ़ील्ड अब दिखाई दे रहे हैं",
     "recipient_form_fields_hidden": "प्राप्तकर्ता प्रपत्र फ़ील्ड अब छिपे हुए हैं",
     "recipient_form_error": "फ़ॉर्म सबमिट करने में कोई गड़बड़ हो गई थी।",
-    "product_custom_property_character_count": "{{ used_chars }}/{{ max_chars }} वर्ण उपयोग किए गए"
+    "product_custom_property_character_count": "{{ used_chars }}/{{ max_chars }} वर्ण उपयोग किए गए",
+    "cancel": "रद्द करें",
+    "discount": "छूट",
+    "account_title": "खाता",
+    "terms_and_policies": "नियम और नीतियां",
+    "account_title_personalized": "नमस्ते {{ first_name }}",
+    "account_orders": "आदेश",
+    "account_profile": "प्रोफ़ाइल",
+    "cart_estimated_total": "अनुमानित कुल योग",
+    "cart_title": "कार्ट",
+    "cart_subtotal": "उपयोग",
+    "cart_total": "कार्ट का कुल योग",
+    "checkout": "देखें",
+    "collection_placeholder": "संग्रह का शीर्षक",
+    "discount_code": "डिस्काउंट कोड",
+    "shipping_discount_error": "पता जोड़ने के बाद शिपिंग छूट चेकआउट पर दिखाई जाती है",
+    "discount_code_error": "छूट कोड आपकी कार्ट पर लागू नहीं किया जा सकता है",
+    "discounts": "छूट",
+    "duties_and_taxes_included": "ड्यूटी और टैक्स शामिल हैं।",
+    "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "ड्यूटी और कर शामिल हैं। छूट और <a href=\"{{ link }}\">शिपिंग</a> का हिसाब चेकआउट के समय लगाया जाएगा।",
+    "duties_and_taxes_included_shipping_at_checkout_with_policy_without_discounts_html": "शुल्क और कर शामिल हैं। शिपिंग का हिसाब चेकआउट के समय लगाया जाएगा।",
+    "duties_and_taxes_included_shipping_at_checkout_without_policy": "शुल्क और कर शामिल हैं। छूट और शिपिंग का हिसाब चेकआउट पर लगाया जाएगा।",
+    "duties_and_taxes_included_shipping_at_checkout_without_policy_without_discounts": "शुल्क और कर शामिल हैं। शिपिंग का हिसाब चेकआउट के समय लगाया जाएगा।",
+    "duties_included": "कर्तव्यों में शामिल हैं।",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "शुल्क शामिल हैं। टैक्स, छूट और <a href=\"{{ link }}\">शिपिंग</a> का हिसाब चेकआउट के समय लगाया जाएगा।",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_without_discounts_html": "शुल्क शामिल हैं। शिपिंग की गणना चेकआउट पर की जाती है।",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "शुल्क शामिल हैं। टैक्स, छूट और शिपिंग का हिसाब चेकआउट पर लगाया जाएगा।",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy_without_discounts": "शुल्क शामिल हैं। शिपिंग की गणना चेकआउट पर की जाती है।",
+    "featured_products": "विशेष रुप से प्रदर्शित उत्पाद",
+    "filters": "फ़िल्टर",
+    "grid_view": {
+      "default_view": "डिफ़ॉल्ट",
+      "grid_fieldset": "कॉलम ग्रिड",
+      "single_item": "अकेला",
+      "zoom_out": "ज़ूम आउट करें"
+    },
+    "inventory_low_stock_show_count": {
+      "one": "{{ count }} शेष हैं",
+      "other": "{{ count }} शेष हैं"
+    },
+    "inventory_low_stock": "कम स्टॉक",
+    "inventory_in_stock": "स्टॉक में",
+    "inventory_out_of_stock": "स्टॉक में नहीं है",
+    "item_count": {
+      "one": "{{ count }} आइटम",
+      "other": "{{ count }} चीज़ें"
+    },
+    "item_count_cutoff": "{{ count }} से ज़्यादा चीज़ें",
+    "language": "भाषा",
+    "localization_region_and_language": "क्षेत्र और भाषा",
+    "no_products_found": "कोई उत्पाद नहीं मिला।",
+    "no_results_found": "कोई परिणाम नहीं मिला",
+    "page_placeholder_title": "पृष्ठ शीर्षक",
+    "page_placeholder_content": "सामग्री प्रदर्शित करने के लिए एक पृष्ठ का चयन करें।",
+    "pagination": {
+      "nav_label": "पृष्ठांकन",
+      "previous": "पिछला",
+      "next": "अगला",
+      "page": "पेज {{ page }}"
+    },
+    "pickup_available_at_html": "पिकअप <b>{{ location }}</b> पर उपलब्ध है",
+    "pickup_available_in": "पिकअप उपलब्ध, {{ pickup_time }}",
+    "pickup_not_available": "अभी पिकअप उपलब्ध नहीं है",
+    "powered_by": "यह दुकान ______ द्वारा संचालित की जाएगी",
+    "price": "कीमत",
+    "price_compare_at": "कीमत पर तुलना करें",
+    "price_from": "{{ price }} से शुरू",
+    "price_regular": "नियमित मूल्य",
+    "price_sale": "बिक्री मूल्य",
+    "price_filter_html": "सबसे अधिक कीमत {{ price }} है",
+    "product_image": "उत्पाद छवि",
+    "product_information": "उत्पाद की जानकारी",
+    "product_subtotal": "उत्पाद उप-योग",
+    "product_total": "उत्पाद कुल",
+    "product_badge_sold_out": "बिक गया",
+    "product_badge_sale": "बिक्री",
+    "product_card_placeholder": "उत्पाद शीर्षक",
+    "placeholder_image": "स्थान-धारक चित्र",
+    "quantity": "मात्रा",
+    "quantity_per_item": "/इ-अ/",
+    "quick_order_list": "त्वरित ऑर्डर सूची",
+    "recently_viewed_products": "हाल ही में देखी गई",
+    "remove_all": "सभी हटाएँ",
+    "remove_all_items_confirmation": "अपनी कार्ट से सभी {{ count }} आइटम हटाएँ?",
+    "remove_one_item_confirmation": "अपने कार्ट से 1 आइटम हटाएँ?",
+    "reviews": "समीक्षाएँ",
+    "read_more": "और पढ़ें...",
+    "search_input_label": "खोजें",
+    "search_input_placeholder": "खोजें",
+    "search": "खोजें",
+    "search_results": "खोज परिणाम",
+    "search_results_label": "खोज परिणाम",
+    "search_results_no_results": "\"{{ terms }}\" के लिए कोई परिणाम नहीं मिला। कोई और खोज आज़माएँ।",
+    "search_results_no_results_check_spelling": "\"{{ terms }}\" के लिए कोई परिणाम नहीं मिला। वर्तनी की जाँच करें या किसी भिन्न शब्द या वाक्यांश का उपयोग करें।",
+    "search_results_resource_articles": "ब्लॉग पोस्ट"
   },
   "fields": {
     "separator": "को"
@@ -226,6 +320,28 @@
       "success": "सदस्यता लेने के लिए धन्यवाद!"
     },
     "filter": "फ़िल्टर करें",
-    "load_video": "वीडियो लोड करें: {{ description }}"
+    "load_video": "वीडियो लोड करें: {{ description }}",
+    "sold_out": "बिक गया",
+    "payment_methods": "भुगतान के तरीके",
+    "slider_label": "स्लाइडर"
+  },
+  "blogs": {
+    "article": {
+      "comments_heading": {
+        "one": "{{ count }} टिप्पणी",
+        "other": "{{ count }} टिप्पणियां"
+      }
+    },
+    "comment_form": {
+      "email": "ईमेल",
+      "error": "टिप्पणी पोस्ट नहीं की जा सकी, कृपया निम्नलिखित पर ध्यान दें:",
+      "heading": "एक टिप्पणी दें",
+      "message": "संदेश",
+      "moderated": "कृपया ध्यान दें, टिप्पणियों को प्रकाशित करने से पहले अनुमोदित किया जाना आवश्यक है।",
+      "name": "नाम",
+      "post": "टिप्पणी पोस्ट करें",
+      "success_moderated": "टिप्पणी पोस्ट कर दी गई है, मॉडरेशन की प्रतीक्षा है",
+      "success": "टिप्पणी पोस्ट की गई"
+    }
   }
 }
