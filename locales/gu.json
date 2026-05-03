@@ -122,7 +122,120 @@
             "local_pickup_delivery_line_detail_changed": "ચાલુ રાખવા માટે વર્તમાન સ્થાનિક પિકઅપ ડિલિવરી વ્યૂહરચના બદલવી આવશ્યક છે.",
             "selected_pickup_option_no_longer_available": "અગાઉ પસંદ કરેલ પિકઅપ વિકલ્પ હવે ઉપલબ્ધ નથી.",
             "local_pickup_no_delivery_strategy_available": "સ્થાનિક પિકઅપ ડિલિવરી વ્યૂહરચના ઉપલબ્ધ નથી.",
-            "origin_location_id_required": "જ્યારે રિટેલ ડિલિવરી પદ્ધતિની વિનંતી કરવામાં આવે ત્યારે મૂળ સ્થાન ID આવશ્યક છે."
+            "origin_location_id_required": "જ્યારે રિટેલ ડિલિવરી પદ્ધતિની વિનંતી કરવામાં આવે ત્યારે મૂળ સ્થાન ID આવશ્યક છે.",
+            "invalid_origin_location_id": "ઓરિજિન લોકેશન ID સાથે મેળ ખાતું કોઈ લોકેશન મળ્યું નથી.",
+            "origin_location_id_not_allowed": "આપેલ ડિલિવરી પદ્ધતિઓ, ઉત્પત્તિ સ્થાન ID ને સમર્થન આપતી નથી.",
+            "auto_fulfill_not_allowed": "આ સત્ર ફુલફિલમેન્ટના વર્તનને ઓવરરાઇડ કરવા માટે અધિકૃત નથી.",
+            "auto_fulfill_required": "જ્યારે RETAIL ડિલિવરી પદ્ધતિની વિનંતી કરવામાં આવે ત્યારે ઓટો પરિપૂર્ણતા (auto fulfill) આવશ્યક છે.",
+            "prefetch_shipping_rates_used": "પહેલેથી મેળવેલા શિપિંગ દરો ક્યારેય દરો પાછા ન આપવા જોઈએ.",
+            "fulfillment_constraints_not_satisfied": "એક અથવા વધુ પરિપૂર્ણતાની મર્યાદાઓ સંતોષાઈ નથી.",
+            "must_fulfill_from_constraint_not_satisfied": "પૂર્ણતાની મર્યાદાઓ સંતોષાતી નથી કારણ કે જરૂરી સ્થળોએથી વસ્તુઓની પૂર્તિ કરી શકાતી નથી.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "પૂર્તિની મર્યાદાઓ સંતોષાઈ નથી કારણ કે વસ્તુઓ એક જ જગ્યાએથી પૂરી પાડી શકાતી નથી.",
+            "delivery_strategy_conditions_not_satisfied": "આ સ્થાન માટે ડિલિવરી વ્યૂહરચનાઓ ઉપલબ્ધ છે, પરંતુ તેની શરતો પૂરી થઈ નથી.",
+            "out_of_stock_at_origin_location": "મૂળ સ્થાન પર કોઈ સ્ટોક નથી.",
+            "invalid_signature": "અમાન્ય ડિસ્કાઉન્ટ સહી.",
+            "mixed_destination_countries": "ડિલિવરી ઉપલબ્ધ નથી કારણ કે ડિલિવરી લાઇન્સ બહુવિધ દેશોમાં ફેલાયેલી છે."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "B2B સ્ટોર્સમાં ડિસ્કાઉન્ટની પરવાનગી નથી.",
+            "mixed_destination_countries": "ડિલિવરી લાઇન બહુવિધ દેશોમાં ફેલાયેલી હોવાને કારણે ડિસ્કાઉન્ટ ઉપલબ્ધ નથી.",
+            "custom_discount_not_honoured": "આપેલ કસ્ટમ ડિસ્કાઉન્ટ સ્વીકારવામાં આવ્યું ન હતું.",
+            "unsupported_expectation": "આપેલી ડિસ્કાઉન્ટ લાઇન એવી અપેક્ષા ધરાવતી હતી જેને પોલિસી સમજી શકી નહીં.",
+            "additional_requested_discount_code_discarded": "{{code}} માન્ય છે પરંતુ લાગુ પડતું નથી. ડિસ્કાઉન્ટની શરતો તપાસો.",
+            "additional_requested_discount_discarded": "તમારું ડિસ્કાઉન્ટ માન્ય છે, પરંતુ લાગુ પડતું નથી. ડિસ્કાઉન્ટના નિયમો અને શરતો તપાસો.",
+            "allocations_mismatch": "તમારો ડિસ્કાઉન્ટ કોડ બદલાઈ ગયો છે. તમારી કાર્ટની સમીક્ષા કરો અને ફરી પ્રયાસ કરો.",
+            "discount_title_too_long": "ડિસ્કાઉન્ટ શીર્ષક 255 અક્ષરોથી વધુ લાંબું હોઈ શકે નહીં."
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "તમારા ઓર્ડર સાથે સંકળાયેલા ટેક્સ બદલાઈ ગયા છે. સમીક્ષા કરો અને ફરી પ્રયાસ કરો.",
+            "unresolvable_tax_terms": "વર્તમાન વાટાઘાટોના સંદર્ભને જોતાં પ્રસ્તાવિત શરતો અસમાધાનકારક છે.",
+            "delivery_price_is_abstract": "સંબંધિત ડિલિવરી કિંમત અસ્પષ્ટ છે.",
+            "tax_inclusivity_mismatch": "કોંક્રિટ totalTaxAndDutyAmount અથવા totalAmountIncludedInTarget મૂલ્ય સાથે ફરીથી વાટાઘાટો કરો.",
+            "tax_exemption_not_supported": "વર્તમાન વાટાઘાટ સત્ર માટે કર મુક્તિને સમર્થન નથી.",
+            "delivery_tax_exemption_not_supported": "ડિલિવરી લાઇન્સ માટે કર મુક્તિઓ હાલમાં સમર્થિત નથી.",
+            "proposed_allocations_required": "'પ્રસ્તાવિત ફાળવણી' ક્ષેત્ર ખૂટે છે.",
+            "merchandise_terms_must_be_defined": "વેપારી ચીજવસ્તુઓની શરતો નિર્ધારિત હોવી આવશ્યક છે.",
+            "delivery_terms_must_be_defined": "ડિલિવરીની શરતો વ્યાખ્યાયિત કરવી આવશ્યક છે.",
+            "merchandise_discount_terms_must_be_defined": "વેપારી ડિસ્કાઉન્ટની શરતો વ્યાખ્યાયિત કરવી આવશ્યક છે.",
+            "delivery_discount_terms_must_be_defined": "ડિલિવરી ડિસ્કાઉન્ટની શરતો વ્યાખ્યાયિત કરવી આવશ્યક છે.",
+            "allocated_required": "'ફાળવેલું' ક્ષેત્ર ખૂટે છે.",
+            "value_required": "'મૂલ્ય' ક્ષેત્ર ખૂટે છે.",
+            "line_splits_not_supported": "'મર્ચન્ડાઇઝ લાઇન્સ' ફીલ્ડને એવી રીતે વિભાજીત કરવી જોઈએ કે વિક્રેતાના પ્રસ્તાવમાં દરેક પાસે એક જ લાઇન ઘટક હોય."
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "B2B સ્ટોર્સમાં મેન્યુઅલ પેમેન્ટની પરવાનગી નથી.",
+            "positive_amount_expected": "ચૂકવવાની રકમ 0 થી વધુ હોવી આવશ્યક છે.",
+            "total_amount_mismatch": "ચૂકવવાપાત્ર કુલ રકમ, ચુકવણીની રકમના સરવાળા સાથે મેળ ખાતી નથી.",
+            "subscription_terms_not_accepted": "સબ્સ્ક્રિપ્શનની શરતો સ્વીકારવામાં આવી નથી.",
+            "missing_session_id": "ક્રેડિટ કાર્ડ સત્ર માહિતી ખૂટે છે.",
+            "gateway_not_supported": "પેમેન્ટ ગેટવે ચુકવણી પદ્ધતિ સ્ટોર કરવાનું સમર્થન કરતું નથી.",
+            "credit_card_last_name_required": "'અટક' નલ હોઈ શકતી નથી.",
+            "credit_card_update_failed": "ક્રેડિટ કાર્ડ અપડેટ નિષ્ફળ.",
+            "invalid_address_type": "આ ચુકવણી પદ્ધતિ માટે આપેલો સરનામાંનો પ્રકાર અમાન્ય છે.",
+            "missing_retail_attributions": "મેન્યુઅલી દાખલ કરાયેલા ક્રેડિટ કાર્ડ પેમેન્ટ માટે રિટેલ વિશેષતાઓ આવશ્યક છે.",
+            "unexpected_retail_attributions": "ક્રેડિટ કાર્ડ ચુકવણી માટે રિટેલ એટ્રિબ્યુશન અણધાર્યા રીતે પ્રદાન કરવામાં આવ્યા હતા.",
+            "invalid_card_source": "આ સત્ર પાસે આ કાર્ડ સ્ત્રોતનો ઉપયોગ કરવાની પરવાનગી નથી.",
+            "wallet_content_missing": "વૉલેટની સામગ્રી ઉપલબ્ધ નથી.",
+            "payment_instrument_not_found": "ચુકવણી પદ્ધતિ મળી નથી",
+            "unauthorized_capture_method": "ચુકવણી કેપ્ચર પદ્ધતિને ગોઠવવાની પરવાનગી નથી.",
+            "saved_payment_methods_not_allowed": "સાચવેલી ચુકવણી પદ્ધતિઓ મંજૂર નથી.",
+            "saved_payment_methods_not_enabled": "આ દુકાન માટે સેવ કરેલી ચુકવણી પદ્ધતિઓ સક્ષમ નથી.",
+            "saved_payment_methods_cvv_verification_disabled": "પસંદ કરેલી ચુકવણી પદ્ધતિ માટે CVV ચકાસણી આવશ્યક છે, જે આ દુકાન માટે સક્ષમ નથી. કૃપા કરીને કોઈ બીજી ચુકવણી પદ્ધતિ પસંદ કરો.",
+            "store_credit_not_enabled": "આ દુકાન માટે સ્ટોર ક્રેડિટ સક્ષમ નથી.",
+            "store_credit_account_not_found": "સ્ટોર ક્રેડિટ એકાઉન્ટ મળ્યું નથી.",
+            "store_credit_account_mismatch": "સ્ટોર ક્રેડિટ ખાતું ખરીદનારની ઓળખ સાથે મેળ ખાતું નથી.",
+            "store_credit_mismatched_currency": "સ્ટોર ક્રેડિટ એકાઉન્ટની કરન્સી ચેકઆઉટ કરન્સી સાથે મળતી નથી.",
+            "store_credit_insufficient_funds": "સ્ટોર ક્રેડિટ ખાતામાં અપૂરતું ભંડોળ છે.",
+            "store_credit_buying_gift_card": "તમે ગિફ્ટ કાર્ડ ખરીદવા માટે સ્ટોર ક્રેડિટનો ઉપયોગ કરી શકતા નથી.",
+            "gift_cards_not_allowed_for_b2b": "B2B સ્ટોર્સમાં ગિફ્ટ કાર્ડ્સની પરવાનગી નથી.",
+            "method_required": "ચુકવણીની પદ્ધતિનો પ્રસ્તાવ મૂકવો આવશ્યક છે.",
+            "paypal_express_address_invalid": "પેપાલે અમાન્ય સરનામું પરત કર્યું છે."
+          },
+          "tip": {
+            "not_accepted_by_shop": "દુકાન ટીપ્સ સ્વીકારતી નથી.",
+            "only_one_tip_line_allowed": "બહુવિધ ટિપ્સ લાઈનો સપોર્ટેડ નથી.",
+            "tips_not_allowed_for_b2b": "B2B સ્ટોર્સમાં ટિપ્સની મંજૂરી નથી.",
+            "currency_change_reset": "ચલણ બદલાવાને કારણે ટિપ ફરીથી સેટ કરવામાં આવી છે.",
+            "tips_not_allowed_for_deferred_purchase_options": "મુલતવી રાખેલ ખરીદી વિકલ્પો માટે ટિપ્સ હજુ સુધી સપોર્ટેડ નથી."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "આ ડ્રાફ્ટ ઓર્ડર વર્તમાન શોપમાં અસ્તિત્વમાં નથી.",
+            "staff_member_not_exist": "આ સ્ટાફ વર્તમાન દુકાનમાં નથી.",
+            "location_not_exist": "આ સ્થળ હાલની દુકાનમાં અસ્તિત્વમાં નથી.",
+            "point_of_sale_device_not_exist": "આ પોઈન્ટ ઓફ સેલ ડિવાઇસ હાલની દુકાનમાં નથી.",
+            "unresolvable_target_merchandise_lines": "વર્તમાન વાટાઘાટના સંદર્ભમાં સૂચવેલ વેચાણ એટ્રિબ્યુશન ઉકેલી શકાય તેવા નથી."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "તમારા ખરીદનારના પ્રસ્તાવમાં અફર શરતો હોવી જોઈએ.",
+            "invalid_signature": "{{target_terms}} માટેની સહી અમાન્ય છે."
+          },
+          "inventory": {
+            "missing_quantity_value": "ખરીદનારની ઇન્વેન્ટરી લાઇનમાં જથ્થાનું ક્ષેત્ર ખૂટે છે.",
+            "changing_behavior_not_allowed": "આ ક્લાયન્ટ પાસે ઇન્વેન્ટરી વર્તણૂક બદલવાની પરવાનગી નથી.",
+            "only_one_inventory_behavior_allowed": "વર્તમાનમાં, ચેકઆઉટ દીઠ ફક્ત એક જ ઇન્વેન્ટરી વર્તણૂકની મંજૂરી છે."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "આ ચેકઆઉટ માટે ફરજોનો ઇનકાર કરવાની મંજૂરી નથી."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "આ ચેકઆઉટ માટે રિટેલ એટ્રિબ્યુશનની પરવાનગી નથી.",
+            "retail_attribution_required": "આ ચેકઆઉટ માટે રિટેલ એટ્રિબ્યુશન જરૂરી છે."
+          },
+          "captcha": {
+            "metadata_missing": "આ ચેકઆઉટ માટે કેપ્ચા પૂર્ણ કરવું આવશ્યક છે.",
+            "metadata_mismatch": "પ્રદાન કરેલ કેપ્ચા પ્રદાતા અને પ્રકાર અપેક્ષિત મૂલ્યો સાથે મેળ ખાતા નથી.",
+            "token_missing": "આ ચેકઆઉટ પૂર્ણ કરવા માટે કેપ્ચા ટોકન આપવું આવશ્યક છે.",
+            "job_enqueue_failed": "કેપ્ચા માન્યતાની જોબ કતારબદ્ધ થઈ શકી નથી.",
+            "job_already_queued": "આ કેપ્ચા ટોકન માટે કેપ્ચા માન્યતા પહેલેથી જ કતારબદ્ધ થઈ ગઈ છે.",
+            "token_expired": "આપેલ કૅપ્ચા ટોકન સમાપ્ત થઈ ગયું છે. ચેકઆઉટ ચાલુ રાખવા માટે નવું કૅપ્ચા પૂર્ણ કરો.",
+            "token_invalid": "આપેલ કૅપ્ચા ટોકન અમાન્ય હતું. ચેકઆઉટ ચાલુ રાખવા માટે નવું કૅપ્ચા પૂર્ણ કરો.",
+            "token_not_valid_for_session": "પ્રદાન કરેલ કૅપ્ચાનો ઉપયોગ આ ચેકઆઉટ સાથે કરી શકાતો નથી."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "પ્રાપ્ત થયેલી રકમ સ્ટોર ચલણમાં હોવી આવશ્યક છે."
+          },
+          "checkout_source": {
+            "revoked": "આ ચેકઆઉટ હવે ઉપલબ્ધ નથી."
           }
         },
         "continue_to_payment_plans_button_label": "ચુકવણી યોજનાઓ પર ચાલુ રાખો",
@@ -195,7 +308,17 @@
           "add_file": "ફાઇલ ઉમેરો",
           "invalid_file_type": "ફાઇલનો પ્રકાર સપોર્ટેડ નથી",
           "dragged_over": "અપલોડ કરવા માટે ફાઇલ છોડો"
-        }
+        },
+        "full_price": "પૂરી કિંમત:",
+        "title": "ચેકઆઉટ - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - ચેકઆઉટ",
+        "loading": "લોડ કરી રહ્યું છે…",
+        "loading_title": "ચેકઆઉટ - {{shopName}}",
+        "google_map_title": "ગૂગલ મેપ",
+        "confirm_order_button_label": "ઓર્ડરની પુષ્ટિ કરો",
+        "submit_order_button_label": "ઓર્ડર સબમિટ કરો",
+        "submit_for_review_button_label": "સમીક્ષા માટે સબમિટ કરો",
+        "submit_for_review_notice_label": "તમારો ઓર્ડર સમીક્ષા ન થાય ત્યાં સુધી ચુકવણી બાકી રહેશે નહીં."
       },
       "embed": {
         "header": {
