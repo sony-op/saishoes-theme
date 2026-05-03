@@ -680,6 +680,139 @@
             }
           }
         }
+      },
+      "order_summary": {
+        "deferred_payment_info": {
+          "description_html": "તમારા ઓર્ડર વિશેના પ્રશ્નો માટે, %{contact_us}.",
+          "paid_today": "આજે ચૂકવેલી કુલ રકમ",
+          "paid_today_next": "આજે ચૂકવાઈ ગયું",
+          "due_on_fulfillment_title": "%{amount_due}નું ચુકવણું પૂર્તિ પર કરવાનું રહેશે",
+          "due_on_receipt_title": "%{amount_due} ની ચુકવણી મળ્યા પછી કરવાની છે"
+        },
+        "deferred_balance_info": {
+          "title": "{{amount_due}}નું બાકી બેલેન્સ {{due_at}} ના રોજ ચૂકવવાનું છે.",
+          "due_on_fulfillment_title": "ચૂકવવાપાત્ર {{amount_due}} ની બાકી રકમ પરિપૂર્ણતા પછી બાકી છે"
+        },
+        "payment_terms_totals": {
+          "due_today": "આજે ચૂકવવાપાત્ર કુલ રકમ",
+          "due_today_next": "આજે આપવાનું છે",
+          "due_later": "કુલ ચૂકવવાપાત્ર %{due_at}",
+          "due_on_fulfillment": "ચૂકવવાપાત્ર કુલ રકમ",
+          "due_on_fulfillment_next": "પૂર્તિ થવા પર ચૂકવવાપાત્ર",
+          "due_on_receipt": "રસીદ મળતા કુલ ચૂકવવાપાત્ર રકમ",
+          "due_later_checkout_to_draft": "બાકીની રકમ પછીથી ચૂકવવાની રહેશે.",
+          "total_paid": "કુલ ચૂકવેલ"
+        },
+        "maximum_discount_code_limit_reached": "તમે ડિસ્કાઉન્ટ કોડની મહત્તમ સંખ્યા પર પહોંચી ગયા છો. <strong style=\"text-transform:uppercase\">%{code}</strong> નો ઉપયોગ કરવા માટે હાલના કોડને દૂર કરો.",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> અત્યારે કામ કરી રહ્યું નથી. સહાય માટે અમારો સંપર્ક કરો.",
+        "due_on_fulfillment": "પૂર્તિ થવા પર ચૂકવવાપાત્ર",
+        "subscriptions": "સબ્સ્ક્રિપ્શન્સ",
+        "duties_label": "ફરજો",
+        "duties_and_taxes_label": "ફરજો અને કરવેરા",
+        "error_duties_tooltip": "આ ઓર્ડર બીજા દેશમાંથી મોકલવામાં આવી રહ્યો છે, તેથી ડિલિવરી પર ડ્યુટી અને ટેક્સ લાગી શકે છે.",
+        "may_be_charged_on_delivery": "ડિલિવરી સમયે શુલ્ક લાગી શકે છે",
+        "total_updated_label_with_price": "અપડેટ થયેલ કુલ કિંમત: %{totalPrice}",
+        "updated_shipping_method": "અપડેટ કરાયેલ શિપિંગ પદ્ધતિ: %{shipping_method}",
+        "recurring_payments": "રિકરિંગ પેમેન્ટ્સ",
+        "recurring_total_multiple_label": "આ ઓર્ડરમાં ઘણી વસ્તુઓ માટે રિકરિંગ શુલ્ક છે.",
+        "deferred_total_due_date_label": "કુલ ચૂકવવાપાત્ર {{date}}",
+        "deferred_total_due_date_label_next": "ચૂકવવાપાત્ર %{date}",
+        "full_price": "પૂરી કિંમત: %{price}",
+        "custom_discount": "કસ્ટમ ડિસ્કાઉન્ટ",
+        "expand_component_information": {
+          "one": "%{count} વસ્તુ બતાવો",
+          "other": "%{count} વસ્તુઓ દર્શાવો"
+        },
+        "collapse_component_information": {
+          "one": "%{count} આઇટમ છુપાવો",
+          "other": "%{count} વસ્તુઓ છુપાવો"
+        },
+        "discount_discovery": {
+          "add_code": "ડિસ્કાઉન્ટ ઉમેરો",
+          "back_to_finalize_order": "ઓર્ડર અંતિમ કરવા પાછા ફરો",
+          "merchandise_quantity_label": {
+            "one": "%{count} આઇટમ",
+            "other": "%{count} આઇટમ્સ"
+          }
+        },
+        "alternative_payment_currency_total": "ચાર્જ કર્યો: %{amount_due}",
+        "pay_merchant_label": "%{merchant_name} ને ચૂકવો",
+        "discount_applies_to_subscription_items_only": "આ ડિસ્કાઉન્ટ ફક્ત સબસ્ક્રિપ્શન આઇટમ્સને જ લાગુ પડે છે"
+      },
+      "shipping": {
+        "title": "શિપિંગ",
+        "delivery_title": "વિતરણ",
+        "shipping_method_title": "શિપિંગ પદ્ધતિ",
+        "shipping_method_rollup_accessibility_label": "શિપિંગ પદ્ધતિના વિકલ્પો",
+        "shipping_method_one_time_purchase_group_title": "એકવારની ખરીદી",
+        "shipping_method_first_shipment_group_title": {
+          "one": "પ્રથમ શિપમેન્ટ",
+          "other": "પ્રથમ ખેપ"
+        },
+        "shipping_method_subscription_group_title": "સબ્સ્ક્રિપ્શન",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "પુનરાવર્તિત શિપમેન્ટ",
+          "other": "પુનરાવર્તિત શિપમેન્ટ"
+        },
+        "subscription_shipping": "સબ્સ્ક્રિપ્શન શિપિંગ",
+        "subscription_local_delivery": "સબસ્ક્રિપ્શન સ્થાનિક ડિલિવરી",
+        "subscription_pickup": "સબ્સ્ક્રિપ્શન પિકઅપ",
+        "waiting_on_rate_notice": "ઉપલબ્ધ શિપિંગ દરો મેળવી રહ્યા છીએ...",
+        "waiting_on_pickup_location_notice": "ઉપલબ્ધ પિકઅપ સ્થાનો મેળવી રહ્યા છીએ...",
+        "no_rates_for_cart_or_destination_notice": "તમારા કાર્ટ અથવા સરનામાં માટે કોઈ શિપિંગ પદ્ધતિઓ ઉપલબ્ધ નથી.",
+        "no_pickup_location_notice": "તમારી ઓછામાં ઓછી એક પ્રોડક્ટ પિક અપ માટે ઉપલબ્ધ નથી",
+        "no_rates_for_country_notice": "આ સરનામા માટે કોઈ શિપિંગ દર મળ્યા નથી.",
+        "no_rates_contact_notice": "વધુ માહિતી માટે અમારો સંપર્ક કરો",
+        "free_rate_label": "મફત",
+        "cheapest_rate_label": "સૌથી સસ્તું",
+        "estimated_delivery_date": {
+          "one": "%{count} કામકાજના દિવસો",
+          "other": "%{count} કામકાજના દિવસો"
+        },
+        "estimated_delivery_date_range": "%{minimum} થી %{maximum} કાર્યકારી દિવસો",
+        "estimated_delivery_time": "અંદાજિત ડિલિવરી: %{time}",
+        "estimated_delivery_time_range": "અંદાજિત ડિલિવરી %{min_time}–%{max_time}",
+        "delivery_today": "તે જ દિવસે ડિલિવરી %{time}",
+        "delivery_tomorrow": "આવતીકાલે %{time} સુધીમાં ડિલિવરી",
+        "two_day_delivery": "2-દિવસીય ડિલિવરી %{time}",
+        "delivery": "ડિલિવરી %{time}",
+        "delivery_to": "માલનું સરનામું",
+        "arrives_time": "આગમન: %{time}",
+        "arrives_time_range": "%{min_time}–%{max_time} દરમિયાન પહોંચશે",
+        "estimated_time": "અંદાજિત %{time}",
+        "estimated_time_range": "અંદાજિત %{min_time}–%{max_time}",
+        "default_description": "૧ કાર્યકારી દિવસમાં રવાના કરવામાં આવે છે",
+        "unbranded_default_description": "શિપમેન્ટ માટે તૈયાર",
+        "unbranded_description_same_day": "એ જ કારોબારી દિવસે શિપ થાય છે",
+        "unbranded_description_with_fulfillment_days": {
+          "one": "આવતા કામકાજના દિવસે રવાના થશે",
+          "other": "%{count} કાર્યકારી દિવસોમાં રવાનગી"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "%{count} અઠવાડિયામાં રવાનગી",
+          "other": "%{count} અઠવાડિયામાં રવાના થશે"
+        },
+        "shipping_line_phone_label": "મોબાઇલ ફોન નંબર (જરૂરી)",
+        "shipping_line_phone": "તમારો કુરિયર તમારો સંપર્ક કરવા માટે આ નંબરનો ઉપયોગ કરી શકે છે.",
+        "shipping_line_delivery_phone_label": "મોબાઇલ ફોન નંબર",
+        "shipping_line_delivery_phone": "તમારી ડિલિવરી અંગેની અપડેટ્સ માટે તમારો સંપર્ક કરવામાં આવી શકે છે.",
+        "optional_shipping_line_delivery_instructions_label": "ડિલિવરી માટેની સૂચનાઓ (વૈકલ્પિક)",
+        "shipping_line_delivery_instructions": "જરૂરી માહિતી જેવી કે ડોર કોડ્સ અથવા ડિલિવરી અંગેની સૂચનાઓ દાખલ કરો.",
+        "other_method": {
+          "zero": "અન્ય કોઈ પદ્ધતિઓ ઉપલબ્ધ નથી.",
+          "one": "અન્ય %{count} પદ્ધતિ ઉપલબ્ધ છે",
+          "other": "બીજી %{count} પદ્ધતિઓ અહીંથી ઉપલબ્ધ છે"
+        },
+        "shipping_rate_discounted_amount": "હતું: %{original_amount}. અત્યારે: %{amount}",
+        "local_delivery": "સ્થાનિક ડિલિવરી",
+        "prime_not_available": {
+          "default": "તમારા ઓર્ડર માટે પ્રાઇમ ડિલિવરી ઉપલબ્ધ નથી. તમારા શિપિંગ વિકલ્પો અપડેટ કરવામાં આવ્યા છે."
+        },
+        "subscription_delivery_description": {
+          "free_shipping_cycles": {
+            "one": "વધુ %{count} ડિલિવરી માટે મફત શિપિંગ"
+          }
+        }
       }
     }
   }
