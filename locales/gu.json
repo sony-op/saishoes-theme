@@ -124,7 +124,139 @@
             "local_pickup_no_delivery_strategy_available": "સ્થાનિક પિકઅપ ડિલિવરી વ્યૂહરચના ઉપલબ્ધ નથી.",
             "origin_location_id_required": "જ્યારે રિટેલ ડિલિવરી પદ્ધતિની વિનંતી કરવામાં આવે ત્યારે મૂળ સ્થાન ID આવશ્યક છે."
           }
+        },
+        "continue_to_payment_plans_button_label": "ચુકવણી યોજનાઓ પર ચાલુ રાખો",
+        "back_button_label": "પાછું આપો",
+        "choose_delivery_strategy": "ડિલિવરી પદ્ધતિ પસંદ કરો",
+        "autocomplete_zero_item": "કોઈ વસ્તુ ઉપલબ્ધ નથી.",
+        "autocomplete_powered_by_google": "{{brandName}} દ્વારા સંચાલિત",
+        "submit": "સબમિટ કરો",
+        "processing": "પ્રક્રિયા ચાલુ છે...",
+        "stepper": {
+          "increase": "વધારો {{type}}",
+          "decrease": "ઘટાડો {{type}}",
+          "minimum_reached": "લઘુતમ {{value}} પર પહોંચી ગયું છે",
+          "maximum_reached": "મહત્તમ {{value}} પર પહોંચી ગયું છે."
+        },
+        "remove_chip": "વસ્તુ કાઢો",
+        "remove_item": "%{label} દૂર કરો",
+        "remove_tag": "ટૅગ કાઢો",
+        "dates": {
+          "weekdays": {
+            "monday": "સોમવાર",
+            "tuesday": "મંગળવાર",
+            "wednesday": "બુધવાર",
+            "thursday": "ગુરુવાર",
+            "friday": "શુક્રવાર",
+            "saturday": "શનિવાર",
+            "sunday": "રવિવાર"
+          },
+          "weekdays_abbreviation": {
+            "monday": "મો",
+            "tuesday": "તું",
+            "wednesday": "અમે",
+            "thursday": "આભાર",
+            "friday": "ફ્રેન્ચ",
+            "saturday": "સા",
+            "sunday": "સુ"
+          },
+          "months": {
+            "january": "જાન્યુઆરી",
+            "february": "ફેબ્રુઆરી",
+            "march": "માર્ચ",
+            "april": "એપ્રિલ",
+            "may": "મે",
+            "june": "જૂન",
+            "july": "જુલાઈ",
+            "august": "ઓગસ્ટ",
+            "september": "સપ્ટેમ્બર",
+            "october": "ઑક્ટોબર",
+            "november": "નવેમ્બર",
+            "december": "ડિસેમ્બર"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "ગત મહિનો બતાવો, {{month}} {{year}}",
+          "show_next_month": "આગામી મહિનો બતાવો, {{month}} {{year}}",
+          "range_start": "શ્રેણીની શરૂઆત",
+          "in_range": "રેન્જમાં",
+          "range_end": "શ્રેણી સમાપ્તિ"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "{{number}} માર્કરનું ક્લસ્ટર",
+            "other": "{{number}} માર્કર્સનું ક્લસ્ટર"
+          }
+        },
+        "sheet": {
+          "expand": "વિસ્તૃત કરો"
+        },
+        "dropzone": {
+          "add_file": "ફાઇલ ઉમેરો",
+          "invalid_file_type": "ફાઇલનો પ્રકાર સપોર્ટેડ નથી",
+          "dragged_over": "અપલોડ કરવા માટે ફાઇલ છોડો"
         }
+      },
+      "embed": {
+        "header": {
+          "review_order": "તમારા ઓર્ડરની સમીક્ષા કરો"
+        },
+        "shipping": {
+          "shipping_options": "બધા શિપિંગ વિકલ્પો જુઓ"
+        },
+        "payment": {
+          "payment_options": "બધા ચુકવણી વિકલ્પો જુઓ"
+        }
+      },
+      "payment_collection": {
+        "cancelled": "આ ચુકવણીની હવે જરૂર નથી. વિગતો માટે ઓર્ડર પેજની મુલાકાત લો.",
+        "paid": "આ ચુકવણી પહેલેથી જ સબમિટ થઈ ગઈ છે. વિગતો માટે ઓર્ડર પેજની મુલાકાત લો."
+      },
+      "contact": {
+        "title": "માહિતી",
+        "address_title": "સરનામું",
+        "shipping_used_as_billing_notice": "આનો ઉપયોગ આ ઓર્ડર માટે તમારા બિલિંગ સરનામાં તરીકે પણ થશે.",
+        "delivery_option_title": "ડિલિવરી પદ્ધતિ",
+        "contact_method_title": "સંપર્ક",
+        "email_label": "ઈમેલ",
+        "email_rollup_accessibility_label": "ઈમેઇલ વિકલ્પો",
+        "email_placeholder": "ઈમેલ",
+        "email_or_phone_label": "ઈમેલ અથવા મોબાઇલ ફોન નંબર",
+        "email_or_phone_placeholder": "ઈમેલ અથવા મોબાઇલ ફોન નંબર",
+        "stored_addresses_label": "સાચવેલા સરનામાં",
+        "available_addresses_label": "ઉપલબ્ધ સરનામા",
+        "new_address_label": "નવા સરનામાનો ઉપયોગ કરો",
+        "first_name_label": "પ્રથમ નામ",
+        "optional_first_name_label": "પ્રથમ નામ (વૈકલ્પિક)",
+        "last_name_label": "છેલ્લું નામ",
+        "company_label": "કંપની",
+        "storefront_link": "વેપારીની વેબસાઇટ",
+        "company_attention_label": "કંપની/ધ્યાન",
+        "optional_company_attention_label": "કંપની/ધ્યાન (વૈકલ્પિક)",
+        "optional_company_label": "કંપની (વૈકલ્પિક)",
+        "address1_label": "સરનામું",
+        "address2_label": "એપાર્ટમેન્ટ, સ્યૂટ, વગેરે.",
+        "optional_address2_label": "એપાર્ટમેન્ટ, સ્યુટ, વગેરે (વૈકલ્પિક)",
+        "city_label": "શહેર",
+        "suburb_label": "ઉપનગર",
+        "country_label": "દેશ/પ્રદેશ",
+        "country_code": "દેશ/પ્રદેશ કોડ",
+        "province_label": "પ્રાંત",
+        "province_placeholder": "પ્રાંત",
+        "county_label": "કાઉન્ટી",
+        "county_placeholder": "કાઉન્ટી",
+        "state_label": "રાજ્ય",
+        "state_placeholder": "રાજ્ય",
+        "region_label": "પ્રદેશ",
+        "region_placeholder": "પ્રદેશ",
+        "region_none": "કોઈ પસંદ કરેલ નથી",
+        "prefecture_label": "પ્રાંત",
+        "prefecture_placeholder": "પ્રાંત",
+        "governorate_label": "રાજ્યપાલનો વહીવટી વિભાગ",
+        "governorate_placeholder": "રાજ્યપાલનો વહીવટી વિભાગ",
+        "emirate_label": "અમીરાત",
+        "emirate_placeholder": "અમીરાત",
+        "state_and_territory_label": "રાજ્ય/પ્રદેશ"
       }
     }
   }
