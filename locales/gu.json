@@ -814,6 +814,160 @@
           }
         }
       }
+    },
+    "notices": {
+      "order": {
+        "cancel_reason": {
+          "declined": "ચુકવણી નામંજૂર થઈ",
+          "inventory": "વસ્તુઓ અનુપલબ્ધ છે",
+          "fraud": "છેતરપિંડીનો ઓર્ડર",
+          "customer": "ગ્રાહકે ઓર્ડર બદલ્યો/રદ કર્યો",
+          "staff": "સ્ટાફની ભૂલ",
+          "other": "અન્ય"
+        },
+        "cash_on_delivery": "કેશ ઓન ડિલિવરી (COD)"
+      },
+      "cart": {
+        "not_found": "કાર્ટ મળ્યું નથી",
+        "only_n_items_available": "તમે કાર્ટમાં ફક્ત %{count} %{name} ઉમેરી શકો છો.",
+        "too_many_items_in_cart": "તમે કાર્ટમાં વધુ %{name} ઉમેરી શકતા નથી.",
+        "only_one_added_to_cart": "ઉપલબ્ધતાને કારણે તમારી કાર્ટમાં ફક્ત 1 વસ્તુ ઉમેરવામાં આવી હતી.",
+        "only_n_added_to_cart": "ઉપલબ્ધતાને કારણે તમારી કાર્ટમાં ફક્ત %{quantity} આઇટમ્સ ઉમેરવામાં આવી હતી.",
+        "maximum_available_quantity_reached": "આ આઇટમની મહત્તમ સંખ્યા પહેલેથી જ તમારા કાર્ટમાં છે.",
+        "less_than_minimum": "આ આઇટમનું લઘુત્તમ %{min} છે.",
+        "more_than_maximum": "આ આઇટમનું મહત્તમ %{max} છે.",
+        "not_respect_step": "તમે ફક્ત આ આઇટમને %{step}ના ગુણાકારમાં ઉમેરી શકો છો.",
+        "all_items_in_cart": "તમારી કાર્ટમાં બધી %{count} %{name} છે.",
+        "empty_update": "ખાલી કાર્ટ અપડેટ કરી શકાતું નથી",
+        "missing_parameters": "કોઈ માન્ય ID અથવા લાઇન પરિમાણ નથી",
+        "generic_error": "કાર્ટમાં ભૂલ",
+        "invalid_input": "%{parameter} પેરામીટર અમાન્ય છે.",
+        "product_not_available": "ઉત્પાદન ઉપલબ્ધ નથી",
+        "too_many_line_items_error": "તમારી કાર્ટમાં %{max} કરતાં વધુ વસ્તુઓ હોઈ શકે નહીં.",
+        "link_expired": "લિંક સમાપ્ત થઈ ગઈ છે",
+        "link_no_longer_exists": "લિંક હવે અસ્તિત્વમાં નથી.",
+        "stock_problems_html": "એક કે વધુ આઇટમ હવે ઉપલબ્ધ નથી. અમે <a href='%{link}'>અપડેટ કરેલી કાર્ટ</a> પ્રદાન કરી છે.",
+        "changed": "કાર્ટ બદલાઈ ગયું છે",
+        "items_changed": "એક કે વધુ આઇટમ બદલાયેલ છે.",
+        "product_sold_out": "ઉત્પાદન '%{name}' પહેલાથી જ વેચાઈ ગયું છે.",
+        "variant_not_found": "વિકલ્પ શોધી શકાતો નથી",
+        "variant_requires_selling_plan": "વેરિયન્ટ ફક્ત સેલિંગ પ્લાન સાથે જ ખરીદી શકાય છે.",
+        "selling_plan_not_available_for_company_locations": "B2B ઓર્ડર માટે માત્ર એક-વખતની ખરીદી ઉપલબ્ધ છે",
+        "digital_product_not_available_for_company_locations": "આ આઇટમને B2B ઓર્ડરમાં ઉમેરી શકાતી નથી",
+        "buyer_cannot_purchase_for_company_locations": "તમે આ સ્થાન માટે ખરીદી કરી શકતા નથી",
+        "selling_plan_not_applicable": "વેરિયન્ટ પર સેલિંગ પ્લાન લાગુ કરી શકાતો નથી",
+        "shipping_address_not_required": "આ કાર્ટને શિપિંગની જરૂર નથી",
+        "shipping_address_invalid": "તમારા શિપિંગ દરોની ગણતરી કરવામાં સમસ્યા આવી હતી. તમારો ઑર્ડર પૂર્ણ કરતા પહેલા શિપિંગ દર પસંદ કરવા માટે ચેકઆઉટ કરવાનું ચાલુ રાખો.",
+        "bundle_requires_components": "બંડલ પ્રોડક્ટ '%{name}' કાર્ટમાં ઉમેરી શકાતી નથી.",
+        "gift_card_with_components_not_supported": "બંડલ પ્રોડક્ટ '%{name}' કાર્ટમાં ઉમેરી શકાતી નથી.",
+        "gift_card_price_must_be_greater_than_zero": "બંડલ પ્રોડક્ટ '%{name}' કાર્ટમાં ઉમેરી શકાતી નથી.",
+        "gift_card_recipient_validation_error": "નિર્દિષ્ટ ગિફ્ટ કાર્ડ મેળવનાર અમાન્ય છે.",
+        "view_lines_limit_reached": "લાઇન %{limit}થી ઓછી અથવા બરાબર હોવી જોઈએ",
+        "cart_too_large": "ગાડી ઘણી મોટી છે.",
+        "cart_attributes_error": "કાર્ટ વિશેષતાઓમાં અમાન્ય ડેટા છે.",
+        "merchandise_line_transformers": {
+          "run_error": "તમારા કાર્ટમાં ભૂલ આવી છે."
+        },
+        "merchandise_not_applicable": "આઇટમ ગોઠવેલ મુજબ ખરીદી શકાતી નથી."
+      },
+      "storefront": {
+        "invalid_password": "પાસવર્ડ ખોટો છે, કૃપા કરીને ફરી પ્રયાસ કરો."
+      },
+      "tags": {
+        "add_articles": "લેખોને ટૅગ %{tag} હોય તેવા લેખો સુધી સંકુચિત કરો.",
+        "add_products": "પ્રોડક્ટ્સ કે જે %{tag} ટેગને મેચ કરે છે તેમના પર પસંદગી મર્યાદિત કરો",
+        "remove_articles": "એવા લેખો પર શોધ વિસ્તૃત કરો કે જે %{tag} ટેગ કરેલા નથી",
+        "remove_products": "ટૅગ %{tag} દૂર કરો"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "અમારી મેઇલિંગ સૂચિ પર સબ્સ્ક્રાઇબ કરવા બદલ આભાર.",
+        "disclaimer": "તમે કોઈપણ સમયે અનસબ્સ્ક્રાઇબ કરી શકો છો.",
+        "unsubscribe": "અનસબ્સ્ક્રાઇબ કરો"
+      },
+      "unsubscribed": {
+        "confirmation": "તમે અમારી મેઇલિંગ સૂચિમાંથી અનસબ્સ્ક્રાઇબ કર્યું છે.",
+        "disclaimer": "તમને હવે અમારા તરફથી કોઈ માર્કેટિંગ અપડેટ્સ પ્રાપ્ત થશે નહીં. તમે કોઈપણ સમયે ફરીથી સબ્સ્ક્રાઇબ કરી શકો છો.",
+        "preview": "તમે ગ્રાહકો અનસબ્સ્ક્રાઇબ કરશે ત્યારે તેઓ જે જોશે તેનું પૂર્વાવલોકન કરી રહ્યાં છો."
+      },
+      "sms_unsubscribe_confirm": {
+        "message": "શું તમે ખરેખર SMS માર્કેટિંગમાંથી અનસબ્સ્ક્રાઇબ કરવા માંગો છો?",
+        "button": "અનસબ્સ્ક્રાઇબ કરો"
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>તમે ઇમેઇલ ઓપન ટ્રેકિંગ પસંદ કર્યું છે.</b>",
+          "visibility": "ઈમેલ ઓપન રેટની જાણકારી ગુપ્ત રાખવામાં આવશે. તમે કોઈ ઈમેલ ખોલ્યો છે કે નહીં તે અમે માત્ર એક સંકલિત ઈમેલ ઓપન રેટના ભાગ રૂપે જ જોઈશું.",
+          "opt_out_html": "જો તમે આ માહિતી શેર કરવા માંગતા ન હો, તો તમે ઈમેલ ઓપન ટ્રેકિંગમાંથી <a style='text-decoration:underline;' href='%{link}'>નાપસંદ</a> કરી શકો છો.",
+          "preview_bar": "જ્યારે ગ્રાહકો ઈમેલ ઓપન ટ્રેકિંગને પસંદ કરશે ત્યારે તેઓ જે જોશે તેનું તમે પૂર્વાવલોકન કરી રહ્યાં છો."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>તમે ઇમેઇલ ઓપન ટ્રેકિંગમાંથી નાપસંદ કર્યું છે.</b>",
+          "visibility": "તમે અમારી ઇમેઇલ્સ ખોલી છે કે નહીં તે અમે જોઈ શકીશું નહીં.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>ઈમેલ ઓપન ટ્રેકિંગ</a> પસંદ કરો.",
+          "preview_bar": "તમે જોઈ રહ્યા છો કે ગ્રાહકો ઇમેઇલ ઓપન ટ્રેકિંગમાંથી નાપસંદ કરે ત્યારે તેમને શું દેખાશે તેનું પૂર્વાવલોકન."
+        },
+        "no_longer_track": {
+          "status_html": "<b>અમે હવે કોઈપણ ઇમેઇલ ઓપનનો ટ્રૅક કરતા નથી.</b>",
+          "privacy_policy": "આ ઇમેઇલ મોકલવામાં આવ્યા પછી, અમે અમારી ગોપનીયતા નીતિ અપડેટ કરી છે અને અમે હવે ઓપન ટ્રેક કરતા નથી."
+        },
+        "track": {
+          "status_html": "<b>ઇમેઇલ ઓપન ટ્રેકિંગની જાણ કરવામાં આવી છે.</b>",
+          "visibility": "તમે ઇમેઇલ ખોલ્યો છે કે નહીં, તે અમે ફક્ત કુલ ઇમેઇલ ઓપન રેટના ભાગ રૂપે જ જોઈ શકીશું."
+        },
+        "updated_policy": {
+          "status_html": "<b>ઇમેઇલ ઓપન ટ્રેકિંગની જાણ કરવામાં આવી છે.</b>",
+          "visibility": "અમે અમારી પોલિસી અપડેટ કરી છે, અને હવે ઇમેઇલ ખોલવાનું ટ્રૅક કરીએ છીએ. ઇમેઇલ ખોલવાના દરો અનામી રીતે નોંધવામાં આવશે. તમે કુલ ઇમેઇલ ખોલવાના દરના ભાગ રૂપે ઇમેઇલ ખોલ્યો છે કે કેમ તે જ અમે જોઈ શકીશું.",
+          "opt_out_html": "જો તમે આ માહિતી શેર કરવા માંગતા નથી, તો તમે <a style='text-decoration:underline;' href='%{link}'>અનસબ્સ્ક્રાઇબ</a> કરી શકો છો."
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "સ્ટોકમાં",
+          "out_of_stock": "સ્ટોક નથી"
+        }
+      },
+      "boolean": {
+        "true_label": "હા",
+        "false_label": "ના"
+      }
+    },
+    "search": {
+      "error": "તમારા શોધ પરિણામો લોડ કરવામાં સમસ્યા આવી હતી. કૃપા કરીને પૃષ્ઠને તાજું કરો અથવા પછીથી ફરી પ્રયાસ કરો.",
+      "sorting": {
+        "relevance": "પ્રાસંગિકતા",
+        "price_ascending": "કિંમત, ઓછી થી વધુ",
+        "price_descending": "કિંમત, વધુથી ઓછી"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "ભૂલ - %{title}",
+      "products": "ઉત્પાદનો",
+      "shopping_cart": "તમારી ખરીદીની ગાડી",
+      "account": "ખાતું",
+      "create_account": "ખાતું બનાવો",
+      "reset_account": "ખાતું ફરીથી સેટ કરો",
+      "addresses": "સરનામાં",
+      "order": "ઓર્ડર %{name}",
+      "search": "શોધ",
+      "search_results": {
+        "one": "શોધો: \"%{terms}\" માટે %{count} પરિણામ મળ્યું",
+        "other": "શોધ: \"%{terms}\" માટે %{count} પરિણામો મળ્યા"
+      },
+      "collections": "સંગ્રહો",
+      "not_found": "404 મળ્યું નથી",
+      "challenge": "પડકાર",
+      "checkpoint": "ચેકપોઇન્ટ"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} ડિસ્કાઉન્ટ લાગુ કરવામાં આવ્યા છે"
+    },
+    "challenge": {
+      "message": "ચાલુ રાખવા માટે, કૃપા કરીને જણાવો કે તમે રોબોટ નથી.",
+      "error": "તમારો જવાબ સાચો નહોતો, કૃપા કરીને ફરીથી પ્રયાસ કરો."
     }
   },
   "customer_accounts": {
