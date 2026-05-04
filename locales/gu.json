@@ -768,13 +768,36 @@
             "address_too_long": "સરનામાની લીટી ખૂબ લાંબી છે"
           },
           "select_different_shipping_address_to_resolve_errors": "તમારું શિપિંગ સરનામું અમાન્ય છે. કૃપા કરીને અલગ સરનામું પસંદ કરો અથવા નવા સરનામાનો ઉપયોગ કરો.",
-          "processing_error_checkout_as_guest": "તમારી ચુકવણીની પ્રક્રિયા કરવામાં સમસ્યા આવી હતી. ફરીથી પ્રયાસ કરો અથવા {{checkout_as_guest_link}}."
+          "processing_error_checkout_as_guest": "તમારી ચુકવણીની પ્રક્રિયા કરવામાં સમસ્યા આવી હતી. ફરીથી પ્રયાસ કરો અથવા {{checkout_as_guest_link}}.",
+          "unavailable": {
+            "title": "{{walletName}} ઉપલબ્ધ નથી",
+            "description": "{{walletName}} ઉપલબ્ધ નહોતું. બીજી ચુકવણીની રીતનો ઉપયોગ કરો અથવા પછીથી ફરી પ્રયાસ કરો.",
+            "instructions": "{{walletName}} માં કોઈ સમસ્યા આવી હતી. ફરીથી પ્રયાસ કરવા માટે સ્ટોર પર પાછા ફરો અથવા અલગ રીતે ચેક આઉટ કરો.",
+            "unavailable_for_country": "{{walletName}} {{countryName}} માં ઉપલબ્ધ નથી. તમારી ખરીદી પૂર્ણ કરવા માટે અલગ ચુકવણી પદ્ધતિ પસંદ કરો"
+          },
+          "unavailable_terminal": {
+            "instructions": "તમારા ઓર્ડર માટે {{walletName}} હાલમાં અનુપલબ્ધ છે. તમારી ખરીદી ચાલુ રાખવા માટે, કૃપા કરીને બીજી ચેકઆઉટ પદ્ધતિ પસંદ કરો."
+          },
+          "generic": "{{walletName}} માં કોઈ સમસ્યા હતી. ફરી પ્રયાસ કરો અથવા ચુકવણીની બીજી પદ્ધતિનો ઉપયોગ કરો.",
+          "discount_code": "આ ડિસ્કાઉન્ટ કોડ લાગુ કરી શકાતો નથી. તમારા કોડની સમીક્ષા કરો અને ફરી પ્રયાસ કરો.",
+          "terminal": "{{walletName}} માં કોઈ સમસ્યા આવી હતી. કૃપા કરીને ચુકવણીની અલગ પદ્ધતિનો ઉપયોગ કરો."
         },
         "scrim": {
           "continue_purchase_in_window": "તમારી ખરીદી {{walletName}} વિંડોમાં ચાલુ રાખો",
           "and_return_to_checkout": "અને ચેકઆઉટ પર પાછા ફરો",
           "cancel": "રદ કરો"
-        }
+        },
+        "return_to_store": "સ્ટોર પર પાછા ફરો",
+        "return_to_checkout": "ચેકઆઉટ પર પાછા ફરો",
+        "redirect_hint": "તમને {{walletName}} વડે સાઇન ઇન કરવા માટે કહેવામાં આવશે.",
+        "logged_in": "{{email}} થી કનેક્ટેડ",
+        "shipping_line_label": "શિપિંગ",
+        "payment_in_progress_title": "ચુકવણી પ્રગતિમાં છે",
+        "payment_in_progress_body": "તમારી ચુકવણી પ્રક્રિયામાં છે. તમારો ઓર્ડર ટૂંક સમયમાં પૂર્ણ થશે.",
+        "call_to_action": "{{walletName}} વડે ચૂકવણી કરો",
+        "place_order": "ઓર્ડર આપો",
+        "redirection_notice": "તમારી ખરીદી પૂર્ણ કરવા માટે તમને {{walletName}} પર રીડાયરેક્ટ કરવામાં આવશે",
+        "recovery_notice": "તમારા ઑર્ડરની વિગતોમાં કોઈ સમસ્યા છે. ચુકવણી પૂર્ણ કરવા માટે તમારી માહિતી અપડેટ કરો."
       },
       "note": {
         "length_exceeds_maximum": "નોટનું કદ ઘટાડીને 5000 અથવા તેનાથી ઓછા અક્ષરો કરો."
@@ -2072,6 +2095,152 @@
         "page_title": "ખરીદી પછી",
         "title": "ખરીદી પછી",
         "escape_confirmation": "તમે તમારા ઓર્ડર માટે ચૂકવણી કરી દીધી છે."
+      },
+      "local_pickup": {
+        "location_information_far_away": {
+          "other": "તમારી વસ્તુ સાથે %{count} સ્થાનો છે."
+        },
+        "location_nearby": {
+          "one": "તમારી વસ્તુ સાથે %{count} નજીકનું સ્થાન છે",
+          "other": "તમારી વસ્તુ સાથે %{count} નજીકના સ્થાનો છે"
+        },
+        "location_nearby_short": {
+          "one": "તમારી વસ્તુ સાથે %{count} નજીકનું સ્થાન",
+          "other": "તમારી વસ્તુ સાથે %{count} નજીકના સ્થાનો"
+        },
+        "location_far_away": {
+          "one": "તમારી આઇટમ સાથે %{count} સ્થાન",
+          "other": "તમારી આઇટમ સાથેના %{count} સ્થાનો"
+        },
+        "toggle_location": "સ્થાન બદલો",
+        "toggle_more_locations": {
+          "one": "વધુ %{count} સ્થાન",
+          "other": "બીજા %{count} લોકેશનો"
+        },
+        "toggle_multiple_locations": "વધુ %{count} સ્થળો",
+        "or": "અથવા",
+        "cancel": "રદ કરો",
+        "your_location": "તમારું સ્થાન",
+        "search_button": "સ્ટોર્સ શોધો",
+        "no_stores_found": "કોઈ સ્ટોર્સ મળ્યા નથી",
+        "all_stores_far_away": {
+          "title": "સૌથી નજીકના સ્થાનો %{distance} કરતા વધુ દૂર છે",
+          "title_with_item": {
+            "one": "તમારા આઇટમ સાથેનું સૌથી નજીકનું સ્થાન %{location}થી %{distance} કરતાં વધુ દૂર છે",
+            "other": "તમારી વસ્તુઓ સાથેનું સૌથી નજીકનું સ્થાન %{location} થી %{distance} કરતાં વધુ દૂર છે."
+          },
+          "title_with_specific_location": "તમારી વસ્તુ સાથેનું સૌથી નજીકનું સ્થાન %{location}થી %{distance} કરતાં વધુ દૂર છે.",
+          "description": "સ્થાન અથવા %{ship_to_address_link} પસંદ કરો",
+          "ship_to_address_link": "સરનામે મોકલો",
+          "change_location_link": "તમારું સ્થાન બદલો"
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "તમારું અગાઉ પસંદ કરેલું સ્થાન હવે ઉપલબ્ધ નથી",
+          "description": "નવું સ્થાન પસંદ કરો અથવા %{ship_to_address_link}",
+          "ship_to_address_link": "સરનામે મોકલો"
+        },
+        "could_not_resolve_address": "તમારું સરનામું શોધી શકાયું નથી. ફરીથી પ્રયાસ કરો અથવા અલગ સરનામું વાપરો",
+        "paginator": {
+          "accessibility_label": "સ્થાનિક પિકઅપ પેજીનેશન",
+          "previous": "અગાઉનું પેજ",
+          "next": "આગળનું પેજ",
+          "label": {
+            "one": "%{first} - %{last} કુલ %{count} સ્ટોર પૈકી",
+            "other": "%{first} - %{last} કુલ %{count} સ્ટોર્સમાંથી"
+          }
+        },
+        "reveal_more_label": {
+          "one": "વધુ %{count} લોકેશન બતાવો",
+          "other": "વધુ %{count} સ્થાનો બતાવો"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "તમારી આઇટમ સાથે કોઈ સ્થાન નથી",
+          "other": "તમારી વસ્તુઓ સાથે કોઈ સ્થાન મળ્યું નથી."
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "તમારી આઇટમ સાથે %{country} માં કોઈ સ્થાનો નથી",
+          "other": "તમારી આઇટમ્સ સાથે %{country} માં કોઈ સ્થાનો નથી."
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_items": "તમારી વસ્તુઓ મોકલો",
+          "search_elsewhere": "બીજે ક્યાંક શોધો",
+          "ship_items_or_search_elsewhere": "%{ship_items} અથવા %{search_elsewhere}"
+        }
+      },
+      "split_delivery": {
+        "pickup_all_items": "બધી વસ્તુઓ ઉપાડો",
+        "items_for_pickup": "પિકઅપ કરવા માટેની વસ્તુઓ",
+        "items_for_shipping": "શિપિંગ માટેની વસ્તુઓ",
+        "items_moved_to_shipping_toast": "જે વસ્તુઓ ઉપાડી શકાતી નથી તેને શિપિંગમાં ખસેડવામાં આવી હતી",
+        "delivery_method": "સ્પ્લિટ ડિલિવરી પદ્ધતિ",
+        "delivery_method_menu": "સ્પ્લિટ ડિલિવરી મેથડ મેનૂ",
+        "inventory_issue_banner": {
+          "heading": {
+            "cannot_be_picked_up": {
+              "one": "%{count} આઇટમ પસંદ કરી શકાતી નથી",
+              "other": "%{count} આઇટમ ઉપાડી શકાતી નથી"
+            },
+            "cannot_be_shipped": {
+              "one": "%{count} વસ્તુ મોકલી શકાતી નથી",
+              "other": "%{count} વસ્તુઓ મોકલી શકાતી નથી"
+            }
+          },
+          "remove_item": {
+            "one": "વસ્તુ દૂર કરો",
+            "other": "વસ્તુઓ દૂર કરો"
+          },
+          "remove_item_only": {
+            "one": "વસ્તુ કાઢો",
+            "other": "વસ્તુઓ દૂર કરો"
+          },
+          "ship_separately": {
+            "one": "તેને અલગથી મોકલો",
+            "other": "તેમને અલગથી મોકલો"
+          },
+          "pick_them_up_in_store": {
+            "one": "સ્ટોરમાંથી લઈ લો",
+            "other": "સ્ટોરમાંથી તેમને લઈ લો."
+          },
+          "remove_items_or_ship": "%{ship_separately_link} અથવા %{remove_items_link}",
+          "remove_items_or_pickup": "%{pickup_in_store_link} અથવા %{remove_items_link}"
+        },
+        "cross_border": {
+          "modal": {
+            "heading": "દેશ બદલો?",
+            "content": "આનાથી બધી વસ્તુઓ શિપિંગ પર રીસેટ થઈ જશે. તમારા પિકઅપ અને શિપિંગ સ્થાનો એક જ દેશમાં હોવા જોઈએ.",
+            "change_country": "દેશ બદલો"
+          },
+          "banner": "તમારી ડિલિવરી પદ્ધતિ અપડેટ કરવામાં આવી છે"
+        }
+      },
+      "captcha": {
+        "title": "ચાલુ રાખવા માટે કેપ્ચા પૂર્ણ કરો",
+        "errors": {
+          "not_solved": "ચાલુ રાખવા માટે કેપ્ચા પૂર્ણ કરો"
+        }
+      },
+      "clipboard": {
+        "copied": "કૉપિ કર્યું",
+        "failed_to_copy": "કોપી કરવામાં નિષ્ફળ"
+      },
+      "discount_errors": {
+        "generic_error": "તમારો ઑર્ડર પ્રોસેસ કરી શકાયો નથી કારણ કે તમારો ડિસ્કાઉન્ટ કોડ હવે ઉપલબ્ધ નથી. તમારા ઑર્ડરના કુલ મૂલ્યની સમીક્ષા કરો અને ફરીથી પ્રયાસ કરો."
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "તમને હવે B2B ઓર્ડર આપવાની પરવાનગી નથી. તેના બદલે પર્સનલ ઓર્ડર આપવા માટે %{logout_url} કરો.",
+        "log_out_link_text": "સાઇન આઉટ કરો",
+        "lost_permissions_subtitle": "તમારી પાસે હવે B2B ઓર્ડર આપવાની પરવાનગી નથી. વ્યક્તિગત ઓર્ડર આપવા માટે સાઇન આઉટ કરો.",
+        "lost_permissions_title": "સ્થાનની કોઈ પરવાનગીઓ નથી"
+      },
+      "shop_pay_external": {
+        "title": "શોપ પે ચેકઆઉટ",
+        "errors": {
+          "problem_loading": "Shop Pay લોડ કરવામાં સમસ્યા છે",
+          "try_again_later": "તમારું કનેક્શન તપાસો અથવા આ વિન્ડો બંધ કરો અને થોડીવારમાં ફરી પ્રયાસ કરો.",
+          "checkout_has_expired": "તમારી ચેકઆઉટની અવધિ સમાપ્ત થઈ ગઈ છે. આ વિંડો બંધ કરો અને {{shopName}} થી ફરીથી ચેકઆઉટ કરવાનો પ્રયાસ કરો."
+        },
+        "return_to_store": "{{shopName}} પર પાછા ફરો",
+        "return_to_store_simple": "સ્ટોર પર પાછા ફરો"
       }
     },
     "notices": {
