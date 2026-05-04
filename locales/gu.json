@@ -2337,7 +2337,34 @@
       "default_address": {
         "title": "ડિફોલ્ટ સરનામું",
         "title_accessibility_label": "ડિફોલ્ટ સરનામું: {{address}}"
-      }
+      },
+      "delete_button": "કાઢી નાખો",
+      "delete_button_accessibility_label": "{{address}} કાઢી નાખો",
+      "delete_confirmation_button": "સરનામું કાઢી નાખો",
+      "delete_confirmation_button_accessibility_label": "{{address}} કાઢી નાખો",
+      "delete_confirmation_message": "સરનામું કાઢી નાખવું? હાલના ઓર્ડર પર અસર થશે નહીં.",
+      "delete_confirmation_title": "સરનામું કાઢી નાખવું છે?",
+      "delete_confirmation_description": "હાલના ઓર્ડર પ્રભાવિત થશે નહીં.",
+      "edit_button": "સંપાદિત કરો",
+      "edit_button_accessibility_label": "{{સરનામું}} સંપાદિત કરો",
+      "edit_section_accessibility_label": "{{સરનામું}} સંપાદિત કરો",
+      "edit_modal_title": {
+        "default": "સરનામું સંપાદિત કરો",
+        "billing": "બિલિંગ સરનામું સંપાદિત કરો",
+        "shipping": "શિપિંગ સરનામું સંપાદિત કરો"
+      },
+      "loading_accessibility_message": "લોડિંગ સરનામું",
+      "loading_addresses_accessibility_message": "સરનામાં લોડ કરી રહ્યા છીએ",
+      "loading_billing_accessibility_message": "બિલિંગ સરનામું લોડ થાય છે",
+      "loading_finished_accessibility_message": "સરનામાનું નવું પેજ લોડ થયું છે.",
+      "loading_shipping_accessibility_message": "શિપિંગ સરનામું લોડ કરી રહ્યું છે",
+      "pagination": {
+        "load_more": "વધુ લોડ કરો",
+        "load_more_accessibility_label": "વધુ સરનામાં લોડ કરો"
+      },
+      "save_new_address_accessibility_label": "સરનામું સાચવો",
+      "title": "સરનામાં",
+      "billing_address_dropdown_placeholder": "બિલિંગ સરનામું"
     },
     "orders": {
       "order_list": {
@@ -2627,6 +2654,48 @@
         "modal_po_number_input_label": "PO નંબર",
         "modal_po_number_input_max_length_error": "PO નંબરની મહત્તમ લંબાઈ {{maxLength}} અક્ષરો છે.",
         "save": "સાચવો"
+      },
+      "account_information": {
+        "company_card_name_label": "કંપનીનું નામ",
+        "company_card_section_accessibility_label": "કંપની"
+      },
+      "locations": {
+        "contact_email": "ઈમેલ",
+        "contact_list_title": "લોકો",
+        "contact_name": "નામ",
+        "contact_permissions": "પરવાનગીઓ",
+        "contact_phone_number": "ફોન નંબર",
+        "location_picker_label": "સ્થળનું નામ",
+        "location_picker_accessibility_label": "સ્થળનું નામ: {{locationName}}",
+        "net_payment_terms_description": "{{name}}: {{numberOfDays}} દિવસમાં ચુકવણી કરવાની રહેશે",
+        "deposit_percentage": "{{percentage}} ડિપોઝિટ",
+        "own_role_contact_name": "તમે",
+        "pagination": {
+          "load_more": "વધુ લોડ કરો",
+          "load_more_accessibility_label": "વધુ સ્થાનો લોડ કરો"
+        },
+        "payment_details_title": "ચુકવણીની વિગતો",
+        "payment_terms": "ચુકવણીની શરતો",
+        "permissions_label": "તમારી પરવાનગીઓ",
+        "permissions_title": "પરવાનગીઓ",
+        "section_title": "સ્થાન",
+        "shipping_address_required": "ઓર્ડર આપવાનું શરૂ કરવા માટે આ સ્થાન પર શિપિંગ સરનામું ઉમેરો.",
+        "staff_and_permissions_title": "સ્ટાફ અને પરવાનગીઓ",
+        "tax_details_title": "કર વિગતો",
+        "tax_id": "ટેક્સ ID",
+        "tax_exemptions": "કરમુક્તિ",
+        "multiple_tax_exemptions": "વધુ {{taxExemptionsCount}}",
+        "multiple_tax_exemptions_and": "અને",
+        "tax_exemptions_modal_close": "બંધ કરો",
+        "taxes_none": "કોઈ નહીં",
+        "tax_exemption_not_applicable": "લાગુ નથી",
+        "tax_exemptions_modal_button_accessibility_label": "બધી કરમુક્તિ જુઓ"
+      },
+      "location_selection": {
+        "continue_to_store": "સ્ટોર કરવાનું ચાલુ રાખો",
+        "description": "જો તમારા કાર્ટમાં પહેલાથી જ વસ્તુઓ હોય, તો સ્થાન બદલવાથી કાર્ટની કિંમતો અને જથ્થાને અસર થઈ શકે છે.",
+        "description_switch_later": "તમે ગમે ત્યારે બદલી શકો છો",
+        "list_accessibility_label": "સ્થળોની સૂચિ"
       }
     },
     "errors": {
@@ -2699,6 +2768,61 @@
       "too_many_attempts": {
         "message": "ઘણા બધા પ્રયાસો",
         "description": "કૃપા કરીને થોડીવાર પછી ફરી પ્રયાસ કરો"
+      }
+    },
+    "address_form": {
+      "attention": "ધ્યાન આપો",
+      "attention_company": "કંપની/ધ્યાન",
+      "attention_help_text": "વ્યક્તિ કે વિભાગનું નામ",
+      "auto_complete_close_accessibility_label": "સૂચનો બંધ કરો",
+      "auto_complete_title": "સૂચનો",
+      "billing_address": "બિલિંગ સરનામું તરીકે ઉપયોગ કરો",
+      "cancel": "રદ કરો",
+      "cancel_accessibility_label": "સરનામું સંપાદિત કરવાનું રદ કરો {{address}}",
+      "creation_success_notification": "સરનામું ઉમેરાયું",
+      "default_address": "આ મારું ડિફોલ્ટ સરનામું છે",
+      "default_address_creation_success_notification": "ડિફોલ્ટ સરનામું ઉમેરાયું",
+      "default_address_update_success_notification": "ડિફૉલ્ટ સરનામું અપડેટ કરાયું",
+      "loading_add_form_accessibility_message": "નવું સરનામું ફોર્મ લોડ કરી રહ્યું છે",
+      "loading_edit_form_accessibility_message": "સરનામું સંપાદિત કરવા માટેનું ફોર્મ લોડ કરી રહ્યું છે",
+      "loading_form_accessibility_message": "સરનામું ફોર્મ લોડ કરી રહ્યું છે",
+      "loading_finished_accessibility_message": "સરનામું ફોર્મ લોડ થઈ ગયું છે",
+      "save": "સાચવો",
+      "save_accessibility_label": "સરનામું સાચવો {{address}}",
+      "section_title_accessibility_label": "સરનામું ઉમેરો",
+      "update_success_notification": "સરનામું અપડેટ કરાયું"
+    },
+    "account_menu": {
+      "signed_out_state": {
+        "sheet_title": "સાઇન ઇન કરો અથવા એકાઉન્ટ બનાવો",
+        "section_divider": "સાઇન ઇન કરવાની વધુ રીતો",
+        "alternate_divider": "અથવા",
+        "use_email_button": "ઈમેલનો ઉપયોગ કરો",
+        "email_field_label": "ઈમેલ",
+        "orders_button": "ઓર્ડર",
+        "profile_button": "પ્રોફાઇલ",
+        "shop_login_button": "Shop વડે સાઇન ઇન કરો",
+        "continue_with_google": "Google વડે ચાલુ રાખો",
+        "continue_with_facebook": "ફેસબુક દ્વારા ચાલુ રાખો"
+      },
+      "signed_in_state": {
+        "greeting_with_name": "હાય, {{first_name}}",
+        "greeting_without_name": "ખાતું",
+        "orders_button": "ઓર્ડર",
+        "profile_button": "પ્રોફાઇલ"
+      },
+      "location_picker": {
+        "sheet_title": "સ્થળો",
+        "search_field_placeholder": "શોધ"
+      },
+      "aria_labels": {
+        "close_menu": "મેનુ બંધ કરો",
+        "back_to_main_menu": "{{title}} પરથી મુખ્ય મેનુ પર પાછા જાઓ",
+        "open_submenu": "{{title}}, સબમેનુ ખોલે છે",
+        "loading_menu": "મેનૂ લોડ કરી રહ્યું છે",
+        "account": "ખાતું",
+        "sign_in_with_email": "ઈમેલ દ્વારા સાઇન ઇન કરો",
+        "sign_in": "સાઇન ઇન કરો"
       }
     }
   },
