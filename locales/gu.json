@@ -1875,8 +1875,13 @@
           "pagination": {
             "load_more_label": "વધુ લોડ કરો",
             "load_more_accessibility_label": "વધુ સમાપ્ત થઈ શકે તેવી રકમ લોડ કરો"
-          }
-        }
+          },
+          "title": "મુદતવાળી સ્ટોર ક્રેડિટ"
+        },
+        "label": "સ્ટોર ક્રેડિટ",
+        "accesibility_label": "સ્ટોર ક્રેડિટ - {{formattedBalance}}",
+        "expirable_amounts_button": "સમાપ્ત થતી રકમો જુઓ",
+        "expirable_amounts_label": "મુદતવીતી રકમ"
       },
       "payment_details": {
         "title": "ચુકવણી પદ્ધતિની વિગતો",
@@ -1950,6 +1955,63 @@
       "add_success": {
         "title": "ચુકવણી પદ્ધતિ ઉમેરાઈ ગઈ છે",
         "done_button": "ખરીદી ચાલુ રાખો"
+      },
+      "replacement_payment_method_title": "ચૂકવણીની વૈકલ્પિક પદ્ધતિ",
+      "title": "ચુકવણી પદ્ધતિઓ",
+      "add_payment_method_button": "ચુકવણી પદ્ધતિ ઉમેરો",
+      "add_payment_method_dropdown": {
+        "bank_account_consent": "ચુકવણી પદ્ધતિ ઉમેરવાથી, જ્યાં સુધી તમે રદ ન કરો ત્યાં સુધી તમે મંજૂર કરો છો તે ભાવિ ખરીદીઓ માટે તમારા કાર્ડને શુલ્ક લેવા અથવા બેંક ખાતામાંથી ડેબિટ કરવા માટે તમે અધિકૃત કરો છો."
+      },
+      "bank_account": {
+        "loading_accessibility_message": "બેંક એકાઉન્ટ બટન લોડ થઈ રહ્યું છે",
+        "iframe_title_accessibility_label": "બેંક ખાતું ખોલાવવું",
+        "display_name": "બેંક ખાતું",
+        "generic_error": "બેંક ખાતું ઉમેરી શકાયું નથી. પછીથી ફરી પ્રયાસ કરો."
+      },
+      "add_payment_method_banner": "ઝડપી ચેકઆઉટ અથવા પૂર્વ-અધિકૃત સેવાઓ માટે ચુકવણીની પદ્ધતિ ઉમેરો",
+      "no_payment_methods_banner": "કોઈ ચુકવણી પદ્ધતિઓ ઉમેરી નથી",
+      "edit_payment_method_button_accessibility_label": "{{paymentMethodName}} જેના છેલ્લા અંકો {{lastDigits}} છે તેમાં સુધારો કરો",
+      "edit_payment_method_brand_button_accessibility_label": "{{paymentMethodName}}માં ફેરફાર કરો",
+      "delete_payment_method_button": "કાઢી નાખો",
+      "delete_payment_method_button_accessibility_label": "{{paymentMethodName}} કાઢી નાખો",
+      "back_button": "પાછળ",
+      "back_button_accessibility_label": "{{paymentMethodStepTitle}} પર પાછા",
+      "default": "ડિફૉલ્ટ",
+      "generic_card": "કાર્ડ",
+      "expiration_warning_button_accessibility_label": "{{lastDigits}} માં સમાપ્ત થતા {{paymentMethodName}} માટે સમાપ્તિની ચેતવણી બતાવો",
+      "expires_soon": "આ કાર્ડની સમયસીમા ટૂંક સમયમાં સમાપ્ત થઈ રહી છે.",
+      "expired": "આ કાર્ડની અવધિ સમાપ્ત થઈ ગઈ છે",
+      "expired_badge_label": "સમાપ્ત થયું",
+      "card_update_consent": "આ ચુકવણી પદ્ધતિ ભવિષ્યની ખરીદીઓ માટે સાચવવામાં આવશે.",
+      "card_update_consent_subscriptions": "આ ચુકવણી પદ્ધતિ ભવિષ્યની ખરીદીઓ માટે સાચવવામાં આવશે અને કોઈપણ રિકરિંગ અથવા મુલતવી રાખેલ ખરીદી માટે ઉપયોગમાં લઈ શકાય છે.",
+      "digital_wallet_title": "ડિજિટલ વોલેટ",
+      "credit_or_debit_card_title": "ક્રેડિટ અથવા ડેબિટ કાર્ડ",
+      "credit_card_title": "ક્રેડિટ કાર્ડ",
+      "additional_payment_methods": "ચુકવણીની અન્ય રીતો",
+      "or": "અથવા",
+      "google_pay": {
+        "iframe_title_accessibility_label": "Google Pay ચુકવણી પદ્ધતિ ઉમેરો",
+        "loading_accessibility_message": "ગૂગલ પે લોડ કરી રહ્યું છે",
+        "loading": "ગૂગલ પે લોડ કરી રહ્યું છે",
+        "errors": {
+          "generic": "Google Pay માં કોઈ સમસ્યા હતી. ફરીથી પ્રયાસ કરો અથવા કોઈ બીજી ચુકવણી પદ્ધતિનો ઉપયોગ કરો.",
+          "missing_billing_address": "Google Pay માટે બિલિંગ સરનામું આવશ્યક છે. કૃપા કરીને તેને તમારા એકાઉન્ટમાં ઉમેરો."
+        }
+      },
+      "pay_pal": {
+        "iframe_title_accessibility_label": "પેપાલ ચુકવણી પદ્ધતિ ઉમેરો",
+        "loading_accessibility_message": "PayPal લોડ કરી રહ્યું છે",
+        "errors": {
+          "generic": "પેપાલમાં સમસ્યા હતી. ફરી પ્રયાસ કરો અથવા ચુકવણીની બીજી પદ્ધતિનો ઉપયોગ કરો."
+        }
+      },
+      "apple_pay": {
+        "loading": "Apple Pay લોડ કરી રહ્યાં છીએ",
+        "errors": {
+          "generic": "Apple Pay માં સમસ્યા હતી. ફરી પ્રયાસ કરો અથવા ચુકવણીની અન્ય કોઈ પદ્ધતિનો ઉપયોગ કરો.",
+          "not_available": "આ ડિવાઇસ પર Apple Pay ઉપલબ્ધ નથી.",
+          "missing_billing_address": "Apple Pay માટે બિલિંગ સરનામું આવશ્યક છે. કૃપા કરીને તમારા એકાઉન્ટમાં એક ઉમેરો."
+        }
       }
     },
     "payment_method_brands": {
@@ -2533,6 +2595,111 @@
         "description": "ઇમેઇલ સફળતાપૂર્વક અપડેટ થયો. લૉગિન પર રીડાયરેક્ટ કરી રહ્યાં છીએ."
       },
       "profile_update_confirmation_message": "પ્રોફાઇલ અપડેટ થઈ"
+    },
+    "B2B": {
+      "draft_order_details": {
+        "order_timeline": {
+          "hide_events_accessibility_label": "ડ્રાફ્ટ ઓર્ડરની વિગતો છુપાવો"
+        },
+        "subtitle": "{{date}} ના રોજ સબમિટ કર્યું",
+        "title": "ઓર્ડર {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "આ ચુકવણી પદ્ધતિ આ સ્થાન પરથી ભવિષ્યની ખરીદીઓ માટે ઉપલબ્ધ રહેશે નહીં.",
+          "description_with_replacement": "આ ચુકવણી પદ્ધતિ કાઢી નાખવાથી આ સ્થાન માટે પૂર્વ-અધિકૃત ચુકવણીઓ પર અસર થશે. આગામી ઑર્ડર મેળવવાનું ચાલુ રાખવા માટે તેને વૈકલ્પિક ચુકવણી પદ્ધતિથી બદલો."
+        },
+        "payment_details": {
+          "order_label": "ઓર્ડર {{name}}",
+          "draft_label": "ડ્રાફ્ટ ઓર્ડર {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "પીઓ નંબર ઉમેરો",
+        "add_modal_title": "પીઓ નંબર ઉમેરો",
+        "cancel": "રદ કરો",
+        "close_modal_accessibility_label": "PO નંબર મોડલ બંધ કરો",
+        "discard": "કાઢી નાખો",
+        "discard_changes_modal_title": "બદલાવો છોડવા?",
+        "edit_accessibility_label": "PO નંબર સંપાદિત કરો",
+        "edit_modal_title": "PO નંબર સંપાદિત કરો",
+        "empty_state": "કોઈ PO નંબર નથી",
+        "modal_po_number_input_label": "PO નંબર",
+        "modal_po_number_input_max_length_error": "PO નંબરની મહત્તમ લંબાઈ {{maxLength}} અક્ષરો છે.",
+        "save": "સાચવો"
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "આ સરનામું ડિલીટ કરવામાં સમસ્યા આવી રહી છે. ફરી પ્રયાસ કરો અથવા પેજ રિફ્રેશ કરો."
+      },
+      "addresses_loading_issue": {
+        "description": "કનેક્શન એરર. તમારું ઇન્ટરનેટ કનેક્શન તપાસો અને ફરી પ્રયાસ કરો."
+      },
+      "banner_title": {
+        "one": "ત્યાં {{count}} ભૂલ છે",
+        "other": "ત્યાં {{count}} ભૂલો છે"
+      },
+      "failed_address_creation": {
+        "description": "તમારું સરનામું બનાવવામાં સમસ્યા આવી રહી હતી. આ પેજ રિફ્રેશ કરવાનો પ્રયાસ કરો અથવા તમારું ઇન્ટરનેટ કનેક્શન તપાસો."
+      },
+      "failed_address_update": {
+        "description": "તમારું સરનામું અપડેટ કરવામાં કોઈ સમસ્યા આવી હતી. કૃપા કરીને આ પેજ રિફ્રેશ કરો અથવા તમારું ઇન્ટરનેટ કનેક્શન તપાસો."
+      },
+      "load_address_form_error": {
+        "title": "સરનામું ફોર્મ લોડ કરી શકાતું નથી",
+        "description": "સરનામાનું ફોર્મ લોડ થઈ શક્યું નથી.",
+        "refresh_button": "પેજ રીફ્રેશ કરો"
+      },
+      "load_orders_error": {
+        "title": "ઓર્ડર લોડ કરી શકાતા નથી",
+        "description": "ફરી પ્રયાસ કરો અથવા પછીથી પાછા આવો.",
+        "retry_button": "ફરી પ્રયાસ કરો"
+      },
+      "load_paypal_error": {
+        "description": "PayPal લોડ કરવામાં સમસ્યા આવી રહી છે. કૃપા કરીને ફરી પ્રયાસ કરો."
+      },
+      "logout_everywhere": {
+        "description": "સાઇન-આઉટ દરમિયાન કંઈક ભૂલ થઈ છે. કૃપા કરીને ફરીથી પ્રયાસ કરો."
+      },
+      "no_access_to_locations": {
+        "description": "તમારી પાસે કોઈ પણ સ્થાનની ઍક્સેસ નથી"
+      },
+      "not_found": {
+        "description": "URL તપાસો અથવા થોડીવાર પછી ફરીથી પ્રયાસ કરો.",
+        "title": "આ પૃષ્ઠ લોડ કરવામાં સમસ્યા છે"
+      },
+      "order_not_found": {
+        "description": "આ ઓર્ડર અસ્તિત્વમાં નથી અથવા તેને જોવાની તમારી પાસે પરવાનગી નથી.",
+        "title": "ઓર્ડર મળ્યો નથી"
+      },
+      "profile_update_error": {
+        "description": "તમારી પ્રોફાઇલ અપડેટ કરવામાં સમસ્યા આવી હતી. આ પેજ રિફ્રેશ કરવાનો પ્રયાસ કરો અથવા તમારું ઇન્ટરનેટ કનેક્શન તપાસો."
+      },
+      "profile_name_update_error": {
+        "description": "તમારું નામ અપડેટ કરવામાં સમસ્યા આવી હતી. કૃપા કરીને આ પૃષ્ઠને રિફ્રેશ કરવાનો પ્રયાસ કરો અથવા તમારું ઇન્ટરનેટ કનેક્શન તપાસો."
+      },
+      "retry_action_label": "ફરી પ્રયાસ કરો",
+      "resend_link": {
+        "too_many_requests": "ઘણી બધી વિનંતીઓ. પછીથી ફરી પ્રયાસ કરો.",
+        "generic": "વિનંતી નિષ્ફળ ગઈ"
+      },
+      "load_extension_error": {
+        "title": "ભૂલ",
+        "description": "આ પેજ રિફ્રેશ કરો અથવા થોડીવાર પછી ફરી પ્રયાસ કરો.",
+        "refresh_button": "પેજ રીફ્રેશ કરો"
+      },
+      "already_upgraded": "ગ્રાહકના ખાતા પહેલેથી જ અપગ્રેડ કરવામાં આવ્યા છે.",
+      "failed_to_upgrade": "ગ્રાહક એકાઉન્ટ સેટિંગ્સ અપગ્રેડ કરવામાં નિષ્ફળ.",
+      "not_upgraded": "ગ્રાહક ખાતાઓ અપગ્રેડ કરાયા નથી.",
+      "failed_to_revert": "ગ્રાહક ખાતાની સેટિંગ્સ પૂર્વવત્ કરવામાં નિષ્ફળ.",
+      "revert_window_expired": "રીવર્ટ વિન્ડો સમાપ્ત થઈ ગઈ છે."
+    },
+    "throttle": {
+      "too_many_attempts": {
+        "message": "ઘણા બધા પ્રયાસો",
+        "description": "કૃપા કરીને થોડીવાર પછી ફરી પ્રયાસ કરો"
+      }
     }
   },
   "accessibility": {
