@@ -737,7 +737,72 @@
         },
         "alternative_payment_currency_total": "ચાર્જ કર્યો: %{amount_due}",
         "pay_merchant_label": "%{merchant_name} ને ચૂકવો",
-        "discount_applies_to_subscription_items_only": "આ ડિસ્કાઉન્ટ ફક્ત સબસ્ક્રિપ્શન આઇટમ્સને જ લાગુ પડે છે"
+        "discount_applies_to_subscription_items_only": "આ ડિસ્કાઉન્ટ ફક્ત સબસ્ક્રિપ્શન આઇટમ્સને જ લાગુ પડે છે",
+        "title": "ઓર્ડર સારાંશ",
+        "group_title_label": "\"%{group_title}\" નો ભાગ",
+        "for_add_on": "માટે: %{group_title}",
+        "from_shop_heading": "%{shop_name} તરફથી",
+        "from_other_stores_heading": "અન્ય સ્ટોર્સમાંથી",
+        "from_multiple_stores_heading": "ઘણા સ્ટોર્સમાંથી",
+        "number_items": {
+          "one": "%{count} આઇટમ",
+          "other": "%{count} આઇટમ્સ"
+        },
+        "view_all_items": {
+          "one": "%{count} આઇટમ જુઓ",
+          "other": "બધી %{count} આઇટમ જુઓ"
+        },
+        "more_items_modal": {
+          "search_item": "શોધ",
+          "clear_search": "શોધ સાફ કરો",
+          "empty_results": "\"%{searchText}\" માટે કોઈ પરિણામ મળ્યું નથી. જોડણી તપાસો અથવા કોઈ અલગ શબ્દ કે શબ્દસમૂહનો ઉપયોગ કરો.",
+          "number_items_shown": "કુલ %{totalNumber} વસ્તુઓમાંથી %{shownNumber}"
+        },
+        "order_name_label": "ઓર્ડર %{name}",
+        "shopping_cart_label": "ખરીદીની ગાડી",
+        "discount_title": "ડિસ્કાઉન્ટ",
+        "discount_title_stacking": {
+          "one": "ડિસ્કાઉન્ટ",
+          "other": "ડિસ્કાઉન્ટ"
+        },
+        "discount_order_stacking": {
+          "one": "ઓર્ડર ડિસ્કાઉન્ટ",
+          "other": "ઓર્ડર ડિસ્કાઉન્ટ"
+        },
+        "discount_label": "ડિસ્કાઉન્ટ કોડ",
+        "discount_not_found": "દાખલ કરેલા કોડ સાથે મેળ ખાતું કોઈ માન્ય ડિસ્કાઉન્ટ મળ્યું નથી.",
+        "discount_placeholder": "ડિસ્કાઉન્ટ કોડ",
+        "discount_code_applied": "ડિસ્કાઉન્ટ કોડ લાગુ કર્યો",
+        "discount_code_applied_with_code": "ડિસ્કાઉન્ટ કોડ %{code} લાગુ કરવામાં આવ્યો છે",
+        "discount_code_removed": "ડિસ્કાઉન્ટ કોડ %{code} દૂર કરવામાં આવ્યો છે",
+        "discount_code_replaced": "ડિસ્કાઉન્ટ કોડ %{old_code} રદ કર્યો અને %{code} લાગુ કર્યો છે.",
+        "discount_code_replaced_multiple": "અનેક ડિસ્કાઉન્ટ કોડ દૂર કરાયા અને %{code} લાગુ કરાયો છે",
+        "discount_code_allocations_mismatch": "તમારો <strong style=\"text-transform:uppercase\">%{code}</strong> ડિસ્કાઉન્ટ કોડ બદલાયો છે. તમારા કાર્ટની સમીક્ષા કરો અને ફરી પ્રયાસ કરો.",
+        "order_discounts_apply_to_local_shop": "ઓર્ડર ડિસ્કાઉન્ટ માત્ર %{shop_name} ની આઇટમ્સ પર લાગુ પડે છે",
+        "gift_card_applied": "ભેટ કાર્ડ લાગુ કર્યું",
+        "enter_shipping_address": "શિપિંગ સરનામું દાખલ કરો",
+        "gift_card_title": "ગિફ્ટ કાર્ડ",
+        "gift_card_label": "ગિફ્ટ કાર્ડ",
+        "gift_card_placeholder": "ગિફ્ટ કાર્ડ",
+        "gift_card_and_discount_title": "ડિસ્કાઉન્ટ કોડ અથવા ગિફ્ટ કાર્ડ",
+        "gift_card_and_discount_label": "ડિસ્કાઉન્ટ કોડ અથવા ગિફ્ટ કાર્ડ",
+        "gift_card_and_discount_placeholder": "ડિસ્કાઉન્ટ કોડ અથવા ગિફ્ટ કાર્ડ",
+        "gift_cards_apply_to_local_shop": "ભેટ કાર્ડ ફક્ત %{shop_name} ની આઇટમ્સ માટે જ લાગુ પડે છે",
+        "add_discount_or_gift_card": "ડિસ્કાઉન્ટ કોડ અથવા ગિફ્ટ કાર્ડ ઉમેરો",
+        "remove_gift_card_label": "ગિફ્ટ કાર્ડ સાફ કરો",
+        "remove_discount_label": "ડિસ્કાઉન્ટ કાઢી નાખો",
+        "return_restocking_fee_label": "રીસ્ટોકિંગ ફી",
+        "return_shipping_fee_label": "પરત મોકલવાનું શિપિંગ",
+        "free_shipping_discount_label": "મફત શિપિંગ",
+        "applied_free_shipping_discount_label": "લાગુ પડ્યું",
+        "apply_discount_button_label": "અરજી કરો",
+        "applied_discount_message": "કુલ ઓર્ડર કિંમત પર %{amount} છૂટ",
+        "discount_has_been_applied": "ડિસ્કાઉન્ટ લાગુ કરવામાં આવ્યું છે",
+        "discount_has_been_removed": "ડિસ્કાઉન્ટ કાઢી નાખવામાં આવ્યું છે",
+        "automatic_discount_tooltip": "આપમેળે લાગુ પડતા ડિસ્કાઉન્ટ દૂર કરી શકાતા નથી",
+        "gift_card_has_been_applied": "ગિફ્ટ કાર્ડ લાગુ કરવામાં આવ્યું છે",
+        "gift_card_has_been_removed": "ભેટ કાર્ડ દૂર કરવામાં આવ્યું છે",
+        "gift_card_subscriptions_notice": "ગિફ્ટ કાર્ડ ફક્ત તમારી પ્રથમ ચુકવણી પર જ લાગુ પડશે"
       },
       "shipping": {
         "title": "શિપિંગ",
@@ -812,6 +877,94 @@
           "free_shipping_cycles": {
             "one": "વધુ %{count} ડિલિવરી માટે મફત શિપિંગ"
           }
+        }
+      },
+      "stock": {
+        "unpurchasable_product_generic": {
+          "status_column_header": "ઉપલબ્ધ નથી"
+        },
+        "unfulfillable_product": {
+          "title": "ડિલિવરી ઉપલબ્ધ નથી",
+          "message": {
+            "one": "આ આઇટમ માટે %{delivery_method} હવે ઉપલબ્ધ નથી.",
+            "other": "આ વસ્તુઓ માટે %{delivery_method} હવે ઉપલબ્ધ નથી."
+          },
+          "default_message": {
+            "one": "આ આઇટમ માટે પસંદ કરેલી ડિલિવરી પદ્ધતિ હવે ઉપલબ્ધ નથી.",
+            "other": "આ વસ્તુઓ માટે પસંદ કરેલ ડિલિવરી પદ્ધતિ હવે ઉપલબ્ધ નથી."
+          }
+        },
+        "unshippable_product": {
+          "title": "ડિલિવરી ઉપલબ્ધ નથી",
+          "header": {
+            "one": "%{count} વસ્તુ માટે કોઈ ડિલિવરી ઉપલબ્ધ નથી",
+            "other": "%{count} આઇટમ્સ માટે કોઈ ડિલિવરી ઉપલબ્ધ નથી"
+          },
+          "message": {
+            "one": "આ આઇટમ તમારા કાર્ટમાંથી દૂર કરવામાં આવશે કારણ કે તમારા સરનામાં માટે કોઈ ડિલિવરી પદ્ધતિઓ ઉપલબ્ધ નથી.",
+            "other": "તમારા સરનામાં માટે કોઈ ઉપલબ્ધ ડિલિવરી પદ્ધતિઓ ન હોવાથી આ આઇટમ્સ તમારી કાર્ટમાંથી દૂર કરવામાં આવશે."
+          },
+          "status_column_header": "ડિલિવરી નહીં"
+        },
+        "price_update": {
+          "title": "ભાવ અપડેટ",
+          "description": "આ વસ્તુઓની કિંમતો બદલાઈ ગઈ છે અને તમારા કાર્ટમાં અપડેટ કરવામાં આવી છે.",
+          "updated_price": "અપડેટ કરેલ કિંમત"
+        },
+        "price_and_quantity_update": {
+          "title": "ભાવ અને જથ્થાનું અપડેટ",
+          "description": "આ વસ્તુઓ માટે કિંમતો અને ઉપલબ્ધ જથ્થામાં ફેરફાર થયો છે અને તે તમારી કાર્ટમાં અપડેટ થયેલ છે."
+        },
+        "out_of_stock": {
+          "description": "આ વસ્તુઓ હવે ઉપલબ્ધ નથી અને તેમને તમારા કાર્ટમાંથી દૂર કરવામાં આવી છે.",
+          "items_unavailable": "કેટલીક વસ્તુઓ હવે ઉપલબ્ધ નથી અને તેને તમારી કાર્ટમાંથી દૂર કરવામાં આવી છે."
+        },
+        "out_of_stock_in_context_label": "આ ઉત્પાદન તમારા દેશ/પ્રદેશમાં ઉપલબ્ધ નથી."
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "અનુપલબ્ધ પ્રોડક્ટ",
+          "other": "અનુપલબ્ધ ઉત્પાદનો"
+        },
+        "products_not_available": {
+          "one": "આ ઉત્પાદન તમારા કાર્ટમાંથી દૂર કરવામાં આવશે કારણ કે તે તમારા દેશ/પ્રદેશમાં ઉપલબ્ધ નથી.",
+          "other": "આ પ્રોડક્ટ્સ તમારા કાર્ટમાંથી દૂર કરવામાં આવશે કારણ કે તે તમારા દેશ/પ્રદેશમાં ઉપલબ્ધ નથી."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "આ ઉત્પાદન તમારા દેશ/પ્રદેશમાં ઉપલબ્ધ નથી.",
+          "other": "આ ઉત્પાદનો તમારા દેશ/પ્રદેશમાં ઉપલબ્ધ નથી."
+        },
+        "unavailable_label": "અનુપલબ્ધ"
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "આ ઉત્પાદન %{location_name} પર ડિલિવરી માટે ઉપલબ્ધ નથી.",
+          "some_products_other": "આ ઉત્પાદનો %{location_name} પર ડિલિવરી માટે ઉપલબ્ધ નથી.",
+          "all_products_one": "તમારા કાર્ટમાંની પ્રોડક્ટ %{location_name} પર પહોંચાડવા માટે ઉપલબ્ધ નથી.",
+          "all_products_other": "તમારા કાર્ટમાંની પ્રોડક્ટ્સ %{location_name} પર ડિલિવરી માટે ઉપલબ્ધ નથી."
+        },
+        "missing_country_fallback": "તમારો દેશ",
+        "indeterminate_location_fallback": "તમારું સ્થાન",
+        "cart_updated": "તમારી કાર્ટ અપડેટ કરવામાં આવી છે.",
+        "change_address_only": "આગળ વધવા માટે ડિલિવરી સરનામું બદલો.",
+        "change_address_or_remove": "ડિલિવરી સરનામું બદલો અથવા %{remove_action} કરો.",
+        "remove_items_action": {
+          "one": "અનુપલબ્ધ વસ્તુ દૂર કરો",
+          "other": "અનુપલબ્ધ વસ્તુઓ દૂર કરો"
+        },
+        "empty_cart_action": "ગાડી ખાલી કરો અને સ્ટોર પર પાછા ફરો"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "%{count} વસ્તુ માટે કોઈ ડિલિવરી ઉપલબ્ધ નથી",
+            "other": "%{count} આઇટમ્સ માટે કોઈ ડિલિવરી ઉપલબ્ધ નથી"
+          },
+          "message": {
+            "one": "આ આઇટમ તમારા કાર્ટમાંથી દૂર કરવામાં આવશે કારણ કે તમારા સરનામાં માટે કોઈ ડિલિવરી પદ્ધતિઓ ઉપલબ્ધ નથી.",
+            "other": "તમારા સરનામાં માટે કોઈ ઉપલબ્ધ ડિલિવરી પદ્ધતિઓ ન હોવાથી આ આઇટમ્સ તમારી કાર્ટમાંથી દૂર કરવામાં આવશે."
+          },
+          "label": "ડિલિવરી નહીં"
         }
       }
     },
