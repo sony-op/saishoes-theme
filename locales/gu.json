@@ -1972,7 +1972,32 @@
           "staff": "સ્ટાફની ભૂલ",
           "other": "અન્ય"
         },
-        "cash_on_delivery": "કેશ ઓન ડિલિવરી (COD)"
+        "cash_on_delivery": "કેશ ઓન ડિલિવરી (COD)",
+        "not_available": "આ ઓર્ડર ઉપલબ્ધ નથી",
+        "financial_status": {
+          "authorized": "અધિકૃત",
+          "pending": "બાકી",
+          "paid": "ચુકવેલ",
+          "unpaid": "વણચૂકવેલ",
+          "voided": "રદ કરેલ",
+          "partially_paid": "આંશિક રીતે ચૂકવેલ",
+          "partially_refunded": "આંશિક રીતે પરત કરવામાં આવ્યું છે",
+          "refunded": "પરત કરવામાં આવ્યું",
+          "expired": "સમાપ્ત થયું"
+        },
+        "fulfillment_status": {
+          "fulfilled": "પૂર્ણ થયું",
+          "complete": "પૂર્ણ કરો",
+          "partial": "આંશિક",
+          "unfulfilled": "અપૂરાં",
+          "restocked": "ફરીથી સંગ્રહ થયો"
+        },
+        "transaction_status": {
+          "success": "સફળતા",
+          "pending": "બાકી",
+          "failure": "નિષ્ફળતા",
+          "error": "ભૂલ"
+        }
       },
       "cart": {
         "not_found": "કાર્ટ મળ્યું નથી",
@@ -2025,6 +2050,32 @@
         "add_products": "પ્રોડક્ટ્સ કે જે %{tag} ટેગને મેચ કરે છે તેમના પર પસંદગી મર્યાદિત કરો",
         "remove_articles": "એવા લેખો પર શોધ વિસ્તૃત કરો કે જે %{tag} ટેગ કરેલા નથી",
         "remove_products": "ટૅગ %{tag} દૂર કરો"
+      },
+      "customer": {
+        "password_reset_error": "પાસવર્ડ રીસેટ ભૂલ",
+        "subscribe_error": "સબ્સ્ક્રાઇબ ભૂલ",
+        "unsubscribe_error": "અનસબ્સ્ક્રાઇબ ભૂલ",
+        "no_account_found": "તે ઇમેઇલ સાથે કોઈ એકાઉન્ટ મળ્યું નથી.",
+        "invalid_credentials": "ખોટો ઇમેઇલ અથવા પાસવર્ડ.",
+        "denylisted_reset_password": "તમારું એકાઉન્ટ ઍક્સેસ કરી શકાયું નથી કારણ કે વર્તમાન પાસવર્ડ સુરક્ષિત નથી. તમને તમારો પાસવર્ડ અપડેટ કરવા માટે એક ઇમેઇલ પ્રાપ્ત થશે.",
+        "signup_disabled": "ગ્રાહક ખાતું બનાવવાનું અક્ષમ કરવામાં આવ્યું છે."
+      },
+      "address": {
+        "updated": "સરનામું સફળતાપૂર્વક અપડેટ થયું.",
+        "error_updating": "સરનામું અપડેટ કરવામાં ભૂલ આવી",
+        "created": "સરનામું સફળતાપૂર્વક બનાવવામાં આવ્યું",
+        "error_creating": "સરનામું બનાવવામાં ભૂલ.",
+        "deleted": "સરનામું સફળતાપૂર્વક કાઢી નાખવામાં આવ્યું.",
+        "error_deleting": "સરનામું કાઢી નાખવામાં ભૂલ આવી."
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "વધારેલ %{delta}",
+          "increment_item": "વધારેલ %{delta}",
+          "decrement_item": "%{total} માંથી %{delta} દૂર કરવામાં આવ્યું.",
+          "decrement_fulfilled_line_item": "%{total} માંથી %{delta} પરત મળ્યા",
+          "decrement_return_line_item": "રીટર્નમાંથી %{delta} દૂર કરવામાં આવ્યું"
+        }
       }
     },
     "email_marketing": {
@@ -2167,7 +2218,88 @@
     },
     "errors": {
       "blank": "ખાલી ન હોઈ શકે",
-      "blocked_address": "આ સ્થાન સપોર્ટેડ નથી."
+      "blocked_address": "આ સ્થાન સપોર્ટેડ નથી.",
+      "credit_card_session_expired": "ક્રેડિટ કાર્ડની અધિકૃતતા સમાપ્ત થઈ ગઈ છે, કૃપા કરીને તમારી ચુકવણીની માહિતી ફરીથી દાખલ કરો. તમારા કાર્ડમાંથી શુલ્ક લેવામાં આવ્યો નથી.",
+      "empty": "ખાલી હોઈ શકે નહીં",
+      "invalid_email": "માન્ય ઇમેઇલ સરનામું હોવું આવશ્યક છે",
+      "discount_disabled": "આ ડિસ્કાઉન્ટ અક્ષમ કરવામાં આવ્યું છે",
+      "discount_expired": "આ ડિસ્કાઉન્ટ હવે માન્ય નથી.",
+      "discount_limit_reached": "આ ડિસ્કાઉન્ટ તેની ઉપયોગ મર્યાદા સુધી પહોંચી ગયું છે",
+      "discount_not_found": "દાખલ કરેલા કોડ સાથે મેળ ખાતું કોઈ માન્ય ડિસ્કાઉન્ટ મળ્યું નથી.",
+      "customer_already_used_once_per_customer_discount_notice": "આ ડિસ્કાઉન્ટ તેની ઉપયોગ મર્યાદા સુધી પહોંચી ગયું છે",
+      "gift_card_already_applied": "તમારા ચેકઆઉટ પર કોડ પહેલેથી જ લાગુ કરી દેવાયો છે",
+      "gift_card_code_invalid": "કોડ અમાન્ય છે",
+      "gift_card_currency_mismatch": "આ ગિફ્ટ કાર્ડનો ઉપયોગ આ ખરીદી માટે થઈ શકશે નહીં. તેને ફરીથી ઇશ્યૂ કરાવવા માટે %{shop_name}નો સંપર્ક કરો.",
+      "gift_card_depleted": "આ ગિફ્ટ કાર્ડમાં કોઈ ભંડોળ બાકી નથી.",
+      "gift_card_disabled": "ગિફ્ટ કાર્ડ અક્ષમ કરેલ છે",
+      "gift_card_expired": "ગિફ્ટ કાર્ડની સમયસીમા સમાપ્ત થઈ ગઈ છે",
+      "invalid": "અમાન્ય છે",
+      "bad_domain": "અમાન્ય ડોમેન નામ શામેલ છે",
+      "taken": "પહેલેથી જ લેવાઈ ચૂક્યું છે",
+      "contains_html_tags": "HTML ટેગ્સ ન હોવા જોઈએ",
+      "too_short": "ખૂબ નાનું છે (ઓછામાં ઓછા %{count} અક્ષરો)",
+      "too_long": "ખૂબ લાંબુ છે (મહત્તમ %{count} અક્ષરો)",
+      "password_mismatch": "આપેલ પાસવર્ડ સાથે મેળ ખાતો હોવો જોઈએ",
+      "contains_spaces": "ખાલી જગ્યાઓથી શરૂ થાય છે અથવા સમાપ્ત થાય છે.",
+      "invalid_for_country": "%{country} માટે માન્ય નથી",
+      "invalid_for_country_and_province": "%{province} અને %{country} માટે માન્ય નથી",
+      "invalid_province_in_country": "એ %{country} માં માન્ય પ્રાંત નથી",
+      "invalid_state_in_country": "એ %{country} માં માન્ય રાજ્ય નથી",
+      "invalid_region_in_country": "%{country}માં માન્ય પ્રદેશ નથી.",
+      "less_than_or_equal_to": "%{count} કરતાં ઓછું અથવા તેના જેટલું હોવું જોઈએ",
+      "not_supported": "આધારભૂત નથી",
+      "full_name_required": "પ્રથમ નામ અને છેલ્લું નામ દાખલ કરો",
+      "invalid_for_card_type": "માન્ય નથી",
+      "invalid_type": "માફ કરશો, અમે આ પ્રકારના કાર્ડ સ્વીકારતા નથી",
+      "invalid_format": "ફોર્મેટ યોગ્ય નથી",
+      "expired": "ની અવધિ પૂર્ણ થઈ ગઈ છે",
+      "invalid_start_date_or_issue_number_for_debit": "માન્ય શરૂઆતની તારીખ અથવા ઇશ્યૂ નંબર આવશ્યક છે",
+      "invalid_expiry_year": "એક માન્ય સમાપ્તિ વર્ષ નથી",
+      "reset_password_html": "આ ઈમેલ સરનામું પહેલાથી જ એક એકાઉન્ટ સાથે સંકળાયેલું છે. જો આ એકાઉન્ટ તમારું હોય, તો તમે <a href=\"/account/login#recover\">તમારો પાસવર્ડ રીસેટ કરી શકો છો</a>",
+      "verify_email": "અમે %{customer_email} પર એક ઇમેઇલ મોકલ્યો છે, કૃપા કરીને તમારા ઇમેઇલ સરનામાની ચકાસણી કરવા માટે શામેલ કરેલી લિંક પર ક્લિક કરો.",
+      "product_not_available": "આ ગ્રાહક માટે પ્રોડક્ટ પ્રકાશિત નથી.",
+      "shop_404": {
+        "title": "એક ઈકોમર્સ વેબસાઇટ બનાવો અને ઓનલાઈન વેચાણ કરો! શોપિફાઈ દ્વારા ઇકોમર્સ સોફ્ટવેર",
+        "heros": {
+          "store_unavailable": "માફ કરશો, આ સ્ટોર હાલમાં અનુપલબ્ધ છે.",
+          "store_not_exist": "આ સ્ટોર અસ્તિત્વમાં નથી.",
+          "no_storefront": "આ સ્ટોરની હજી કોઈ વેબસાઇટ નથી."
+        },
+        "links": {
+          "explore_other_stores": "અન્ય સ્ટોર્સ શોધો",
+          "start_free_trial": "મફત અજમાયશ શરૂ કરો"
+        },
+        "owner_ctas": {
+          "header": "શું તમે સ્ટોરના માલિક છો?",
+          "fix_domain": "તમારા નવા વેબ સરનામાંનું સેટઅપ પૂરું કરો, %{domain_settings_link} પર જાઓ. \"ડોમેઇન કનેક્ટ કરો\" પર ક્લિક કરો અને દાખલ કરો: %{domain}.<br>જો તમને તમારી સ્ટોરમાં પ્રવેશવામાં મુશ્કેલી પડી રહી હોય, તો %{forgot_your_store_link} પૃષ્ઠનો પ્રયાસ કરો.",
+          "fix_domain_link_text": "તમારી ડોમેન સેટિંગ્સ",
+          "forgot_your_store_link_text": "તમારો સ્ટોર ભૂલી ગયા છો?",
+          "add_storefront": "તમે તમારા %{admin_link} માં ઑનલાઇન સ્ટોર ચેનલ ઉમેરીને તમારી વેબસાઇટ સેટ કરી શકો છો. જો તમને તમારા સ્ટોરમાં પ્રવેશ કરવામાં મુશ્કેલી આવી રહી હોય, તો %{forgot_your_store_link} પેજ અજમાવો.",
+          "admin_link_text": "એડમિન"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "રૂબરૂ વેચાણ કરો",
+            "caption": "તમે શરૂઆત કરી રહ્યા હો કે વિસ્તરણ કરી રહ્યા હો, તમારી રિટેલ સ્ટોર ચલાવવા માટે જરૂરી સુવિધાઓ મેળવો.",
+            "link_text": "મફત અજમાયશ શરૂ કરો"
+          },
+          "open_a_store": {
+            "header": "નવો શોપિફાય સ્ટોર ખોલો",
+            "caption": "3-દિવસની મફત અજમાયશ શરૂ કરો, પછીના 3 મહિના માટે દર મહિને $1 માં ચાલુ રાખો.",
+            "link_text": "હમણાં સાઇન અપ કરો"
+          },
+          "editions": {
+            "header": "Shopify Editions જુઓ",
+            "caption": "૧૦૦+ પ્રોડક્ટ અપડેટ્સ સાથે, તમે કલ્પના કરી હોય તેના કરતાં વધુ ઉત્પાદક અને સર્જનાત્મક બની શકો છો, અને વાણિજ્યમાં વધુ શક્તિશાળી બની શકો છો.",
+            "link_text": "નવીનતમ આવૃત્તિઓ જુઓ"
+          },
+          "store_owner": {
+            "header": "શું તમે સ્ટોરના માલિક છો?",
+            "caption": "શું તમને તમારા સ્ટોરમાં લૉગ ઇન કરવામાં મુશ્કેલી પડી રહી છે? %{forgot_your_store_link} સુવિધાનો પ્રયાસ કરો. જો તમે તમારા સ્ટોરને ફરીથી સક્રિય કરવા માંગતા હોય, તો %{shopify_support_link} નો સંપર્ક કરો.",
+            "shopify_support_link_text": "શોપિફાય સપોર્ટ"
+          }
+        }
+      }
     },
     "checkpoint": {
       "message": "ચાલુ રાખવા માટે કેપ્ચા સોલ્વ કરો",
