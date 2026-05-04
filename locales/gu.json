@@ -1917,6 +1917,154 @@
         "title": "ડિફોલ્ટ સરનામું",
         "title_accessibility_label": "ડિફોલ્ટ સરનામું: {{address}}"
       }
+    },
+    "orders": {
+      "order_list": {
+        "filter": {
+          "date": {
+            "today": "આજે",
+            "last_7_days": "છેલ્લા ૭ દિવસ",
+            "last_30_days": "છેલ્લા 30 દિવસ",
+            "last_90_days": "છેલ્લા 90 દિવસ",
+            "last_365_days": "છેલ્લા 12 મહિના",
+            "custom": "કસ્ટમ"
+          }
+        },
+        "show_order_actions_accessibility_label": "ઓર્ડર {{name}} માટે ઓર્ડર ક્રિયાઓ બતાવો",
+        "view_order": "ઓર્ડર જુઓ",
+        "view_order_accessibility_label": "ઓર્ડર {{orderName}} જુઓ"
+      },
+      "order_status": {
+        "attempted_delivery_label": "વિતરણનો પ્રયાસ કર્યો",
+        "attempted_to_deliver_label": "વિતરિત કરવાનો પ્રયત્ન કર્યો",
+        "preparing_for_shipping_label": "શિપિંગ માટે તૈયારી કરી રહ્યા છીએ",
+        "ready_for_pickup_label": "પિકઅપ માટે તૈયાર છે",
+        "ready_for_pickup_description": "આ વસ્તુઓ ઉપાડવા માટે તૈયાર છે. તમારી ઑર્ડરની પુષ્ટિ કરતી વખતે કૃપા કરીને તે સાથે લાવજો.",
+        "ready_for_pickup_location": "તમારો ઓર્ડર લોકેશન પર પિકઅપ માટે તૈયાર છે",
+        "picked_up_label": "પસંદ કર્યું",
+        "canceled_label": "રદ કર્યું",
+        "canceled_title": "તમારો ઓર્ડર રદ કરવામાં આવ્યો છે.",
+        "come_back": "તમારી શિપમેન્ટની સ્થિતિ પરના અપડેટ્સ માટે આ પૃષ્ઠ પર પાછા આવો.",
+        "company_tracking_number": "{{company}} ટ્રેકિંગ નંબર:",
+        "confirmed_label": "ખાતરી થઈ",
+        "confirmed_title": "તમારો ઓર્ડર કન્ફર્મ થઈ ગયો છે.",
+        "confirmed_description_pickup": "તમારો ઑર્ડર પિકઅપ માટે તૈયાર હોય ત્યારે તમને એક ઇમેઇલ પ્રાપ્ત થશે.",
+        "confirmed_description_digital": "તમારો ઓર્ડર તૈયાર થશે ત્યારે તમને એક ઇમેઇલ પ્રાપ્ત થશે.",
+        "confirmed_description_gift_card_text": "તમારો ઑર્ડર તૈયાર થઈ જાય ત્યારે તમને એક ટેક્સ્ટ મળશે.",
+        "complete_label": "પૂર્ણ કરો",
+        "delivered_label": "વિતરિત કરવામાં આવ્યું",
+        "delivered_description_gift_card": {
+          "one": "ભેટ કાર્ડ ઇમેઇલ દ્વારા મોકલવામાં આવ્યું હતું.",
+          "other": "ગિફ્ટ કાર્ડ્સ ઇમેઇલ દ્વારા મોકલવામાં આવ્યા હતા."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "ગિફ્ટ કાર્ડ ટેક્સ્ટ દ્વારા મોકલવામાં આવ્યું હતું.",
+          "other": "ગિફ્ટ કાર્ડ્સ ટેક્સ્ટ દ્વારા મોકલવામાં આવ્યા હતા."
+        },
+        "gift_card_label": {
+          "one": "ગિફ્ટ કાર્ડ",
+          "other": "ગિફ્ટ કાર્ડ્સ"
+        },
+        "gift_card_resend_button": {
+          "one": "ગિફ્ટ કાર્ડ ફરીથી મોકલો",
+          "other": "ગીફ્ટ કાર્ડ ફરીથી મોકલો"
+        },
+        "gift_resend_success": {
+          "one": "ગિફ્ટ કાર્ડ ફરીથી મોકલવામાં આવ્યું છે",
+          "other": "ગિફ્ટ કાર્ડ ફરીથી મોકલવામાં આવ્યા"
+        },
+        "gift_resend_failure": {
+          "one": "તમારી ગિફ્ટ કાર્ડ ફરીથી મોકલવામાં સમસ્યા હતી. ફરી પ્રયાસ કરો અથવા અમારો સંપર્ક કરો.",
+          "other": "તમારી ગિફ્ટ કાર્ડ્સ ફરીથી મોકલવામાં સમસ્યા આવી હતી. ફરી પ્રયાસ કરો અથવા અમારો સંપર્ક કરો."
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "ગિફ્ટ કાર્ડ એક અલગ ઇમેઇલમાં મોકલવામાં આવશે.",
+          "other": "દરેક ગિફ્ટ કાર્ડ અલગ ઇમેઇલમાં મોકલવામાં આવશે."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "ગિફ્ટ કાર્ડ અલગ ટેક્સ્ટમાં મોકલવામાં આવશે.",
+          "other": "દરેક ગિફ્ટ કાર્ડ અલગ ટેક્સ્ટમાં મોકલવામાં આવશે."
+        },
+        "status_timestamp": "{{તારીખ}}ના રોજ અપડેટ કરાયું",
+        "estimated_delivery": "અપેક્ષિત {{date}}",
+        "expected_by": "{{date}} સુધીમાં અપેક્ષિત છે",
+        "was_expected_by": "{{date}} સુધીમાં અપેક્ષિત હતું",
+        "delivered": "આવ્યા {{date}}",
+        "buy_with_prime_logo_accessibility_label": "એમેઝોન બાય વીથ પ્રાઇમ લોગો",
+        "in_review_label": "સમીક્ષા હેઠળ",
+        "in_review_title": "તમારો ઓર્ડર સમીક્ષા હેઠળ છે",
+        "last_updated": "છેલ્લે અપડેટ કરાયું: {{date}}",
+        "multiple_shipments_label": "બહુવિધ શિપમેન્ટ",
+        "multiple_statuses_label": "બહુવિધ ઓર્ડર સ્થિતિઓ",
+        "no_tracking_number": "આ શિપમેન્ટ માટે કોઈ ટ્રૅકિંગ નંબર નથી.",
+        "tracking_number": {
+          "one": "ટ્રેકિંગ નંબર",
+          "other": "ટ્રેકિંગ નંબરો"
+        },
+        "on_its_way_label": "તેના માર્ગ પર",
+        "out_for_delivery_label": "ડિલિવરી માટે નીકળી ગયું છે",
+        "resume_tracking": "ફરી શરૂ કરો ટ્રૅકિંગ",
+        "submitted_label": "સબમિટ કરેલું",
+        "submitted_description": "ઓર્ડર અને ચુકવણીની વિગતો તપાસો.",
+        "there_was_a_problem_label": "કોઈ સમસ્યા હતી.",
+        "track_shipment": "શિપમેન્ટ ટ્રૅક કરો",
+        "request_return": "રીટર્નની વિનંતી કરો",
+        "view_order_for_details": "વિગતો માટે ઓર્ડર જુઓ",
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "એમેઝોન પર મેનેજ કરો"
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "એમેઝોન વડે મેનેજ કરો",
+            "new_window_disclaimer": "(નવી વિંડોમાં ખુલે છે)"
+          }
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": " દ્વારા ડિલિવરીની ખાતરી",
+            "external_promise_brand_label": "દ્વારા ડિલિવરી",
+            "not_delivered_by_label": "{{date}} પછી વિતરિત",
+            "delivery_guarantee_expired_label": "ડિલિવરી ગેરંટીની અવધિ પૂરી થઈ ગઈ છે",
+            "modal_accessibility_button_label": "ડિલિવરી પ્રોમિસની વિગતો",
+            "download_shop_app_button_label": "ટ્રૅક કરવા માટે દુકાન ડાઉનલોડ કરો",
+            "track_with_shop_button_label": "દુકાન સાથેનો ટ્રેક",
+            "claim_shop_cash_button_label": "શોપ કેશનો દાવો કરો"
+          },
+          "details_modal": {
+            "title": "ડિલિવરી ગેરંટી",
+            "active_delivery_guarantee_label": "ડિલિવરી: {{date}} સુધીમાં",
+            "expired_delivery_guarantee_description": "આ ઓર્ડરની 30-દિવસની Shop Promise ગેરંટીની અવધિ પૂર્ણ થઈ ગઈ છે.",
+            "expired_badge_label": "સમાપ્ત થયું",
+            "order_includes_guarantees_label": "તમારા ઓર્ડરમાં {{deliveryAgreementsCount}} ગેરંટી શામેલ છે",
+            "order_includes_guarantees_description": "શોપ પ્રોમિસ ઝડપી, ભરોસાપાત્ર ડિલિવરીની ગેરંટી આપે છે. જો તમારો ઑર્ડર {{date}} પછી આવે, તો શોપ કૅશનો દાવો કરો.",
+            "delivered_after_label": "{{date}} પછી વિતરિત",
+            "delivered_after_description": "તમારો ઑર્ડર મોડો આવ્યો હોવાથી, તમે {{amount}} શૉપ કૅશ ક્લેમ કરવાને પાત્ર છો.",
+            "claimed_shop_cash_description": "આ ઓર્ડર મોડો આવ્યો હોવાથી, તમે {{amount}} શોપ કેશનો દાવો કર્યો છે.",
+            "eligible_to_claim_shop_cash_description": "તમારો ઑર્ડર મોડો આવ્યો હોવાથી, તમે {{amount}} શૉપ કૅશ ક્લેમ કરવાને પાત્ર છો.",
+            "learn_more_button_label": "વધુ જાણો",
+            "claim_shop_cash_button_label": "શોપ કેશનો દાવો કરો",
+            "view_balance_in_shop_button_label": "દુકાનમાં બેલેન્સ જુઓ",
+            "scan_to_claim_shop_cash_label": "{{amount}} શૉપ કૅશ મેળવવા માટે સ્કૅન કરો"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "તરત ડિલિવરી સાથે",
+            "mixed_brands_label": "ડિલિવરીની ખાતરી",
+            "not_delivered_by_label": "{{date}} સુધીમાં ડિલિવર નહિ થાય",
+            "modal_accessibility_button_label": "ડિલિવરી પ્રોમિસની વિગતો"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "તમારા શોપ કૅશનો દાવો કરો",
+            "no_shop_app_label": "{{appDownloadLink}} શોપ કેશ મેળવવા માટે",
+            "download_shop_app_label": "શોપ ડાઉનલોડ કરો"
+          },
+          "details_modal": {
+            "title": "તરત ડિલિવરી સાથે",
+            "modal_accessiblity_label": "ડિલિવરી પ્રોમિસની વિગતો"
+          }
+        }
+      }
     }
   },
   "accessibility": {
