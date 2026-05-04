@@ -676,7 +676,76 @@
           "status": {
             "invalid_format": {
               "at": "ઓસ્ટ્રિયાના VAT નંબર્સમાં AT અને 9 અક્ષરો હોય છે.",
-              "be": "બેલ્જિયમ VAT નંબર BE અને 10 અક્ષરો ધરાવે છે"
+              "be": "બેલ્જિયમ VAT નંબર BE અને 10 અક્ષરો ધરાવે છે",
+              "bg": "બલ્ગેરિયાના VAT નંબર BG અને 9-10 અક્ષરો ધરાવે છે.",
+              "hr": "ક્રોએશિયાના VAT નંબર HR અને 11 અક્ષરો ધરાવે છે",
+              "cy": "સાયપ્રસ VAT નંબર CY અને 9 અક્ષરો ધરાવે છે.",
+              "cz": "ચેક રિપબ્લિકના VAT નંબરોમાં CZ અને 8-10 અક્ષરો હોય છે.",
+              "dk": "ડેનમાર્કના VAT નંબર DK અને 8 અક્ષરો ધરાવે છે.",
+              "ee": "એસ્ટોનિયા VAT નંબરોમાં EE અને 9 અક્ષરો હોય છે",
+              "fi": "ફિનલેન્ડ VAT નંબર FI અને 8 અક્ષરો ધરાવે છે.",
+              "fr": "ફ્રાન્સ VAT નંબરોમાં FR અને 11 અક્ષરો હોય છે.",
+              "de": "જર્મનીના VAT નંબરોમાં DE અને 9 અક્ષરો હોય છે",
+              "gr": "ગ્રીસના VAT નંબરોમાં EL અને 9 અક્ષરો શામેલ હોય છે",
+              "hu": "હંગેરી VAT નંબરોમાં HU અને 8 અક્ષરો હોય છે.",
+              "ie": "આયર્લેન્ડના VAT નંબરોમાં IE અને 8-9 અક્ષરો હોય છે",
+              "it": "ઈટાલીના VAT નંબરોમાં IT અને 11 અક્ષરો હોય છે",
+              "lv": "લાતવિયાના VAT નંબર LV અને 11 અક્ષરો ધરાવે છે.",
+              "lt": "લિથુઆનિયા VAT નંબરમાં LT અને 9-12 અક્ષરો હોય છે",
+              "lu": "લક્ઝમબર્ગ VAT નંબરોમાં LU અને 8 અક્ષરો હોય છે.",
+              "mt": "માલ્ટાના VAT નંબર MT અને 8 અક્ષરો ધરાવે છે.",
+              "nl": "નેધરલેન્ડના VAT નંબર NL અને 12 અક્ષરો ધરાવે છે",
+              "pl": "પોલેન્ડના VAT નંબરોમાં PL અને 10 અક્ષરો હોય છે.",
+              "pt": "પોર્ટુગલ VAT નંબરોમાં PT અને 9 અક્ષરો હોય છે.",
+              "ro": "રોમાનિયાના VAT નંબરોમાં RO અને 10 અક્ષરો હોય છે",
+              "sk": "સ્લોવાકિયા VAT નંબરોમાં SK અને 10 અક્ષરો હોય છે",
+              "si": "સ્લોવેનિયાના VAT નંબર્સમાં SI અને 8 અક્ષરો હોય છે.",
+              "es": "સ્પેનના VAT નંબર ES અને 9 અક્ષરો ધરાવે છે.",
+              "se": "સ્વીડનના VAT નંબર SE અને 12 અક્ષરો ધરાવે છે.",
+              "gb": "યુનાઇટેડ કિંગડમના VAT નંબર GB અથવા XI અને 5-12 અક્ષરો ધરાવે છે."
+            },
+            "invalid_number": {
+              "at": "એક માન્ય ઑસ્ટ્રિયા VAT નંબર દાખલ કરો",
+              "be": "માન્ય બેલ્જિયમ VAT નંબર દાખલ કરો",
+              "bg": "માન્ય બલ્ગેરિયા VAT નંબર દાખલ કરો",
+              "hr": "માન્ય ક્રોએશિયા VAT નંબર દાખલ કરો",
+              "cy": "માન્ય સાયપ્રસ VAT નંબર દાખલ કરો",
+              "cz": "માન્ય ચેક VAT નંબર દાખલ કરો",
+              "dk": "માન્ય ડેનમાર્ક VAT નંબર દાખલ કરો",
+              "ee": "માન્ય એસ્ટોનિયા VAT નંબર દાખલ કરો",
+              "fi": "માન્ય ફિનલેન્ડ VAT નંબર દાખલ કરો",
+              "fr": "માન્ય ફ્રાન્સ VAT નંબર દાખલ કરો",
+              "de": "માન્ય જર્મની VAT નંબર દાખલ કરો",
+              "gr": "માન્ય ગ્રીસ VAT નંબર દાખલ કરો",
+              "hu": "માન્ય હંગેરી VAT નંબર દાખલ કરો",
+              "ie": "માન્ય આયર્લેન્ડ VAT નંબર દાખલ કરો",
+              "it": "માન્ય ઇટાલી VAT નંબર દાખલ કરો",
+              "lv": "માન્ય લાટવિયા VAT નંબર દાખલ કરો",
+              "lt": "માન્ય લિથુઆનિયા VAT નંબર દાખલ કરો",
+              "lu": "માન્ય લક્ઝમબર્ગ VAT નંબર દાખલ કરો",
+              "mt": "માન્ય માલ્ટા VAT નંબર દાખલ કરો",
+              "nl": "એક માન્ય નેધરલેન્ડ્સ VAT નંબર દાખલ કરો",
+              "pl": "માન્ય પોલેન્ડ VAT નંબર દાખલ કરો",
+              "pt": "માન્ય પોર્ટુગલ VAT નંબર દાખલ કરો",
+              "ro": "માન્ય રોમાનિયા VAT નંબર દાખલ કરો",
+              "sk": "માન્ય સ્લોવાકિયા VAT નંબર દાખલ કરો",
+              "si": "માન્ય સ્લોવેનિયા VAT નંબર દાખલ કરો",
+              "es": "માન્ય સ્પેન VAT નંબર દાખલ કરો",
+              "se": "માન્ય સ્વીડન VAT નંબર દાખલ કરો",
+              "gb": "યુનાઇટેડ કિંગડમનો એક માન્ય VAT નંબર દાખલ કરો"
+            },
+            "service_unavailable": "માન્યતા સેવા અનુપલબ્ધ છે",
+            "service_error": "માન્યતા સેવા અનુપલબ્ધ છે"
+          },
+          "accessibility": {
+            "status": {
+              "validating": "વેટ નંબર ચકાસણી પ્રગતિમાં છે",
+              "valid": "વેટ નંબર માન્ય છે",
+              "applied": "VAT મુક્તિ લાગુ કરવામાં આવી છે",
+              "domestic": "VAT મુક્તિ લાગુ નથી પડી",
+              "invalid_number": "વેટ (VAT) મુક્તિ નિષ્ફળ",
+              "service_unavailable": "VAT મુક્તિ ચકાસવામાં અસમર્થ",
+              "service_error": "VAT મુક્તિ ચકાસવામાં અસમર્થ"
             }
           }
         }
@@ -1110,6 +1179,178 @@
           },
           "label": "ડિલિવરી નહીં"
         }
+      },
+      "address_management": {
+        "saved_with_store": "આ સ્ટોર સાથે સેવ કર્યું"
+      },
+      "shop_policies": {
+        "privacy_policy": "ગોપનીયતા નીતિ",
+        "terms_of_service": "સેવાની શરતો",
+        "legal_notice": "કાનૂની સૂચના",
+        "shipping_policy": "શિપિંગ",
+        "terms_of_sale": "વેચાણની શરતો",
+        "subscription_policy": "રદબાતલ",
+        "purchase_options_policy": "ખરીદી વિકલ્પોની નીતિ",
+        "contact_information": "સંપર્ક",
+        "purchase_options_cancellation_policy": "રદબાતલ",
+        "cookie_preferences": "કુકીઝ",
+        "terms_and_policies": "શરતો અને નીતિઓ"
+      },
+      "remote_policies": {
+        "unavailable_policy": "આ સ્ટોર માટે કોઈ %{policy_name} પ્રદાન કરવામાં આવ્યું નથી. વધુ માહિતી માટે, %{shop_name} નો સીધો સંપર્ક કરો."
+      },
+      "mor_policies": {
+        "terms_and_conditions": "મર્ચન્ટ ઑફ રેકોર્ડના નિયમો અને શરતો",
+        "privacy_policy": "રેકોર્ડના વેપારીની ગોપનીયતા નીતિ"
+      },
+      "markets": {
+        "invalid_market_manager_error": "ચુકવણી પૂર્ણ કરતા પહેલા તમારી સંપર્ક માહિતીની સમીક્ષા કરો"
+      },
+      "notifications": {
+        "title": "સૂચનાઓ"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "ઓર્ડર %{order_name} માટે ચૂકવવાની રકમ",
+        "changes_summary": {
+          "added": {
+            "one": "ઉમેરાયેલું",
+            "other": "ઉમેરવામાં આવ્યા %{count}"
+          },
+          "removed": "દૂર કરાયેલું",
+          "subtracted": "દૂર કરાયા %{count}",
+          "returned": "પરત કર્યા %{count}",
+          "return_line_item_removed": "રીટર્નમાંથી %{count} કાઢી નાખ્યા"
+        },
+        "additional_payment_requested": "%{total_outstanding} ની ચુકવણી આવશ્યક છે",
+        "checkout_review_and_pay": "તમારો ઑર્ડર %{order_name} અપડેટ કરવામાં આવ્યો છે. આ ફેરફારોની સમીક્ષા કરો, પછી તમારા ઑર્ડરની ખાતરી કરવા માટે ચુકવણી કરો.",
+        "order_updated_on": "તમારા ઑર્ડરને %{last_edited_at} ના રોજ અપડેટ કરવામાં આવ્યો હતો.",
+        "order_review_and_pay": "તમારો ઓર્ડર અપડેટ કરવામાં આવ્યો છે. તમારા ઓર્ડરની પુષ્ટિ કરવા માટે તેની સમીક્ષા કરો અને ચૂકવણી કરો.",
+        "pay_now": "હમણાં ચૂકવણી કરો"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "તમારા ક્રેડિટ કાર્ડમાંથી %{amount} લેવામાં આવશે",
+        "payment_total_label": "ચૂકવણીની કુલ રકમ",
+        "change_currency_link": "%{currency_name}માં બદલો",
+        "card_provider_fx_charges_warning": "તમારા કાર્ડ પ્રદાતા %{currency_code} ટ્રાન્ઝેક્શન પર ફી વસૂલી શકે છે.",
+        "currency_not_supported_by_shop": "તમે પસંદ કરેલી ચલણ હવે ઉપલબ્ધ નથી. બધી કિંમતો હવે %{currency_code}માં છે."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "તમારા શિપિંગ દેશના આધારે તમારી કાર્ટ અપડેટ કરવામાં આવી છે.",
+        "cart_and_currency_updated_based_on_country": "તમારા શિપિંગ દેશના આધારે તમારી કાર્ટ અને ચલણ અપડેટ કરવામાં આવ્યું છે.",
+        "currency_updated_for_country": "%{country} માટે ચલણ અપડેટ કરવામાં આવ્યું."
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "તમારો દેશ/પ્રદેશ અપડેટ કરવામાં આવ્યો છે. ચેકઆઉટ ચાલુ રાખવા માટે તમારું શિપિંગ સરનામું દાખલ કરો."
+      },
+      "tips": {
+        "title": "ટીપ ઉમેરો",
+        "description": "ટીમને %{shop_name} પર તમારો સહકાર બતાવો",
+        "presets_description": "ટિપની ટકાવારી પસંદ કરો",
+        "custom_label": "વધારાની ટિપ",
+        "add_tip": "ટીપ ઉમેરો",
+        "update_tip": "ટિપ અપડેટ કરો",
+        "message": "આભાર, અમે તેની પ્રશંસા કરીએ છીએ.",
+        "no_tip_label": "કોઈ નહીં",
+        "not_available_with_spi": "શોપ પે ઇન્સ્ટોલમેન્ટ્સ સાથે ઉપલબ્ધ નથી"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "%{product_name} ખરીદો",
+          "one": "%{product_name} અને અન્ય %{count} વસ્તુ ખરીદો",
+          "other": "%{product_name} અને અન્ય %{count} વસ્તુઓ ખરીદો"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "દિવસ",
+            "other": "%{count} દિવસ"
+          },
+          "week": {
+            "one": "અઠવાડિયું",
+            "other": "%{count} અઠવાડિયા"
+          },
+          "month": {
+            "one": "મહિનો",
+            "other": "%{count} મહિના"
+          },
+          "year": {
+            "one": "વર્ષ",
+            "other": "%{count} વર્ષ"
+          }
+        },
+        "recurring_totals": "દર %{interval} ના %{total_price}",
+        "recurring_totals_with_initial_order_shipping_discount": "પ્રથમ ચુકવણી %{total_price_with_discount}, પછી %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "પ્રથમ ચુકવણી %{total_price}",
+            "other": "પ્રથમ %{count} ચૂકવણી, દરેક %{total_price}"
+          },
+          "following_cycles": ", પછી દર %{interval} એ %{total_price}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", પછી %{total_price} પર %{count} ચુકવણી",
+            "other": ", પછી %{total_price} લેખે %{count} ચુકવણીઓ"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "ચુકવણી પદ્ધતિઓ",
+        "title": "ચુકવણી પદ્ધતિઓ",
+        "update_card_button_label": "કાર્ડ અપડેટ કરો",
+        "delete_customer_mandate": {
+          "generic_error": "તમારી વિનંતી પર પ્રક્રિયા કરવામાં એક સમસ્યા આવી છે.",
+          "success_message": "તમારી ચુકવણી પદ્ધતિ સફળતાપૂર્વક કાઢી નાખવામાં આવી છે."
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "ઘણા બધા પ્રયાસો",
+          "description": "થોડીવાર પછી ફરી પ્રયાસ કરો"
+        },
+        "line_to_check_out": "તમે ચેકઆઉટ કરવા માટે લાઈનમાં છો",
+        "cart_summary_heading": "તમારો કાર્ટ",
+        "merchandise": {
+          "available": "ઉપલબ્ધ",
+          "sold_out": "વેચાઈ ગયું"
+        },
+        "inventory": {
+          "partial_inventory_banner": "તમારા કાર્ટનો એક ભાગ વેચાઈ ગયો છે અને ચેકઆઉટ વખતે ખરીદવા માટે ઉપલબ્ધ રહેશે નહીં.",
+          "sold_out": {
+            "heading": "તમારો કાર્ટ વેચાઈ ગયો છે",
+            "storefront_body": "ખરીદી ચાલુ રાખવા માટે સ્ટોર પર પાછા જાઓ",
+            "no_storefront_body": "કમનસીબે તમે જે વસ્તુ ખરીદવા માંગો છો તે હવે ઉપલબ્ધ નથી.",
+            "link": "સ્ટોર પર પાછા જાઓ"
+          }
+        },
+        "title": "કતાર",
+        "time_to_checkout_title": "ચેકઆઉટ કરવાનો સમય - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "અંદાજિત રાહ જોવાના સમયની ગણતરી કરી રહ્યાં છીએ",
+          "less_than_one": "અંદાજિત રાહ જોવાનો સમય: એક મિનિટથી ઓછો",
+          "one": "અંદાજિત રાહ જોવાનો સમય: {{count}} મિનિટ",
+          "other": "અંદાજિત રાહ જોવાનો સમય: {{count}} મિનિટ"
+        },
+        "last_checked": "(છેલ્લે તપાસેલ: {{time}})",
+        "footer": {
+          "heading": "આ પેજ રિફ્રેશ કરશો નહીં, તે આપમેળે અપડેટ થઈ જશે.",
+          "body": "તમારા કાર્ટમાંની વસ્તુઓ તમે ચેકઆઉટ પૂર્ણ ન કરો ત્યાં સુધી અનામત રાખવામાં આવતી નથી."
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "તમારી વિનંતી પર પ્રક્રિયા કરવામાં સમસ્યા આવી હતી. સ્ટોરના માલિકનો સંપર્ક કરો."
+      },
+      "no_address_location": {
+        "title": "સરનામા વિનાનું સ્થળ",
+        "header": "આ સ્થાન માટે તમારી પાસે શિપિંગ સરનામું નથી",
+        "alt_header": "શિપિંગ સરનામું ખૂટે છે",
+        "message": "આ સ્થાન માટે સરનામું ઉમેરવા અને ચેકઆઉટ પ્રક્રિયા પૂર્ણ કરવા માટે અમારો સંપર્ક કરો.",
+        "email_us_button_label": "અમને ઇમેઇલ મોકલો"
+      },
+      "order_errors": {
+        "creation_failure": "તમારો ઓર્ડર બનાવવામાં કોઈ સમસ્યા આવી હતી. ફરીથી પ્રયાસ કરો, અથવા વધુ વિગતો માટે અમારો સંપર્ક કરો.",
+        "network_failure": "નેટવર્ક એરરના કારણે તમારો ઓર્ડર સબમિટ થઈ શક્યો નથી. કૃપા કરીને તમારું ઇન્ટરનેટ કનેક્શન તપાસો અને ફરીથી પ્રયાસ કરો."
       }
     },
     "notices": {
@@ -1265,6 +1506,58 @@
     "challenge": {
       "message": "ચાલુ રાખવા માટે, કૃપા કરીને જણાવો કે તમે રોબોટ નથી.",
       "error": "તમારો જવાબ સાચો નહોતો, કૃપા કરીને ફરીથી પ્રયાસ કરો."
+    },
+    "pagination": {
+      "previous": "અગાઉનું",
+      "next": "આગળ"
+    },
+    "links": {
+      "powered_by_shopify": "Shopify દ્વારા સંચાલિત",
+      "learn_more": "વધુ જાણો"
+    },
+    "feed": {
+      "more": "વધુ"
+    },
+    "attributes": {
+      "email": "ઈમેલ",
+      "password": "પાસવર્ડ",
+      "password_confirmation": "પાસવર્ડની પુષ્ટિ",
+      "first_name": "પ્રથમ નામ",
+      "last_name": "અટક",
+      "body": "શરીર",
+      "signature": "સરનામું"
+    },
+    "addresses": {
+      "zip_code": "પિન કોડ",
+      "postal_code": "પોસ્ટલ કોડ",
+      "postcode": "પોસ્ટકોડ",
+      "pincode": "પિનકોડ",
+      "region": "પ્રદેશ",
+      "prefecture": "પ્રાંત",
+      "province": "પ્રાંત",
+      "state": "રાજ્ય",
+      "state_and_territory": "રાજ્ય/પ્રદેશ",
+      "county": "કાઉન્ટી",
+      "emirate": "અમીરાત",
+      "governorate": "રાજ્યપાલનો વહીવટી વિભાગ",
+      "confirm": "શું તમે ખરેખર આ સરનામું કાઢી નાખવા માંગો છો?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "વૈશિષ્ટ્યકૃત",
+        "best_selling": "સૌથી વધુ વેચાણકર્તા",
+        "az": "ક્રમાનુસાર, A-Z",
+        "za": "મૂળાક્ષર પ્રમાણે, ઝેડ-એ",
+        "price_ascending": "કિંમત, ઓછી થી વધુ",
+        "price_descending": "કિંમત, વધુથી ઓછી",
+        "date_ascending": "તારીખ, જૂનીથી નવી",
+        "date_descending": "તારીખ, નવાથી જૂના",
+        "most_relevant": "સૌથી સુસંગત"
+      }
+    },
+    "errors": {
+      "blank": "ખાલી ન હોઈ શકે",
+      "blocked_address": "આ સ્થાન સપોર્ટેડ નથી."
     }
   },
   "customer_accounts": {
