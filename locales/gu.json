@@ -547,7 +547,57 @@
         },
         "order_edit_banner_items_removed": {
           "in_full": "દૂર કરાયેલું"
-        }
+        },
+        "network_card_payment_options": "કાર્ડ નેટવર્ક પસંદ કરો",
+        "network_card_persistence_description": "પસંદ કરેલ નેટવર્ક ભવિષ્યના વ્યવહારો માટે તમારી ચુકવણી પદ્ધતિ સાથે સાચવવામાં આવશે.",
+        "amazon_payments_label": "એમેઝોન પે",
+        "amazon_payments_login_hint": "તમને એમેઝોન વડે સાઇન ઇન કરવાનું કહેવામાં આવશે.",
+        "amazon_payments_logout": "એમેઝોન પેમાંથી સાઇન આઉટ કરો",
+        "amazon_payments_failed_mfa_challenge": "પસંદ કરેલી ચુકવણી પદ્ધતિનો ઉપયોગ થઈ શક્યો નથી. કૃપા કરીને કોઈ અલગ પદ્ધતિ પસંદ કરો અથવા તમારી બેંક અથવા કાર્ડ પ્રદાતાનો સંપર્ક કરો.",
+        "amazon_payments_abandoned_mfa_challenge": "તમારી ચુકવણી પૂર્ણ થઈ શકી નથી. કૃપા કરીને ચુકવણીની બીજી પદ્ધતિનો પ્રયાસ કરો અથવા તમારી બેંક અથવા કાર્ડ ઇશ્યુઅરનો સંપર્ક કરો.",
+        "amazon_payments_could_not_enqueue_authorize": "તમારી ચુકવણીની પ્રક્રિયા કરવામાં સમસ્યા આવી હતી. ફરીથી પ્રયાસ કરો અથવા ચુકવણીની અલગ પદ્ધતિનો ઉપયોગ કરો.",
+        "title": "ચુકવણી",
+        "amount_left_to_pay_label": "ચૂકવણી કરવાની છે:",
+        "discount_button_action_label": "ડિસ્કાઉન્ટ કોડ લાગુ કરો",
+        "discount_codes_removed_summary": {
+          "one": "ડિસ્કાઉન્ટ કોડ કાઢી નાખવામાં આવ્યો હતો",
+          "other": "%{count} ડિસ્કાઉન્ટ કોડ દૂર કરવામાં આવ્યા"
+        },
+        "discount_codes_modified_summary": {
+          "one": "%{count} ડિસ્કાઉન્ટ કોડમાં ફેરફાર કરવામાં આવ્યો હતો",
+          "other": "%{count} ડિસ્કાઉન્ટ કોડમાં ફેરફાર કરવામાં આવ્યા હતા"
+        },
+        "discount_codes_removed_or_modified_summary": {
+          "one": "ડિસ્કાઉન્ટ કોડ કાઢી નાખવામાં આવ્યો હતો અથવા સુધારવામાં આવ્યો હતો",
+          "other": "%{count} ડિસ્કાઉન્ટ કોડ દૂર કરાયા અથવા સુધારવામાં આવ્યા"
+        },
+        "discount_show_more_warnings": {
+          "one": "બીજા %{count} બતાવો",
+          "other": "બીજા %{count} બતાવો"
+        },
+        "gift_card_code_label": "ગિફ્ટ કાર્ડ કોડ",
+        "apply_gift_card_button_label": "અરજી કરો",
+        "gift_card_balance_label": "બૅલેન્સ:",
+        "supported_card_brands_more_label": "અને વધુ…",
+        "detected_card_brand": "શોધાયેલ કાર્ડ બ્રાંડ: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "તમારું ક્રેડિટ કાર્ડ સેવ કરો",
+        "credit_card_vaulting_sign_in_banner_info": "ભવિષ્યની ખરીદીઓ માટે તમારા ક્રેડિટ કાર્ડને સાચવવા માટે લોગ ઇન કરો અથવા એકાઉન્ટ બનાવો.",
+        "credit_card_vaulting_sign_in_banner_button_label": "લોગ ઇન કરો",
+        "ftd_vault_credit_card_label": "ઝડપી ચેકઆઉટ માટે આ ક્રેડિટ કાર્ડ મારા એકાઉન્ટમાં સાચવો",
+        "card_number_label": "કાર્ડ નંબર",
+        "card_number_placeholder": "કાર્ડ નંબર",
+        "card_pay_with": "આના વડે ચૂકવણી કરો:",
+        "card_security_notice": "તમામ વ્યવહારો સુરક્ષિત અને એન્ક્રિપ્ટેડ છે.",
+        "card_security_vault_notice": "ભવિષ્યની ચૂકવણીઓ માટે અમને તમારી વિગતો જોઈશે. બધા વ્યવહારો સુરક્ષિત અને એન્ક્રિપ્ટેડ છે.",
+        "card_information_notice": "બધા વ્યવહારો સુરક્ષિત અને એન્ક્રિપ્ટેડ છે. ક્રેડિટ કાર્ડની માહિતી ક્યારેય સંગ્રહિત થતી નથી.",
+        "name_on_card_label": "કાર્ડ પરનું નામ",
+        "name_on_card_placeholder": "કાર્ડ પરનું નામ",
+        "card_nickname_label": "ઉપનામ (વૈકલ્પિક)",
+        "card_expired": "સમાપ્ત થયું",
+        "card_expiry_label": "સમાપ્તિ તારીખ (મહિનો / વર્ષ)",
+        "card_expiry_placeholder": "સમાપ્તિ તારીખ (મહિનો / વર્ષ)",
+        "credit_card_start_month": "શરૂઆતનો મહિનો",
+        "credit_card_start_year": "શરૂઆતનું વર્ષ"
       },
       "wallets": {
         "errors": {
@@ -1116,7 +1166,27 @@
         "split_shipping_merchandise_shipment_number": "વહન %{number} નું %{total}",
         "pre_order_ships_now": "જહાજો હવે",
         "pre_order_ships_later": "પછી શિપમેન્ટ",
-        "pre_order_ships_date": "જહાજો %{date}"
+        "pre_order_ships_date": "જહાજો %{date}",
+        "split_shipping_shipped_by_shop": "%{shop_name} દ્વારા મોકલવામાં આવ્યું",
+        "split_shipping_multiple_shipment_label": "બહુવિધ શિપમેન્ટ",
+        "split_shipping_shipping_label": "પદ્ધતિ",
+        "split_shipping_shipment_notice": "તમારો ઑર્ડર %{quantity_shipments} માં આવશે.",
+        "split_shipping_first_shipment_notice": "તમારો પહેલો ઓર્ડર %{quantity_shipments} માં આવશે",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} શિપમેન્ટ્સ",
+        "split_shipping_multiple_shipment_notice": "તમારો ઓર્ડર અનેક શિપમેન્ટમાં આવશે.",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "તમારો ઓર્ડર %{quantity} શિપમેન્ટમાં આવશે",
+        "split_shipping_more_shipping_options": "વધુ શિપિંગ વિકલ્પો",
+        "split_shipping_shipment_number": "શિપમેન્ટ %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "જથ્થો: %{quantity}",
+        "split_shipping_merchandise_quantity_label_inline": "%{merchandise_title} ×% {quantity}",
+        "split_shipping_option_free": "મફત શિપિંગ",
+        "split_shipping_option_lowest_price": "સૌથી ઓછી કિંમત",
+        "split_shipping_option_fastest": "સૌથી ઝડપી",
+        "split_shipping_option_recommended": "ભલામણ કરેલ",
+        "split_shipping_option_custom": "કસ્ટમ",
+        "add_shipping_address": "શિપિંગ સરનામું ઉમેરો",
+        "add_new_delivery_address": "નવું ડિલિવરી સરનામું ઉમેરો",
+        "choose_new_address": "નવું સરનામું પસંદ કરો"
       },
       "stock": {
         "unpurchasable_product_generic": {
@@ -1516,6 +1586,42 @@
         },
         "checkout_on_shop_label": "%{shop_name} પર તપાસો",
         "single_shop_transition": "તમારી ખરીદી પૂર્ણ કરવા માટે તમને %{advertiser} પર રીડાયરેક્ટ કરી રહ્યાં છીએ."
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "વધારાની માહિતી",
+          "tax_credential_br": "સીપીએફ/સીએનપીજે",
+          "shipping_credential_br": "સીપીએફ/સીએનપીજે",
+          "shipping_credential_kr": "વ્યક્તિગત કસ્ટમ્સ કોડ",
+          "shipping_credential_cn": "રહેવાસી ઓળખ નંબર",
+          "tax_credential_it": "કોડિસ ફિસ્કેલ (વૈકલ્પિક)",
+          "tax_email_it": "PEC (વૈકલ્પિક)",
+          "tax_credential_co": "નોંધ/વેટ",
+          "tax_credential_type_co": "પ્રકાર આઈડી કાર્ડ",
+          "shipping_credential_co": "નોંધ/વેટ",
+          "shipping_credential_type_co": "પ્રકાર આઈડી કાર્ડ",
+          "tax_credential_cr": "ઓળખ નંબર/RUT",
+          "shipping_credential_cr": "ઓળખ નંબર/RUT",
+          "tax_credential_ec": "સીઆઈ/આરયુસી/આઈવીએ",
+          "shipping_credential_ec": "સીઆઈ/આરયુસી/આઈવીએ",
+          "tax_credential_gt": "નાઇટ/આઇવીએ",
+          "shipping_credential_gt": "નાઇટ/આઇવીએ",
+          "tax_credential_id": "એનપીડબ્લ્યુપી",
+          "shipping_credential_id": "એનપીડબ્લ્યુપી",
+          "tax_credential_my": "TIN/નોંધણી નંબર",
+          "shipping_credential_my": "TIN/નોંધણી નંબર",
+          "shipping_credential_mx": "આરએફસી",
+          "tax_credential_mx": "આરએફસી",
+          "tax_credential_type_mx": "નાણાકીય શાસન",
+          "tax_credential_use_mx": "CFDI નો ઉપયોગ",
+          "tax_credential_py": "સીઆઈ/આરયુસી/આઈવીએ",
+          "shipping_credential_py": "સીઆઈ/આરયુસી/આઈવીએ",
+          "tax_credential_es": "ડીએનઆઈ/એનઆઈએફ",
+          "shipping_credential_es": "ડીએનઆઈ/એનઆઈએફ",
+          "shipping_credential_tw": "રાષ્ટ્રીય ID નંબર/VAT",
+          "tax_credential_tr": "તુર્કીશ રિપબ્લિક આઈડેન્ટિટી નંબર/VAT",
+          "shipping_credential_tr": "તુર્કીશ રિપબ્લિક આઈડેન્ટિટી નંબર/VAT"
+        }
       }
     },
     "notices": {
