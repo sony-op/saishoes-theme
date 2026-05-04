@@ -948,7 +948,151 @@
       "december": "ડિસેમ્બર",
       "monday": "સોમવાર",
       "tuesday": "મંગળવાર",
-      "wednesday": "બુધવાર"
+      "wednesday": "બુધવાર",
+      "thursday": "ગુરુવાર",
+      "friday": "શુક્રવાર",
+      "saturday": "શનિવાર",
+      "sunday": "રવિવાર",
+      "mondayAbbreviation": "મો",
+      "tuesdayAbbreviation": "તું",
+      "wednesdayAbbreviation": "અમે",
+      "thursdayAbbreviation": "આભાર",
+      "fridayAbbreviation": "ફ્રેન્ચ",
+      "saturdayAbbreviation": "સા",
+      "sundayAbbreviation": "સુ",
+      "showNextMonth": "આગામી મહિનો બતાવો, {{month}} {{year}}",
+      "showPreviousMonth": "ગત મહિનો બતાવો, {{month}} {{year}}",
+      "rangeStart": "શ્રેણીની શરૂઆત",
+      "inRange": "રેન્જમાં",
+      "rangeEnd": "શ્રેણી સમાપ્તિ",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} આઇટમ ઉપલબ્ધ છે",
+        "other": "{{count}} વસ્તુઓ ઉપલબ્ધ છે"
+      },
+      "removeItem": "{{લેબલ}} દૂર કરો",
+      "removeTag": "ટૅગ કાઢો",
+      "month": {
+        "one": "મહિનો",
+        "other": "મહિનાઓ"
+      },
+      "mapClusterTitle": {
+        "one": "{{number}} માર્કરનું ક્લસ્ટર",
+        "other": "{{number}} માર્કર્સનું ક્લસ્ટર"
+      },
+      "expandSheet": "વિસ્તૃત કરો",
+      "qrCode": "QR કોડ",
+      "addFile": "ફાઇલ ઉમેરો",
+      "dropzoneInvalidFileType": "ફાઇલનો પ્રકાર સપોર્ટેડ નથી",
+      "dropzoneDraggedOver": "અપલોડ કરવા માટે ફાઇલ છોડો"
+    },
+    "profile_preview_bar": {
+      "customize_button": "કસ્ટમાઇઝ કરો",
+      "hide_bar": "બાર છુપાવો",
+      "navigate_to_admin": "એડમિન પર જાઓ",
+      "close_preview": "પૂર્વાવલોકન બંધ કરો",
+      "previewing": "તમે પૂર્વાવલોકન કરી રહ્યા છો:",
+      "saved_at": "{{date}}ના રોજ {{time}} વાગ્યે સેવ કર્યું",
+      "viewing": "તમે જોઈ રહ્યા છો:",
+      "not_available": "પ્રોફાઇલ ડેટા ઉપલબ્ધ નથી",
+      "actions_button": "કાર્યવાહી"
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "{{extensionName}} નામનું એક્સટેન્શન પસંદ કરો",
+        "unselect": "{{extensionName}} નામનું એક્સ્ટેંશન અનસિલેક્ટ કરો",
+        "move_down": "એક્સ્ટેંશનને પછીની સ્થિતિ પર ખસેડો",
+        "move_up": "એક્સ્ટેંશનને અગાઉની સ્થિતિ પર ખસેડો",
+        "remove": "એક્સ્ટેંશન દૂર કરો",
+        "move_down_tooltip": "આગળની સ્થિતિ પર જાઓ",
+        "move_up_tooltip": "પહેલાની સ્થિતિ પર ખસેડો",
+        "remove_tooltip": "દૂર કરો"
+      }
+    },
+    "editor": {
+      "link_new_tab_confirmation": "આ લિંક એડિટરની અંદર ખોલી શકાતી નથી. તે નવી વિન્ડો ({{resolved_to_link}}) માં ખુલશે. ચાલુ રાખવા માટે OK પર ક્લિક કરો."
+    },
+    "settings": {
+      "title": "સેટિંગ્સ",
+      "loading_accessibility_message": "સેટિંગ્સ પેજ લોડ કરી રહ્યું છે",
+      "log_out_everywhere": {
+        "title": "બધી જગ્યાએથી સાઇન આઉટ કરો",
+        "description": "જો તમે કોઈ ઉપકરણ ગુમાવ્યું હોય અથવા સુરક્ષા સંબંધિત ચિંતાઓ હોય, તો તમારા એકાઉન્ટની સુરક્ષા સુનિશ્ચિત કરવા માટે બધી જગ્યાએથી લૉગ આઉટ કરો.",
+        "button": "બધા ઉપકરણોમાંથી સાઇન આઉટ કરો",
+        "warning_message": "તમને આ ઉપકરણમાંથી પણ સાઇન આઉટ કરવામાં આવશે."
+      }
+    },
+    "shop_ads": {
+      "title": "તમને કદાચ આ અન્ય પ્રોડક્ટ્સ ગમશે",
+      "subtitle": "મર્યાદિત સમય માટે ઉપલબ્ધ",
+      "button": "શોપ પર અન્વેષણ કરો",
+      "previous_button": "અગાઉનું",
+      "next_button": "આગળ"
+    },
+    "knowledge_base": {
+      "self_serve_returns": {
+        "enabled": "ગ્રાહકો પોતે વળતરની વિનંતી કરી શકે છે અને તેનું સંચાલન કરી શકે છે.",
+        "disabled": "ગ્રાહકોએ રિટર્નની વિનંતી કરવા માટે વેપારીનો સંપર્ક કરવો આવશ્યક છે."
+      }
+    },
+    "subscriptions": {
+      "update_payment_instrument": {
+        "title": "ચુકવણી પદ્ધતિ બદલો",
+        "loading": "ચુકવણીની રીતો લોડ કરી રહ્યું છે",
+        "no_payment_methods_available": "કોઈ ચુકવણી પદ્ધતિઓ ઉપલબ્ધ નથી",
+        "select_new_payment_method": "ચુકવણીની નવી પદ્ધતિ પસંદ કરો",
+        "current_method": "વર્તમાન",
+        "cancel": "રદ કરો",
+        "save": "સાચવો",
+        "success": "ચુકવણીની પદ્ધતિ અપડેટ કરી",
+        "use_new_payment_method": "+ નવી ચુકવણી પદ્ધતિનો ઉપયોગ કરો"
+      }
+    },
+    "intents": {
+      "subscription_replace_payment_method": {
+        "card_number": "કાર્ડ નંબર",
+        "title": "ચુકવણી પદ્ધતિ બદલો",
+        "replace_with": "ના બદલે",
+        "add_new_payment_method": "નવું ઉમેરો",
+        "save_button": "સાચવો",
+        "close_button": "બંધ કરો",
+        "loading": "ચુકવણી પદ્ધતિ બદલવાનું મોડલ લોડ થાય છે",
+        "success": "ચુકવણીની પદ્ધતિ અપડેટ કરી",
+        "invalid_subscription_contract": "સબ્સ્ક્રિપ્શન શોધી શકાયું નથી",
+        "expiry_date": "મુદત. {{expiryDate}}",
+        "edit_current_payment_method": "વર્તમાન ચુકવણી પદ્ધતિ સંપાદિત કરો",
+        "edit_selected_payment_method": "પસંદ કરેલ ચુકવણી પદ્ધતિ સંપાદિત કરો"
+      }
+    },
+    "sign_in": {
+      "brand_logo_alt_text": "%{shop_name} લોગો",
+      "processing": "પ્રક્રિયા ચાલુ છે...",
+      "step_one": {
+        "page_title": "સાઇન ઇન કરો - %{shop_name}",
+        "heading": "સાઇન ઇન કરો",
+        "subheading": "તમારો ઇમેઇલ દાખલ કરો અને અમે તમને વેરિફિકેશન કોડ મોકલીશું",
+        "subheading_with_sign_in_options": "સાઇન ઇન કરો અથવા એકાઉન્ટ બનાવો",
+        "input_field_label": "ઈમેલ",
+        "button": "ચાલુ રાખો",
+        "or": "કે",
+        "consent_agreement": "આગળ વધવાથી, તમે %{terms} સાથે સંમત થાઓ છો"
+      },
+      "step_two": {
+        "page_title": "કોડ દાખલ કરો - %{shop_name}",
+        "heading": "કોડ દાખલ કરો",
+        "subheading": "મોકલાયેલ %{email}",
+        "restart_link": "અલગ ઇમેઇલ વડે સાઇન ઇન કરો",
+        "input_field_label": "6-અંકનો કોડ",
+        "button": "સબમિટ કરો"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "માન્ય ઇમેઇલ સરનામું દાખલ કરો",
+          "invalid_code": "સાચો 6-અંકનો કોડ દાખલ કરો"
+        }
+      }
     }
+  },
+  "accessibility": {
+    "account": "ખાતું"
   }
 }
