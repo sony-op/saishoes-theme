@@ -379,7 +379,33 @@
         "governorate_placeholder": "રાજ્યપાલનો વહીવટી વિભાગ",
         "emirate_label": "અમીરાત",
         "emirate_placeholder": "અમીરાત",
-        "state_and_territory_label": "રાજ્ય/પ્રદેશ"
+        "state_and_territory_label": "રાજ્ય/પ્રદેશ",
+        "state_and_territory_placeholder": "રાજ્ય/પ્રદેશ",
+        "phone_label": "ફોન",
+        "phone_rollup_accessibility_label": "ફોન વિકલ્પો",
+        "phone_country_code_label": "ફોન નંબર કન્ટ્રી કોડ",
+        "optional_phone_label": "ફોન (વૈકલ્પિક)",
+        "phone_placeholder": "ફોન",
+        "phone_tooltip": "જો અમને તમારા ઓર્ડર વિશે તમારો સંપર્ક કરવાની જરૂર હોય",
+        "zip_code_label": "પિન કોડ",
+        "optional_zip_code_label": "ઝીપ કોડ (વૈકલ્પિક)",
+        "zip_code_placeholder": "પિન કોડ",
+        "postal_code_label": "પોસ્ટલ કોડ",
+        "optional_postal_code_label": "પોસ્ટલ કોડ (વૈકલ્પિક)",
+        "postal_code_placeholder": "પોસ્ટલ કોડ",
+        "postcode_label": "પોસ્ટકોડ",
+        "optional_postcode_label": "પોસ્ટકોડ (વૈકલ્પિક)",
+        "postcode_placeholder": "પોસ્ટકોડ",
+        "pincode_label": "પિન કોડ",
+        "optional_pincode_label": "પિન કોડ (વૈકલ્પિક)",
+        "pincode_placeholder": "પિન કોડ",
+        "civic_number_warning": "જો તમારી પાસે ઘર નંબર હોય તો ઉમેરો",
+        "optional_last_name_label": "છેલ્લું નામ (વૈકલ્પિક)",
+        "different_shipping_address_label": "બીજા સરનામે મોકલો",
+        "different_shipping_address_text": "આ ઓર્ડર માટે વન-ટાઇમ એડ્રેસનો ઉપયોગ કરો",
+        "change_company_location_link_label": "કંપનીનું સ્થાન બદલો",
+        "change_location_link_label": "સ્થાન બદલો",
+        "ship_to_company": "{{companyName}} ને મોકલો"
       },
       "payment": {
         "usdc_cashback_terms": "શરતો અને મર્યાદાઓ લાગુ પડે છે",
@@ -1094,7 +1120,10 @@
       },
       "stock": {
         "unpurchasable_product_generic": {
-          "status_column_header": "ઉપલબ્ધ નથી"
+          "status_column_header": "ઉપલબ્ધ નથી",
+          "title": "ખરીદી ન શકાય તેવી પ્રોડક્ટ",
+          "header": "તમારા કાર્ટમાંથી કેટલીક વસ્તુઓ કાઢી નાખવામાં આવી હતી.",
+          "message": "આ વસ્તુઓ ઉપલબ્ધ નથી."
         },
         "unfulfillable_product": {
           "title": "ડિલિવરી ઉપલબ્ધ નથી",
@@ -1132,7 +1161,40 @@
           "description": "આ વસ્તુઓ હવે ઉપલબ્ધ નથી અને તેમને તમારા કાર્ટમાંથી દૂર કરવામાં આવી છે.",
           "items_unavailable": "કેટલીક વસ્તુઓ હવે ઉપલબ્ધ નથી અને તેને તમારી કાર્ટમાંથી દૂર કરવામાં આવી છે."
         },
-        "out_of_stock_in_context_label": "આ ઉત્પાદન તમારા દેશ/પ્રદેશમાં ઉપલબ્ધ નથી."
+        "out_of_stock_in_context_label": "આ ઉત્પાદન તમારા દેશ/પ્રદેશમાં ઉપલબ્ધ નથી.",
+        "page_title": "ઇન્વેન્ટરી સમસ્યાઓ",
+        "title": "સ્ટોક નથી",
+        "items_unavailable_notice": "કેટલીક વસ્તુઓ હવે ઉપલબ્ધ નથી.",
+        "product_column_header": "ઉત્પાદનો",
+        "quantity_column_header": "જથ્થો",
+        "price_column_header": "કિંમત",
+        "status_column_header": "સ્થિતિ",
+        "removed_from_cart_notice": "કાર્ટમાંથી દૂર કરવામાં આવ્યું",
+        "sold_out_label": "વેચાઈ ગયું",
+        "reduced_label": "ઘટાડેલો",
+        "reduced_with_quantity_label": "માત્ર %{quantity_available} બાકી છે",
+        "remove_from_cart_button_label": "કાર્ટમાંથી દૂર કરો",
+        "continue_shopping_button_label": "ચાલુ રાખો",
+        "go_back_to_cart_button_label": "મારા કાર્ટ પર પાછા જાઓ",
+        "remove": "દૂર કરો",
+        "return_to_store_label": "સ્ટોર પર પાછા ફરો",
+        "continue_cta_label": "ચુકવણી આગળ વધારો",
+        "item_label": {
+          "one": "{{count}} આઇટમ",
+          "other": "{{count}} વસ્તુઓ"
+        },
+        "empty_cart_label": "તમારો કાર્ટ ખાલી છે",
+        "quantity_update": {
+          "page_title": "જથ્થામાં સુધારો",
+          "title": "જથ્થામાં સુધારો",
+          "description": "આ વસ્તુઓ માટે ઉપલબ્ધ જથ્થામાં ફેરફાર થયો છે અને તે તમારી કાર્ટમાં અપડેટ કરવામાં આવ્યો છે."
+        },
+        "unpurchasable_product": {
+          "title": "ખરીદી ન શકાય તેવી પ્રોડક્ટ",
+          "header": "તમારા કાર્ટમાંથી કેટલીક વસ્તુઓ કાઢી નાખવામાં આવી હતી.",
+          "message": "આ વસ્તુઓ B2B ઓર્ડર માટે ઉપલબ્ધ નથી.",
+          "status_column_header": "ઉપલબ્ધ નથી"
+        }
       },
       "contextual_availability": {
         "title": {
@@ -1400,6 +1462,60 @@
         "other_options": "અન્ય વિકલ્પો",
         "delivery_information_label": "ડિલિવરી માહિતી:",
         "gift_card_sent_confirmation": "ગિફ્ટ કાર્ડ્સ મોકલ્યા"
+      },
+      "delivery_options": {
+        "free_total_label": "મફત",
+        "ship": "જહાજ",
+        "ship_to_address": "ના પર મોકલો",
+        "shipping_address": "શિપિંગ સરનામું",
+        "pick_up": "ઉપાડો",
+        "pick_up_from_store": "સ્ટોરમાંથી લઈ જાઓ",
+        "pick_up_locations": "પિકઅપ સ્થાન",
+        "pickup_point_map_title": "પિકઅપ પોઈન્ટનો નકશો",
+        "pick_up_in_one_hour": "સામાન્ય રીતે 1 કલાકમાં તૈયાર",
+        "pick_up_in_two_hours": "સામાન્ય રીતે ૨ કલાકમાં તૈયાર",
+        "pick_up_in_four_hours": "સામાન્ય રીતે 4 કલાકમાં તૈયાર થઈ જાય છે",
+        "pick_up_in_twenty_four_hours": "સામાન્ય રીતે 24 કલાકમાં તૈયાર થઈ જાય છે.",
+        "pick_up_in_two_to_four_days": "સામાન્ય રીતે 2-4 દિવસમાં તૈયાર થઈ જાય છે",
+        "pick_up_in_five_or_more_days": "સામાન્ય રીતે 5+ દિવસમાં તૈયાર થાય છે",
+        "pick_up_in_zero_to_two_hours": "2 કલાકમાં ઉપાડવા માટે તૈયાર",
+        "pick_up_in_two_to_four_hours": "4 કલાકમાં પિકઅપ માટે તૈયાર છે",
+        "pick_up_immediately": "હવે પિકઅપ માટે તૈયાર છે",
+        "pick_up_next_day": "આગળના દિવસે લેવા માટે તૈયાર",
+        "pickup_point_method_definition": "પિકઅપ પોઈન્ટ પર મોકલો",
+        "retail_method_definition": "રિટેલ શિપિંગ",
+        "company_location_no_address_banner": "સરનામું વિનાના સ્થળોએ મોકલવામાં આવતા ઓર્ડર સમીક્ષા માટે સબમિટ કરવામાં આવશે.",
+        "none_method_definition": "કોઈ શિપિંગ નથી",
+        "subscription_pickup_information": "આ તમારા સબસ્ક્રિપ્શનના ભવિષ્યના તમામ ઓર્ડર માટેનું પિકઅપ સ્થળ હશે."
+      },
+      "customer_account": {
+        "not_user_label": "તમે %{first_name} નથી?",
+        "have_an_account_label": "એકાઉન્ટ છે?",
+        "sign_in_link_label": "સાઇન ઇન કરો",
+        "sign_out_link_label": "સાઇન આઉટ કરો",
+        "save_my_information_label": "આ માહિતી આગલી વખતે માટે સાચવી રાખો",
+        "invalid_address": "પસંદ કરેલું સરનામું અમાન્ય છે. %{update_address_link} અથવા કોઈ અલગ સરનામું પસંદ કરો.",
+        "incomplete_address": "પસંદ કરેલું સરનામું અધૂરું છે. %{update_address_link} અથવા અલગ સરનામું પસંદ કરો.",
+        "rollup_label": "ખાતું",
+        "rollup_accessibility_label": "ખાતાના વિકલ્પો",
+        "invalid_shipping_method_summary": "ઉપલબ્ધ શિપિંગ પદ્ધતિઓ જોવા માટે માન્ય શિપિંગ સરનામું પસંદ કરો",
+        "saved_address_option_description": {
+          "one": "તમારું {{count}} સેવ કરેલું સરનામું છે.",
+          "other": "તમારી પાસે {{count}} સાચવેલા સરનામાં છે."
+        },
+        "saved_address_option_link": "સાચવેલા સરનામાનો ઉપયોગ કરો",
+        "saved_address_modal_title": "મારા સાચવેલા સરનામાનો ઉપયોગ કરો."
+      },
+      "remote_merchandise_only": {
+        "title": "તમારી ખરીદી પૂર્ણ કરો",
+        "remote_only_notice": "આ વસ્તુઓ અન્ય સ્ટોર્સ દ્વારા વેચવામાં આવે છે અને મોકલવામાં આવે છે. તમારી ખરીદી પૂર્ણ કરવા માટે દરેક સ્ટોર પાસેથી ચેકઆઉટ કરો.",
+        "return_to_store_label": "સ્ટોર પર પાછા ફરો",
+        "detail_item_label": {
+          "one": "{{count}} આઇટમ",
+          "other": "{{count}} વસ્તુઓ"
+        },
+        "checkout_on_shop_label": "%{shop_name} પર તપાસો",
+        "single_shop_transition": "તમારી ખરીદી પૂર્ણ કરવા માટે તમને %{advertiser} પર રીડાયરેક્ટ કરી રહ્યાં છીએ."
       }
     },
     "notices": {
