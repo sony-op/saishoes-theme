@@ -875,9 +875,153 @@
         },
         "subscription_delivery_description": {
           "free_shipping_cycles": {
-            "one": "વધુ %{count} ડિલિવરી માટે મફત શિપિંગ"
+            "one": "વધુ %{count} ડિલિવરી માટે મફત શિપિંગ",
+            "other": "વધુ %{count} ડિલિવરી માટે મફત શિપિંગ"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "%{count} ડિલિવરી માટે મફત શિપિંગ",
+            "other": "%{count} ડિલિવરી માટે મફત શિપિંગ"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "વધુ %{count} ડિલિવરી માટે મફત શિપિંગ, પછી %{recurring_order_shipping_price}",
+            "other": "વધુ %{count} ડિલિવરી માટે મફત શિપિંગ, પછી %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "%{count} ડિલિવરી માટે મફત શિપિંગ, પછી %{recurring_order_shipping_price}",
+            "other": "%{count} ડિલિવરી માટે મફત શિપિંગ, પછી %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "%{shipping_price} માં બીજા %{count} ડિલિવરી",
+            "other": "દરેકના %{shipping_price} મુજબ વધુ %{count} ડિલિવરી"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{shipping_price} માં %{count} ડિલિવરી",
+            "other": "દરેકના %{shipping_price} મુજબ વધુ %{count} ડિલિવરી"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "પહેલા %{cycle} માટે મફત શિપિંગ, ત્યારબાદ %{recurring_order_shipping_price}",
+            "other": "પહેલા %{cycle} માટે મફત શિપિંગ, ત્યારબાદ %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "વધુ %{count} ડિલિવરી માટે %{shipping_price}",
+            "other": "વધુ %{count} ડિલિવરી માટે %{shipping_price} (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{count} ડિલિવરી માટે %{shipping_price}",
+            "other": "%{count} ડિલિવરી માટે %{shipping_price} (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "વધુ %{count} ડિલિવરી માટે %{shipping_price}, ત્યારબાદ %{recurring_order_shipping_price}",
+            "other": "%{count} વધુ ડિલિવરી માટે %{shipping_price} (%{per_delivery_cost}), તે પછી %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{count} ડિલિવરી માટે %{shipping_price}, ત્યારબાદ %{recurring_order_shipping_price}",
+            "other": "%{count} ડિલિવરી માટે %{shipping_price} (%{per_delivery_cost}), ત્યારબાદ %{recurring_order_shipping_price}"
+          },
+          "subscription_free_with_frequency_label": "મફત શિપિંગ %{delivery_frequency}",
+          "prepaid_delivery_frequency": {
+            "one": "%{count} ડિલિવરી માટે",
+            "other": "%{count} ડિલિવરી માટે"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "દરરોજ",
+              "other": "દર %{count} દિવસે"
+            },
+            "week": {
+              "one": "દર અઠવાડિયે",
+              "other": "દર %{count} અઠવાડિયે"
+            },
+            "month": {
+              "one": "દર મહિને",
+              "other": "દર %{count} મહિને"
+            },
+            "year": {
+              "one": "દર વર્ષે",
+              "other": "દર %{count} વર્ષે"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "દરેક ડિલિવરી માટે %{shipping_price}",
+          "prepaid_shipping_price_label": "પ્રતિ ડિલિવરી %{shipping_price} x %{delivery_interval_count}",
+          "initial_order_discounted": "પ્રથમ શિપિંગ ખર્ચ %{discounted_shipping_cost}, પછી %{frequency_description}",
+          "prepaid_initial_order_discounted": "પ્રથમ શિપિંગ ખર્ચ %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "પ્રથમ શિપિંગ ખર્ચ %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "પ્રથમ શિપિંગ ખર્ચ %{discounted_shipping_price} %{prepaid_delivery_frequency}, પછી %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "પ્રથમ શિપિંગ ખર્ચ %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), પછી %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "શામેલ છે",
+          "recurring_order_shipping_price": "પછી %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "પ્રથમ ઓર્ડર શામેલ છે, ત્યારબાદ %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} પ્રતિ ડિલિવરી), ત્યારબાદ %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "પ્રથમ ઓર્ડર મફત",
+            "other": "પહેલા %{count} ઓર્ડર મફત"
+          },
+          "free_for_first_n_order": {
+            "one": "પ્રથમ ક્રમ માટે",
+            "other": "પહેલા %{count} ઑર્ડર માટે"
           }
-        }
+        },
+        "one_time_purchase_shipping": "એક વખતનું શિપિંગ",
+        "duties_and_taxes_title": "ફરજો અને કરવેરા",
+        "shipping_information_required_notice": "શિપિંગની માહિતી આવશ્યક છે. {{link}}.",
+        "shipping_information_redirect_link": "તમારી માહિતી અહીં દાખલ કરો",
+        "loading_progressive_rates": "વધુ દરો શોધી રહ્યા છીએ…",
+        "no_other_methods_available": "અન્ય કોઈ પદ્ધતિઓ ઉપલબ્ધ નથી.",
+        "duties_and_taxes_options": {
+          "ddu_title": "ડિલિવરી પર ચૂકવણી",
+          "ddu_caption": "વધારાની ફી લાગુ પડી શકે છે",
+          "ddp_title": "હમણાં ચૂકવણી કરો",
+          "ddp_caption": "ડિલિવરી પર કોઈ વધારાની ફી નથી"
+        },
+        "shipping_method_combinations": {
+          "combination": "%{rest} અને %{current}"
+        },
+        "shipping_used_as_billing_notice": "આનો ઉપયોગ આ ઓર્ડર માટે તમારા બિલિંગ સરનામાં તરીકે પણ થશે.",
+        "address_update": "સરનામું અપડેટ કરો",
+        "shipping_address_title": "ને મોકલો",
+        "shipping_address_rollup_accessibility_label": "માલ મોકલવાના સરનામાના વિકલ્પો",
+        "third_party_address_timeout": "સરનામા લોડ કરી શકાતા નથી. ફરીથી પ્રયાસ કરો અથવા બીજું સરનામું વાપરો.",
+        "third_party_address_error": "સરનામું પસંદ કરતી વખતે ભૂલ આવી છે. નીચે તમારું સરનામું મેન્યુઅલી દાખલ કરો.",
+        "third_party_payment_timeout": "ચુકવણી પદ્ધતિઓ લોડ કરી શકાઈ નથી. ફરીથી પ્રયાસ કરો અથવા કોઈ અલગ ચુકવણી પદ્ધતિનો ઉપયોગ કરો.",
+        "third_party_payment_error": "ચુકવણી પસંદગી લોડ કરતી વખતે ભૂલ આવી. અલગ ચુકવણી પદ્ધતિનો ઉપયોગ કરો.",
+        "add_address": "બીજા સરનામાનો ઉપયોગ કરો",
+        "add_delivery_instructions": "ડિલિવરી સૂચનાઓ ઉમેરો",
+        "edit": "સંપાદિત કરો",
+        "delete": "કાઢી નાખો",
+        "back": "પાછળ",
+        "address_more": "આ સરનામા માટે વધુ ક્રિયાઓ",
+        "address_edit": "સરનામું સંપાદિત કરો",
+        "address_delete": "સરનામું કાઢી નાખો",
+        "address_confirm": "શું તમે ખાતરી કરો છો કે તમે તમારા એકાઉન્ટમાંથી આ સરનામું કાઢી નાખવા માંગો છો?",
+        "address_default": "ડિફોલ્ટ તરીકે સેટ કરો",
+        "address_form": {
+          "add_address": "સરનામું ઉમેરો",
+          "save": "સાચવો",
+          "cancel": "રદ કરો",
+          "edit": "સરનામું સંપાદિત કરો",
+          "update": "ફેરફારો સાચવો",
+          "generic_error": "તમારું સરનામું સેવ કરવામાં સમસ્યા હતી. ફરીથી પ્રયાસ કરો.",
+          "one_time_address_subtitle": "આ ઓર્ડર માટે વન-ટાઇમ એડ્રેસનો ઉપયોગ કરો"
+        },
+        "different_shipping_method_summary": "ઉપલબ્ધ શિપિંગ પદ્ધતિઓ જોવા માટે અલગ શિપિંગ સરનામું દાખલ કરો",
+        "invalid_shipping_method_summary": "ઉપલબ્ધ શિપિંગ પદ્ધતિઓ જોવા માટે માન્ય શિપિંગ સરનામું દાખલ કરો",
+        "invalid_shipping_method_summary_selected": "ઉપલબ્ધ શિપિંગ પદ્ધતિઓ જોવા માટે અલગ શિપિંગ સરનામું પસંદ કરો",
+        "method_summary": {
+          "incomplete_address_entered": "ઉપલબ્ધ શિપિંગ પદ્ધતિઓ જોવા માટે સંપૂર્ણ શિપિંગ સરનામું દાખલ કરો",
+          "incomplete_address_selected": "ઉપલબ્ધ શિપિંગ પદ્ધતિઓ જોવા માટે સંપૂર્ણ શિપિંગ સરનામું પસંદ કરો"
+        },
+        "local_pickup": {
+          "search_address": "સરનામું શોધો",
+          "rollup_title": "પિકઅપ સ્થાન",
+          "rollup_accessibility_label": "પિકઅપ સ્થાનના વિકલ્પો"
+        },
+        "missing_shipping_address": "શિપિંગ સરનામું ખૂટે છે",
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} વસ્તુઓ",
+        "split_shipping_merchandise_quantity_label_additional": "બીજા +%{quantity}",
+        "split_shipping_merchandise_shipment_number": "વહન %{number} નું %{total}",
+        "pre_order_ships_now": "જહાજો હવે",
+        "pre_order_ships_later": "પછી શિપમેન્ટ",
+        "pre_order_ships_date": "જહાજો %{date}"
       },
       "stock": {
         "unpurchasable_product_generic": {
@@ -1128,7 +1272,31 @@
       "card_fields": {
         "unavailable": {
           "link_text": "આ પેજ રિફ્રેશ કરો.",
-          "suffix": "અથવા પછીથી ફરી પ્રયાસ કરો."
+          "suffix": "અથવા પછીથી ફરી પ્રયાસ કરો.",
+          "text": "ક્રેડિટ અને ડેબિટ કાર્ડ વડે પેમેન્ટ અત્યારે ઉપલબ્ધ નથી."
+        },
+        "card_number_label": "કાર્ડ નંબર",
+        "card_number_placeholder": "કાર્ડ નંબર",
+        "name_on_card_label": "કાર્ડ પરનું નામ",
+        "name_on_card_placeholder": "કાર્ડ પરનું નામ",
+        "card_expiry_label": "સમાપ્તિ તારીખ (મહિનો / વર્ષ)",
+        "card_expiry_placeholder": "સમાપ્તિ તારીખ (મહિનો / વર્ષ)",
+        "card_verification_value_label": "સુરક્ષા કોડ",
+        "card_verification_value_placeholder": "સુરક્ષા કોડ",
+        "card_start_label": "ઇસ્યુ તારીખ (MM / YY)",
+        "card_start_placeholder": "ઇસ્યુ તારીખ (MM / YY)",
+        "tooltip": {
+          "tooltip_accessibility_label": "વધુ માહિતી",
+          "card_verification_value_explanation_amex": "તમારા કાર્ડની આગળની બાજુએ 4-અંકનો સુરક્ષા કોડ",
+          "card_verification_value_explanation_other": "તમારા કાર્ડની પાછળ 3-અંકનો સુરક્ષા કોડ",
+          "card_verification_value_explanation": "3-અંકનો સુરક્ષા કોડ સામાન્ય રીતે તમારા કાર્ડની પાછળની બાજુએ હોય છે. અમેરિકન એક્સપ્રેસ કાર્ડ્સમાં આગળની બાજુએ 4-અંકનો કોડ હોય છે.",
+          "card_security_notice": "તમામ વ્યવહારો સુરક્ષિત અને એન્ક્રિપ્ટેડ છે."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "તમારું નામ તમારા કાર્ડ પર લખેલું છે તે પ્રમાણે જ દાખલ કરો",
+          "credit_card_number_invalid": "માન્ય કાર્ડ નંબર દાખલ કરો",
+          "credit_card_expiry_invalid": "માન્ય કાર્ડ સમાપ્તિ તારીખ દાખલ કરો",
+          "credit_card_verification_value_blank": "તમારા કાર્ડ પર CVV અથવા સુરક્ષા કોડ દાખલ કરો"
         }
       },
       "payment_delete": {
@@ -1199,6 +1367,106 @@
       "three_d_secure": {
         "title": "3D સિક્યોર",
         "verification_failed": "તમારી ચુકવણી ચકાસી શકાય નથી. ફરીથી પ્રયાસ કરો અથવા ચુકવણીની અલગ રીતનો ઉપયોગ કરો."
+      },
+      "store_credit": {
+        "details_modal": {
+          "balance_label": "સંતુલન",
+          "expiration_date_label": "મુદત પૂરી થવાની તારીખ",
+          "amount_label": "રકમ",
+          "date_label": "તારીખ",
+          "event_label": "ઘટના",
+          "events": {
+            "adjustment": "ગોઠવણ",
+            "order_payment": "ઓર્ડરની ચુકવણી",
+            "order_refund": "ઓર્ડર રિફંડ",
+            "payment_failure": "ચૂકવણી નિષ્ફળ",
+            "payment_returned": "ચુકવણી પરત કરી",
+            "order_cancellation": "ઓર્ડર રદ કરવો",
+            "tax_finalization": "કરનું અંતિમ નિર્ધારણ"
+          },
+          "expirable_balance_info": "તમારા બેલેન્સનો કેટલોક ભાગ ભવિષ્યની કોઈ તારીખે સમાપ્ત થઈ જશે",
+          "expirable_amount_label": "કુલ સમાપ્ત થઈ શકે તેવી રકમ",
+          "expirable_amounts_info": "જે રકમની સમયસીમા જલદી પૂરી થતી હોય તે ચેકઆઉટ વખતે પહેલા લાગુ પડશે",
+          "expirable_amounts_button": "જુઓ",
+          "expired_amounts_button": "સમાપ્ત થયેલી રકમો જુઓ",
+          "pagination": {
+            "load_more_label": "વધુ લોડ કરો",
+            "load_more_accessibility_label": "વધુ સમાપ્ત થઈ શકે તેવી રકમ લોડ કરો"
+          }
+        }
+      },
+      "payment_details": {
+        "title": "ચુકવણી પદ્ધતિની વિગતો",
+        "credit_card_details_accessibility_label": "જેનો અંત {{lastDigits}} માં થાય છે",
+        "billing_title": "બિલિંગ સરનામું",
+        "card_info_title": "કાર્ડની માહિતી",
+        "payment_method_expiring_on": "{{expiryDate}} ના રોજ સમાપ્ત થાય છે",
+        "payment_method_expired_on": "{{expiryDate}} ના રોજ સમાપ્ત થયેલ",
+        "preauthorized_payments": "પૂર્વ-અધિકૃત ચુકવણીઓ",
+        "close_payment_modal": "બંધ કરો",
+        "close_payment_modal_accessibility_label": "ચુકવણી પદ્ધતિની વિગતોનું મોડલ બંધ કરો",
+        "payment_method_not_found_error": "ચુકવણી પદ્ધતિ શોધી શકાઈ નથી",
+        "payment_details_loading": "ચુકવણી પદ્ધતિની વિગતો લોડ કરી રહ્યાં છીએ",
+        "pre_authorized_payments": "પૂર્વ-અધિકૃત ચુકવણીઓ",
+        "total_amount_of_subscription_line_items_left": "અને બીજા {{total}}",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "કુલ {{totalItems}} આઇટમ્સ, {{totalItemsToDisplay}} આઇટમ્સ પ્રદર્શિત કરી રહ્યાં છીએ.",
+        "next_payment_due": "આગામી ચુકવણીની નિયત તારીખ {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "સંપાદિત કરો",
+        "edit_payment_method_button_accessibility_label": "ચુકવણી પદ્ધતિ સંપાદિત કરો જેનો અંત {{lastDigits}} માં થાય છે",
+        "loading_shop_pay": "શોપ પે લોડ કરી રહ્યું છે",
+        "invalid_payment_method": "ચુકવણીની પદ્ધતિ અમાન્ય છે",
+        "invalid_payment_method_message": "આગળના ઓર્ડર મેળવવાનું ચાલુ રાખવા માટે નવા ક્રેડિટ કાર્ડનો ઉપયોગ કરો.",
+        "replace_payment_method": "ચુકવણી પદ્ધતિ બદલો",
+        "checkout_card_banner": "આ ચુકવણી પદ્ધતિનો ઉપયોગ ફક્ત પૂર્વ-અધિકૃત ચુકવણીઓ માટે જ થઈ શકે છે. જો તમે આ સ્ટોરમાં લૉગ ઇન કરશો, તો તે ચેકઆઉટ વખતે દેખાશે નહીં.",
+        "default_checkbox": "ડિફોલ્ટ તરીકે સેટ કરો",
+        "default_checkbox_accessibility_label": "આ ચુકવણી પદ્ધતિને મૂળભૂત તરીકે સેટ કરો",
+        "replace_payment_method_button": "બદલો"
+      },
+      "edit_payment_method": {
+        "title": "ચુકવણી પદ્ધતિ સંપાદિત કરો",
+        "save_payment_method_button": "સાચવો",
+        "cancel_edit_payment_method_button": "રદ કરો",
+        "payment_method_updated_toast": "ચુકવણીની પદ્ધતિ અપડેટ કરી",
+        "billing_address": "બિલિંગ સરનામું",
+        "billing_address_add_new": "નવું ઉમેરો",
+        "billing_address_choose_from_list": "યાદીમાંથી પસંદ કરો",
+        "future_purchases_notice": "આ ચુકવણી પદ્ધતિ ભવિષ્યની ખરીદીઓ માટે સાચવવામાં આવશે.",
+        "generic_error": "અપડેટ કરવામાં સમસ્યા હતી. કૃપા કરીને ફરી પ્રયાસ કરો."
+      },
+      "update_payment_method": {
+        "title": "ચુકવણી પદ્ધતિ અપડેટ કરો",
+        "button_title": "અપડેટ કરો",
+        "billing_address": "બિલિંગ સરનામું",
+        "disclaimer": "આ ચુકવણી પદ્ધતિ ભવિષ્યની ખરીદીઓ માટે સાચવવામાં આવશે અને કોઈપણ રિકરિંગ અથવા મુલતવી રાખેલ ખરીદી માટે ઉપયોગમાં લઈ શકાય છે.",
+        "error_message": "ચુકવણી પદ્ધતિ અપડેટ કરી શકાતી નથી",
+        "current": "વર્તમાન",
+        "subscriptions_title": "સબ્સ્ક્રિપ્શન્સ",
+        "subscriptions_list_accessibility_label": "સબ્સ્ક્રિપ્શન પ્રોડક્ટ્સની સૂચિ",
+        "pre_orders_title": "આગળ આવી રહ્યું છે",
+        "pre_orders_list_accessibility_label": "બાકી ઓર્ડર ઉત્પાદનોની સૂચિ",
+        "resources_list_accessibility_label": "આ ચુકવણી પદ્ધતિનો ઉપયોગ કરીને સબ્સ્ક્રિપ્શન પ્રોડક્ટ્સ અને બાકી ઓર્ડર પ્રોડક્ટ્સ",
+        "resources_card_scroll": "વધુ વસ્તુઓ માટે સ્ક્રોલ કરો",
+        "resources_card_show_more": "વધુ બતાવો",
+        "resources_card_show_less": "ઓછું બતાવો",
+        "loading_form_accessibility_message": "ચુકવણી પદ્ધતિ અપડેટ ફોર્મ લોડ કરી રહ્યું છે",
+        "loading_current_payment_method": "વર્તમાન ચુકવણી પદ્ધતિ લોડ કરી રહ્યા છીએ",
+        "loading_digital_wallets": "ડિજિટલ વૉલેટ વિકલ્પો લોડ કરી રહ્યાં છીએ",
+        "loading_card_fields": "ક્રેડિટ કાર્ડ ફીલ્ડ્સ લોડ કરી રહ્યા છીએ",
+        "loading_resources": "સબ્સ્ક્રિપ્શન અને આગામી ઓર્ડર લોડ કરી રહ્યા છીએ"
+      },
+      "link_expired": {
+        "message": "તમારી ચુકવણી પદ્ધતિ અપડેટ કરવા માટેની આ લિંક સમાપ્ત થઈ ગઈ છે.",
+        "update_message": "તમારી ચુકવણી પદ્ધતિ અપડેટ કરવા માટેની આ લિંક સમાપ્ત થઈ ગઈ છે.",
+        "add_message": "તમારી ચુકવણી પદ્ધતિ ઉમેરવા માટેની આ લિંકની સમયસીમા સમાપ્ત થઈ ગઈ છે.",
+        "return_home_button": "હોમ પેજ પર પાછા ફરો"
+      },
+      "update_success": {
+        "title": "ચુકવણીની પદ્ધતિ અપડેટ કરી",
+        "done_button": "ખરીદી ચાલુ રાખો"
+      },
+      "add_success": {
+        "title": "ચુકવણી પદ્ધતિ ઉમેરાઈ ગઈ છે",
+        "done_button": "ખરીદી ચાલુ રાખો"
       }
     },
     "payment_method_brands": {
