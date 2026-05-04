@@ -3796,7 +3796,102 @@
     "recipient_form_fields_visible": "પ્રાપ્તકર્તા ફોર્મના ક્ષેત્રો હવે દૃશ્યમાન છે",
     "recipient_form_fields_hidden": "પ્રાપ્તકર્તાના ફોર્મના ફીલ્ડ્સ હવે છુપાયેલા છે.",
     "recipient_form_error": "ફોર્મ સબમિટ કરવામાં ભૂલ હતી",
-    "product_custom_property_character_count": "{{ used_chars }}/{{ max_chars }} અક્ષરો વપરાયા છે"
+    "product_custom_property_character_count": "{{ used_chars }}/{{ max_chars }} અક્ષરો વપરાયા છે",
+    "cancel": "રદ કરો",
+    "discount": "ડિસ્કાઉન્ટ",
+    "account_title": "ખાતું",
+    "terms_and_policies": "નિયમો અને નીતિઓ",
+    "account_title_personalized": "હાય {{ first_name }}",
+    "account_orders": "ઓર્ડર",
+    "account_profile": "પ્રોફાઇલ",
+    "cart_estimated_total": "અંદાજિત કુલ",
+    "cart_title": "કાર્ટ",
+    "cart_subtotal": "પેટાકુલ",
+    "cart_total": "કાર્ટનો કુલ સરવાળો",
+    "checkout": "જુઓ",
+    "collection_placeholder": "સંગ્રહ શીર્ષક",
+    "discount_code": "ડિસ્કાઉન્ટ કોડ",
+    "shipping_discount_error": "સરનામું ઉમેર્યા પછી ચેકઆઉટ વખતે શિપિંગ ડિસ્કાઉન્ટ દેખાશે",
+    "discount_code_error": "ડિસ્કાઉન્ટ કોડ તમારા કાર્ટ પર લાગુ કરી શકાતો નથી",
+    "discounts": "ડિસ્કાઉન્ટ",
+    "duties_and_taxes_included": "ડ્યુટી અને ટેક્સ શામેલ છે.",
+    "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "ફરજો અને કરવેરા શામેલ છે. ડિસ્કાઉન્ટ અને <a href=\"{{ link }}\">શિપિંગ</a> ચેકઆઉટ પર ગણતરી.",
+    "duties_and_taxes_included_shipping_at_checkout_with_policy_without_discounts_html": "ડ્યુટી અને ટેક્સ શામેલ છે. શિપિંગની ગણતરી ચેકઆઉટ વખતે કરવામાં આવશે.",
+    "duties_and_taxes_included_shipping_at_checkout_without_policy": "ફરજો અને કરવેરા શામેલ છે. ડિસ્કાઉન્ટ અને શિપિંગ ચેકઆઉટ પર ગણતરી થાય છે.",
+    "duties_and_taxes_included_shipping_at_checkout_without_policy_without_discounts": "ડ્યુટી અને ટેક્સ શામેલ છે. શિપિંગની ગણતરી ચેકઆઉટ વખતે કરવામાં આવશે.",
+    "duties_included": "ફરજો શામેલ છે.",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "ફરજોનો સમાવેશ થાય છે. ટેક્સ, ડિસ્કાઉન્ટ અને <a href=\"{{ link }}\">શિપિંગ</a> ચેકઆઉટ વખતે ગણવામાં આવશે.",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_without_discounts_html": "ફરજો શામેલ છે. શિપિંગ ચેકઆઉટ વખતે ગણવામાં આવે છે.",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "ફરજો શામેલ છે. ટેક્સ, ડિસ્કાઉન્ટ અને શિપિંગની ગણતરી ચેકઆઉટ સમયે કરવામાં આવશે.",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy_without_discounts": "ફરજો શામેલ છે. શિપિંગ ચેકઆઉટ વખતે ગણવામાં આવે છે.",
+    "featured_products": "ફીચર્ડ પ્રોડક્ટ્સ",
+    "filters": "ફિલ્ટર્સ",
+    "grid_view": {
+      "default_view": "ડિફૉલ્ટ",
+      "grid_fieldset": "કોલમ ગ્રીડ",
+      "single_item": "એકલુ",
+      "zoom_out": "ઝૂમ આઉટ કરો"
+    },
+    "inventory_low_stock_show_count": {
+      "one": "{{ count }} બાકી",
+      "other": "{{ count }} બાકી"
+    },
+    "inventory_low_stock": "ઓછો સ્ટોક",
+    "inventory_in_stock": "સ્ટોકમાં",
+    "inventory_out_of_stock": "સ્ટોક નથી",
+    "item_count": {
+      "one": "{{ count }} વસ્તુ",
+      "other": "{{ count }} વસ્તુઓ"
+    },
+    "item_count_cutoff": "{{ count }} કરતાં વધુ વસ્તુઓ",
+    "language": "ભાષા",
+    "localization_region_and_language": "પ્રદેશ અને ભાષા",
+    "no_products_found": "કોઈ ઉત્પાદન મળ્યું નથી.",
+    "no_results_found": "કોઈ પરિણામ મળ્યું નથી",
+    "page_placeholder_title": "પાનાનું શીર્ષક",
+    "page_placeholder_content": "તેની સામગ્રી પ્રદર્શિત કરવા માટે એક પેજ પસંદ કરો.",
+    "pagination": {
+      "nav_label": "પૃષ્ઠ ક્રમાંકન",
+      "previous": "અગાઉનું",
+      "next": "આગળ",
+      "page": "પાનું {{ page }}"
+    },
+    "pickup_available_at_html": "પિકઅપ <b>{{ location }}</b> પર ઉપલબ્ધ છે",
+    "pickup_available_in": "પિકઅપ ઉપલબ્ધ છે, {{ pickup_time }}",
+    "pickup_not_available": "પિકઅપ હાલમાં ઉપલબ્ધ નથી",
+    "powered_by": "આ દુકાન દ્વારા સંચાલિત થશે",
+    "price": "કિંમત",
+    "price_compare_at": "ની કિંમત સાથે સરખામણી કરો",
+    "price_from": "શરૂઆત {{ price }} થી",
+    "price_regular": "નિયમિત ભાવ",
+    "price_sale": "વેચાણ કિંમત",
+    "price_filter_html": "સૌથી વધુ કિંમત {{ price }} છે",
+    "product_image": "ઉત્પાદનની છબી",
+    "product_information": "ઉત્પાદનની માહિતી",
+    "product_subtotal": "ઉત્પાદનનો કુલ સરવાળો",
+    "product_total": "પ્રોડક્ટનું કુલ મૂલ્ય",
+    "product_badge_sold_out": "વેચાઈ ગયું",
+    "product_badge_sale": "વેચાણ",
+    "product_card_placeholder": "ઉત્પાદનનું શીર્ષક",
+    "placeholder_image": "સ્થાનધારક છબી",
+    "quantity": "જથ્થો",
+    "quantity_per_item": "પ્રત્યેક",
+    "quick_order_list": "ઝડપી ઓર્ડર સૂચિ",
+    "recently_viewed_products": "તાજેતરમાં જોયેલું",
+    "remove_all": "બધા દૂર કરો",
+    "remove_all_items_confirmation": "તમારા કાર્ટમાંથી બધી {{ count }} વસ્તુઓ દૂર કરવી છે?",
+    "remove_one_item_confirmation": "તમારા કાર્ટમાંથી 1 આઇટમ દૂર કરવી છે?",
+    "reviews": "સમીક્ષાઓ",
+    "read_more": "વધુ વાંચો...",
+    "search_input_label": "શોધ",
+    "search_input_placeholder": "શોધ",
+    "search": "શોધ",
+    "search_results": "શોધ પરિણામો",
+    "search_results_label": "શોધ પરિણામો",
+    "search_results_no_results": "\"{{ terms }}\" માટે કોઈ પરિણામ મળ્યું નથી. બીજી શોધનો પ્રયાસ કરો.",
+    "search_results_no_results_check_spelling": "\"{{ terms }}\" માટે કોઈ પરિણામ મળ્યું નથી. જોડણી તપાસો અથવા કોઈ અલગ શબ્દ કે શબ્દસમૂહનો ઉપયોગ કરો.",
+    "search_results_resource_articles": "બ્લોગ પોસ્ટ્સ",
+    "search_results_resource_collections": "સંગ્રહો"
   },
   "fields": {
     "separator": "ને"
@@ -3902,6 +3997,27 @@
     },
     "filter": "ફિલ્ટર કરો",
     "load_video": "વિડિઓ લોડ કરો: {{ description }}",
-    "sold_out": "વેચાઈ ગયું"
+    "sold_out": "વેચાઈ ગયું",
+    "payment_methods": "ચુકવણી પદ્ધતિઓ",
+    "slider_label": "સ્લાઇડર"
+  },
+  "blogs": {
+    "article": {
+      "comments_heading": {
+        "one": "{{ count }} ટિપ્પણી",
+        "other": "{{ count }} ટિપ્પણીઓ"
+      }
+    },
+    "comment_form": {
+      "email": "ઈમેલ",
+      "error": "ટિપ્પણી પોસ્ટ કરવામાં નિષ્ફળ, કૃપા કરીને નીચેના મુદ્દાઓ પર ધ્યાન આપો:",
+      "heading": "ટિપ્પણી કરો",
+      "message": "સંદેશ",
+      "moderated": "કૃપા કરીને નોંધ લો કે ટિપ્પણીઓ પ્રકાશિત થાય તે પહેલાં મંજૂર થવી જરૂરી છે.",
+      "name": "નામ",
+      "post": "ટિપ્પણી પોસ્ટ કરો",
+      "success_moderated": "ટિપ્પણી પોસ્ટ કરી, મધ્યસ્થીની રાહ જોઈ રહી છે",
+      "success": "ટિપ્પણી પોસ્ટ કરી"
+    }
   }
 }
