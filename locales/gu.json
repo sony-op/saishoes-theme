@@ -815,5 +815,140 @@
         }
       }
     }
+  },
+  "customer_accounts": {
+    "payment_methods": {
+      "card_fields": {
+        "unavailable": {
+          "link_text": "આ પેજ રિફ્રેશ કરો.",
+          "suffix": "અથવા પછીથી ફરી પ્રયાસ કરો."
+        }
+      },
+      "payment_delete": {
+        "title": "ચુકવણી પદ્ધતિ કાઢી નાખો",
+        "description_without_replacement": "આ ચુકવણી પદ્ધતિ ભવિષ્યની ખરીદીઓ માટે ઉપલબ્ધ રહેશે નહીં.",
+        "description_with_replacement": "આ ચુકવણી પદ્ધતિ કાઢી નાખવાથી પૂર્વ-અધિકૃત ચુકવણીઓ પર અસર થશે. આગામી ઑર્ડર મેળવવાનું ચાલુ રાખવા માટે તમે વૈકલ્પિક રીતે તેને અન્ય ચુકવણી પદ્ધતિ વડે બદલી શકો છો.",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "આ ચુકવણી પદ્ધતિ ડિલીટ કરવાથી પૂર્વ-અધિકૃત ચુકવણીઓને અસર થશે. જ્યાં સુધી તમે વૈકલ્પિક ચુકવણી પદ્ધતિ પસંદ ન કરો, ત્યાં સુધી આ ચુકવણી પદ્ધતિનો ઉપયોગ વર્તમાન ઓર્ડર પરના કોઈપણ બાકી રહેલા બિલો માટે થશે. વૈકલ્પિક ચુકવણી પદ્ધતિ પસંદ કરવાથી તમે વિક્ષેપ વિના આગામી સબ્સ્ક્રિપ્શન ઓર્ડર પ્રાપ્ત કરી શકશો.",
+          "with_pending_orders": "આ ચુકવણી પદ્ધતિને ડિલીટ કરવાથી તે તમારા એકાઉન્ટમાંથી દૂર થઈ જશે અને ભવિષ્યની ખરીદીઓ માટે ઉપલબ્ધ રહેશે નહીં. જો તમે વૈકલ્પિક ચુકવણી પદ્ધતિ પસંદ નહીં કરો, તો પણ હાલના ઓર્ડર પરના કોઈપણ બાકી રહેલા બેલેન્સ માટે તેના પર શુલ્ક લેવામાં આવશે.",
+          "with_subscriptions": "આ ચુકવણી પદ્ધતિને ડિલીટ કરવાથી પૂર્વ-અધિકૃત ચુકવણીઓ પર અસર થશે. આગામી ઑર્ડર મેળવવાનું ચાલુ રાખવા માટે તેને વૈકલ્પિક ચુકવણી પદ્ધતિથી બદલો."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "આ ચુકવણી પદ્ધતિ કાઢી નાખવાથી પૂર્વ-અધિકૃત ચુકવણીઓ પર અસર થશે. હાલના ઓર્ડર પરના કોઈપણ બાકી ચૂકવણી માટે આ ચુકવણી પદ્ધતિનો ઉપયોગ કરીને ચુકવણી કરવામાં આવશે, પરંતુ તમને આગામી સબસ્ક્રિપ્શન ઓર્ડર પ્રાપ્ત થશે નહીં. સબસ્ક્રિપ્શન ઓર્ડર મેળવવાનું ચાલુ રાખવા માટે વૈકલ્પિક ચુકવણી પદ્ધતિ ઉમેરો.",
+          "with_pending_orders": "આ ચુકવણી પદ્ધતિને ડિલીટ કરવાથી તે તમારા એકાઉન્ટમાંથી દૂર થઈ જશે અને ભવિષ્યની ખરીદીઓ માટે ઉપલબ્ધ રહેશે નહીં. હાલના ઓર્ડર પર કોઈપણ બાકી લેણાં માટે તે હજુ પણ વસૂલવામાં આવશે.",
+          "with_subscriptions": "આ ચુકવણી પદ્ધતિ કાઢી નાખવાથી પૂર્વ-અધિકૃત ચુકવણીઓ પર અસર થશે. આગામી ઑર્ડર્સ મેળવવાનું ચાલુ રાખવા માટે વૈકલ્પિક ચુકવણી પદ્ધતિ ઉમેરો."
+        },
+        "payment_method_selector_placeholder": "ચુકવણીની વૈકલ્પિક પદ્ધતિ પસંદ કરો (વૈકલ્પિક)",
+        "payment_method_selector_no_alternative_payment": "કોઈ રિપ્લેસમેન્ટ પદ્ધતિ નથી",
+        "replace_method_with_new_method_description": "તમારી {{currentPaymentMethodName}} કાઢી નાખવામાં આવશે અને તેની જગ્યાએ તમારી {{newPaymentMethodName}} ઉમેરવામાં આવશે.",
+        "error_when_deleting": "અમે માફી માંગીએ છીએ પરંતુ કંઈક ખોટું થયું અને અમે આ ચુકવણી પદ્ધતિને કાઢી શક્યા નહીં. કૃપા કરીને પછીથી ફરી પ્રયાસ કરો અથવા પૃષ્ઠને તાજું કરો.",
+        "delete_and_replace_button": "કાઢી નાખો અને બદલો",
+        "delete_and_replace_button_accessibility_label": "{{currentPaymentMethodName}} કાઢી નાખો અને તેને બદલીને {{newPaymentMethodName}} કરો.",
+        "deleted_successfully": "ચુકવણી પદ્ધતિ સફળતાપૂર્વક કાઢી નાખવામાં આવી.",
+        "loading_available_payment_methods_accessibility_label": "ઉપલબ્ધ ચુકવણી પદ્ધતિઓ લોડ કરી રહ્યું છે"
+      },
+      "add_payment_method": {
+        "title": "ચુકવણી પદ્ધતિ ઉમેરો",
+        "button_title": "ઉમેરો",
+        "payment_method_added_confirmation": "ચુકવણી પદ્ધતિ ઉમેરાઈ ગઈ છે",
+        "missing_customer_error": "કંઈક ખોટું થયું છે. કૃપા કરીને ફરીથી પ્રયાસ કરો અથવા સપોર્ટનો સંપર્ક કરો.",
+        "replace_mode_warning": "આ ચુકવણી પદ્ધતિને ડિલીટ કરવાથી સબ્સ્ક્રિપ્શન્સ અથવા પ્રી-ઓર્ડર પર અસર થશે. આગામી ઑર્ડર મેળવવાનું ચાલુ રાખવા માટે તેને વૈકલ્પિક ચુકવણી પદ્ધતિથી બદલો.",
+        "choose_from_list": "યાદીમાંથી પસંદ કરો",
+        "add_new_button": "નવું ઉમેરો",
+        "billing_address": {
+          "title": "બિલિંગ સરનામું",
+          "add_billing_address_button": "નવું ઉમેરો",
+          "add_billing_address_button_accessibility_label": "નવું બિલિંગ સરનામું ઉમેરો",
+          "choose_billing_address_from_list_button": "યાદીમાંથી પસંદ કરો",
+          "choose_billing_address_from_list_button_accessibility_label": "સૂચિમાંથી બિલિંગ સરનામું પસંદ કરો",
+          "missing_billing_address_error_message": "કૃપા કરીને બિલિંગ સરનામું સ્પષ્ટ કરો",
+          "default_checkbox": "ડિફૉલ્ટ ચુકવણી પદ્ધતિ તરીકે સેટ કરો"
+        },
+        "subscription_contracts": {
+          "title": "રિકરિંગ ઓર્ડર માટે ચુકવણી પદ્ધતિનો ઉપયોગ કરો",
+          "more_items": {
+            "one": "{{count}} વધુ ઉત્પાદન",
+            "other": "બીજી {{count}} પ્રોડક્ટ્સ"
+          },
+          "product_count": {
+            "one": "{{count}} ઉત્પાદન",
+            "other": "{{count}} ઉત્પાદનો"
+          },
+          "product_details": "પ્રોડક્ટની વિગતો",
+          "load_more": "વધુ લોડ કરો"
+        },
+        "updating_contracts": {
+          "one": "{{count}} સબસ્ક્રિપ્શન કરાર અપડેટ કરી રહ્યાં છીએ...",
+          "other": "{{count}} સબ્સ્ક્રિપ્શન કરારો અપડેટ કરી રહ્યાં છીએ..."
+        },
+        "contracts_updated": {
+          "one": "સબ્સ્ક્રિપ્શન કરાર સફળતાપૂર્વક અપડેટ કર્યો {{count}}",
+          "other": "{{count}} સબ્સ્ક્રિપ્શન કરારો સફળતાપૂર્વક અપડેટ થયા છે"
+        },
+        "contracts_update_failed": "કેટલાક સબ્સ્ક્રિપ્શન કરારો અપડેટ કરવામાં નિષ્ફળ.",
+        "subscription_contracts_updated": "{{total}} સબસ્ક્રિપ્શન્સમાંથી {{succeeded}} અપડેટ થયા",
+        "invalid_wallet_type_error": "અમાન્ય વૉલેટ પ્રકાર."
+      },
+      "three_d_secure": {
+        "title": "3D સિક્યોર",
+        "verification_failed": "તમારી ચુકવણી ચકાસી શકાય નથી. ફરીથી પ્રયાસ કરો અથવા ચુકવણીની અલગ રીતનો ઉપયોગ કરો."
+      }
+    },
+    "payment_method_brands": {
+      "visa": "વિઝા",
+      "mastercard": "માસ્ટરકાર્ડ",
+      "americanexpress": "અમેરિકન એક્સપ્રેસ",
+      "discover": "શોધો",
+      "dinersclub": "ડાઇનર્સ ક્લબ",
+      "jcb": "જેસીબી",
+      "elo": "એલો",
+      "visaelectron": "વિઝા ઇલેક્ટ્રોન",
+      "maestro": "માસ્ટ્રો",
+      "forbrugsforeningen": "ફોરબ્રુગ્સફોરેનિંગન",
+      "dankort": "ડેનકાર્ડ",
+      "hipercard": "હિપરકાર્ડ",
+      "unionpay": "યુનિયનપે",
+      "laser": "લેસર",
+      "shoppay": "શોપ પે",
+      "applepay": "એપલ પે",
+      "paypal": "પેપાલ",
+      "storecredit": "સ્ટોર ક્રેડિટ",
+      "bogus": "નકલી",
+      "klarna_pay_now": "ક્લાર્ના",
+      "klarna_pay_later": "ક્લાર્ના",
+      "klarna_slice_it": "ક્લાર્ના"
+    },
+    "privacy_banner": {
+      "cookie_preferences_link": "કૂકી પસંદગીઓ"
+    },
+    "ui_components": {
+      "clear": "ચોખ્ખું",
+      "clipboardCopied": "કૉપિ કર્યું",
+      "clipboardFailedToCopy": "કોપી કરવામાં નિષ્ફળ",
+      "closeNotification": "બંધ કરો",
+      "expandNotification": "વધુ જુઓ",
+      "closeModal": "બંધ કરો",
+      "submit": "સબમિટ કરો",
+      "processing": "પ્રક્રિયા ચાલુ છે...",
+      "increase": "વધારો {{type}}",
+      "decrease": "ઘટાડો {{type}}",
+      "minimumReached": "લઘુતમ {{value}} પર પહોંચી ગયું છે",
+      "maximumReached": "મહત્તમ {{value}} પર પહોંચી ગયું છે.",
+      "january": "જાન્યુઆરી",
+      "february": "ફેબ્રુઆરી",
+      "march": "માર્ચ",
+      "april": "એપ્રિલ",
+      "may": "મે",
+      "june": "જૂન",
+      "july": "જુલાઈ",
+      "august": "ઓગસ્ટ",
+      "september": "સપ્ટેમ્બર",
+      "october": "ઑક્ટોબર",
+      "november": "નવેમ્બર",
+      "december": "ડિસેમ્બર",
+      "monday": "સોમવાર",
+      "tuesday": "મંગળવાર",
+      "wednesday": "બુધવાર"
+    }
   }
 }
