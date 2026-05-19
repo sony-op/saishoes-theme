@@ -242,6 +242,29 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "product_specs_dreamzhub": {
+              "type": "product-specs",
+              "name": "Product Specifications",
+              "settings": {
+                "title": "Specifications",
+                "title_preset": "h6",
+                "background_color": "transparent",
+                "brand": "LIP N CHIC GLOW",
+                "item_form": "Hydrogel Patches",
+                "item_weight": "50 Grams",
+                "liquid_volume": "0.01 Cubic Centimetres",
+                "speciality": "Nail Care",
+                "number_of_items": "1",
+                "net_quantity": "21.0 Grams",
+                "scent": "Unscented",
+                "manufacturer": "Lip N Chic Glow",
+                "size": "21 g (Pack of 1)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              }
             }
           },
           "block_order": [
@@ -249,7 +272,8 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
-            "text_aEtTtq"
+            "text_aEtTtq",
+            "product_specs_dreamzhub"
           ]
         }
       },

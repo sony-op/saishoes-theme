@@ -1,0 +1,310 @@
+{%- assign block_settings = block.settings -%}
+
+<div
+  class="product-specs spacing-style"
+  style="
+    {% render 'spacing-padding', settings: block_settings %}
+    --specs-bg: {{ block_settings.background_color | default: 'transparent' }};
+  "
+  {{ block.shopify_attributes }}
+>
+  {%- if block_settings.title != blank -%}
+    <h3 class="product-specs__title {{ block_settings.title_preset }}">{{ block_settings.title }}</h3>
+  {%- endif -%}
+
+  <div class="product-specs__grid">
+    {%- if block_settings.brand != blank -%}
+      <div class="product-specs__row">
+        <span class="product-specs__label">Brand</span>
+        <span class="product-specs__value">{{ block_settings.brand }}</span>
+      </div>
+    {%- endif -%}
+
+    {%- if block_settings.item_form != blank -%}
+      <div class="product-specs__row">
+        <span class="product-specs__label">Item Form</span>
+        <span class="product-specs__value">{{ block_settings.item_form }}</span>
+      </div>
+    {%- endif -%}
+
+    {%- if block_settings.item_weight != blank -%}
+      <div class="product-specs__row">
+        <span class="product-specs__label">Item Weight</span>
+        <span class="product-specs__value">{{ block_settings.item_weight }}</span>
+      </div>
+    {%- endif -%}
+
+    {%- if block_settings.liquid_volume != blank -%}
+      <div class="product-specs__row">
+        <span class="product-specs__label">Liquid Volume</span>
+        <span class="product-specs__value">{{ block_settings.liquid_volume }}</span>
+      </div>
+    {%- endif -%}
+
+    {%- if block_settings.speciality != blank -%}
+      <div class="product-specs__row">
+        <span class="product-specs__label">Speciality</span>
+        <span class="product-specs__value">{{ block_settings.speciality }}</span>
+      </div>
+    {%- endif -%}
+
+    {%- if block_settings.number_of_items != blank -%}
+      <div class="product-specs__row">
+        <span class="product-specs__label">Number of Items</span>
+        <span class="product-specs__value">{{ block_settings.number_of_items }}</span>
+      </div>
+    {%- endif -%}
+
+    {%- if block_settings.net_quantity != blank -%}
+      <div class="product-specs__row">
+        <span class="product-specs__label">Net Quantity</span>
+        <span class="product-specs__value">{{ block_settings.net_quantity }}</span>
+      </div>
+    {%- endif -%}
+
+    {%- if block_settings.scent != blank -%}
+      <div class="product-specs__row">
+        <span class="product-specs__label">Scent</span>
+        <span class="product-specs__value">{{ block_settings.scent }}</span>
+      </div>
+    {%- endif -%}
+
+    {%- if block_settings.manufacturer != blank -%}
+      <div class="product-specs__row">
+        <span class="product-specs__label">Manufacturer</span>
+        <span class="product-specs__value">{{ block_settings.manufacturer }}</span>
+      </div>
+    {%- endif -%}
+
+    {%- if block_settings.size != blank -%}
+      <div class="product-specs__row">
+        <span class="product-specs__label">Size</span>
+        <span class="product-specs__value">{{ block_settings.size }}</span>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% stylesheet %}
+  .product-specs {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: var(--specs-bg);
+    box-sizing: border-box;
+  }
+
+  .product-specs__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--color-foreground-heading, #000000);
+  }
+
+  .product-specs__grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .product-specs__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    align-items: center;
+    line-height: 1.4;
+  }
+
+  .product-specs__label {
+    font-weight: 700;
+    color: var(--color-foreground-heading, #000000);
+  }
+
+  .product-specs__value {
+    color: var(--color-foreground, #333333);
+    font-weight: 400;
+  }
+
+  @media (max-width: 480px) {
+    .product-specs__row {
+      grid-template-columns: 1.2fr 0.8fr;
+      font-size: 13px;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Product Specifications",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Specifications"
+    },
+    {
+      "type": "select",
+      "id": "title_preset",
+      "label": "Title Font Size",
+      "options": [
+        {
+          "value": "paragraph",
+          "label": "Paragraph"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ],
+      "default": "h6"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "transparent"
+    },
+    {
+      "type": "header",
+      "content": "Specifications Details"
+    },
+    {
+      "type": "text",
+      "id": "brand",
+      "label": "Brand",
+      "default": "LIP N CHIC GLOW"
+    },
+    {
+      "type": "text",
+      "id": "item_form",
+      "label": "Item Form",
+      "default": "Hydrogel Patches"
+    },
+    {
+      "type": "text",
+      "id": "item_weight",
+      "label": "Item Weight",
+      "default": "50 Grams"
+    },
+    {
+      "type": "text",
+      "id": "liquid_volume",
+      "label": "Liquid Volume",
+      "default": "0.01 Cubic Centimetres"
+    },
+    {
+      "type": "text",
+      "id": "speciality",
+      "label": "Speciality",
+      "default": "Nail Care"
+    },
+    {
+      "type": "text",
+      "id": "number_of_items",
+      "label": "Number of Items",
+      "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "net_quantity",
+      "label": "Net Quantity",
+      "default": "21.0 Grams"
+    },
+    {
+      "type": "text",
+      "id": "scent",
+      "label": "Scent",
+      "default": "Unscented"
+    },
+    {
+      "type": "text",
+      "id": "manufacturer",
+      "label": "Manufacturer",
+      "default": "Lip N Chic Glow"
+    },
+    {
+      "type": "text",
+      "id": "size",
+      "label": "Size",
+      "default": "21 g (Pack of 1)"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "t:settings.left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "t:settings.right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Specifications",
+      "category": "t:categories.product"
+    }
+  ]
+}
+{% endschema %}
